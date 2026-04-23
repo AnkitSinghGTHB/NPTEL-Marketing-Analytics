@@ -1,0 +1,512 @@
+sd(data$TIME)
+View(data)
+View(data)
+data$WEIGHT==1
+which(data$WEIGHT==1)
+x1=data$TIME[which(data$WEIGHT==1)]
+x2=data$TIME[which(data$WEIGHT==2)]
+x1
+x2
+View(data)
+mean(x1)
+mean(x2)
+t.test(x1,mu=28)
+t.test(x2,mu=28)
+?t,tets
+?t.test
+t.tets(x1,x2,alternative = "less")
+t.test(x1,x2,alternative = "less")
+dropout=read.csv(file.choose(), header=TRUE)
+dropout
+my-chisq=chisq.test(dropout[2:7, 2:5])
+chisq=chisq.test(dropout[2:7, 2:5])
+chisq
+chisq$observed
+chisq$expected
+contribution=100*chisq$residuals^2/chisq$statistic
+round(contribution, 3)
+tbl=read.csv(file.choose(), header=TRUE)
+A=tbl$Category
+B=tbl$Period
+C=tbl$Employment
+oneway_cat=aov(C~A)
+summary(oneway_cat)
+oneway_pd=aov(C~B)
+summary(oneway_pd)
+twoway=aov(C~A*B)
+summary(twoway)
+#Now I am doing Two Way ANOVA
+twoway=aov(C~A*B)
+df=read.csv("https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data")
+View(df)
+?read.csv
+df=read.csv("https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data",header=FALSE)
+View(df)
+names(df)=c("age","workclass","fnlwgt","education","education-num","marital",
+"occupation","relationship","race","sex","capital-gain",
+"capital-loss","hours-per-week","native","income")
+View(df)
+summary(df)
+str(df)
+summary(df)
+df=na.omit(df)
+install.packages("partykit")
+install.packages("CHAID", repos="http://R-Forge.R-project.org")
+data(attrition)
+library("CHAID")
+data(attrition)
+library(rsample)
+install.packages("rsample")
+library(rsample)
+data(attrition)
+library(CHAID)
+data(attrition)
+data=attrition
+data(attrition)
+View(attrition)
+data(attrition)
+str(attrition)
+View(attrition)
+summary(attrition)
+attrition$JobLevel=as.factor(attrition$JobLevel)
+library(dplyr)
+summary(attrition)
+attrition=attrition %>%   mutate(MonthlyIncome_quantile = ntile(MonthlyIncome, 4))
+View(attrition)
+str(attrition)
+attrition=attrition %>%   mutate(MonthlyIncome_quantile = as.factor(ntile(MonthlyIncome, 4)))
+str(attrition)
+summary(attrition)
+attrition=attrition %>%   mutate(PercentSalaryHike_quantile = as.factor(ntile(PercentSalaryHike, 4)))
+attrition=attrition %>%   mutate(YearsAtCompany_quantile = as.factor(ntile(YearsAtCompany, 4)))
+apply(attrition,2,is.factor)
+apply(attrition,1,is.factor)
+apply(attrition,2,is.factor)
+newdata=attrition %>% select_if(is.factor)
+#Model building
+chaidattrit1 <- chaid(Attrition ~ ., data = newattrit)
+#Model building
+chaidattrit1 <- chaid(Attrition ~ ., data = newdata)
+print(chaidattrit1)
+plot(chaidattrit1)
+plot(chaidattrit1, type = "simple")
+plot(
+chaidattrit1,
+main = "Testing Graphical Options",
+gp = gpar(fontsize = 8),
+type = "simple"
+)
+plot(
+chaidattrit1,
+main = "Testing Graphical Options",
+gp = gpar(fontsize = 8),
+)
+plot(
+chaidattrit1,
+main = "Testing Graphical Options",
+gp = gpar(fontsize = 6),type = "simple"
+)
+plot(
+chaidattrit1,
+main = "Testing Graphical Options",
+gp = gpar(col = "blue",
+lty = "solid",
+lwd = 3,fontsize = 6),type = "simple"
+)
+plot(
+chaidattrit1,
+main = "Testing Graphical Options",
+gp = gpar(col = "blue",
+lwd = 3,fontsize = 6),type = "simple"
+)
+plot(
+chaidattrit1,
+main = "Testing Graphical Options",
+gp = gpar(col = "blue",
+lwd = 1,fontsize = 6),type = "simple"
+)
+plot(
+chaidattrit1,
+main = "Testing Graphical Options",
+gp = gpar(col = "blue",
+lwd = 1,fontsize = 6)
+)
+plot(
+chaidattrit1,
+main = "Testing Graphical Options",
+gp = gpar(col = "blue",
+lwd = 1,fontsize = 6),type="simple"
+)
+#Tuning the model
+ctrl <- chaid_control(minsplit = 200, minprob = 0.05)
+ctrl
+?chaid_control
+chaidattrit2 <- chaid(Attrition ~ ., data = newattrit, control = ctrl)
+print(chaidattrit2)
+chaidattrit2 <- chaid(Attrition ~ ., data = newdata, control = ctrl)
+print(chaidattrit2)
+plot(
+chaidattrit2,
+main = "Testing Graphical Options",
+gp = gpar(col = "blue",
+lwd = 1,fontsize = 6),type="simple"
+)
+plot(
+chaidattrit2,
+main = "Testing Graphical Options",
+gp = gpar(col = "blue",
+lwd = 1,fontsize = 6)
+)
+ctrl <- chaid_control(minsplit = 200, minprob = 0.05,maxheight=3)
+chaidattrit2 <- chaid(Attrition ~ ., data = newdata, control = ctrl)
+print(chaidattrit2)
+plot(
+chaidattrit2,
+main = "Testing Graphical Options",
+gp = gpar(col = "blue",
+lwd = 1,fontsize = 6),type="simple"
+)
+#How good is the model within data
+predicted=predict(chaidattrit2)
+librray(caret)
+library(caret)
+confusionMatrix(predicted,newdata$Attrition)
+set.seed(1)
+a=sample(1:1470,500,replace=FALSE)
+traindata=newdata[-a,]
+testdata=newdata[a,]
+ctrl <- chaid_control(minsplit = 50, minprob = 0.05,maxheight=3)
+chaidattrit2 <- chaid(Attrition ~ ., data = newdata, control = ctrl)
+chaidattrit3 <- chaid(Attrition ~ ., data = newdata, control = ctrl)
+chaidattrit3 <- chaid(Attrition ~ ., data = traindata, control = ctrl)
+predicted=predict(chaidattrit3,newdata=testdata)
+confusionMatrix(predicted,newdata$Attrition)
+confusionMatrix(predicted,testdata$Attrition)
+#CART for satisfaction
+str(data)
+#CART for satisfaction
+str(attrition)
+attrition$JobSatisfaction=as.numeric(as.character(attrition$JobSatisfaction))
+attrition$JobSatisfaction
+data(attrition)
+as.character(attrition$JobSatisfaction)
+levels(attrition$JobSatisfaction)
+attrition$JobSatisfaction=as.numeric(attrition$JobSatisfaction)
+library(rpart)
+traindata=attrition[-a,]
+testdata=attrition[a,]
+m.rpart <- rpart(JobSatisfaction ~ ., data = traindata)
+m.rpart
+library(rpart.plot)
+rpart.plot(m.rpart, digits = 3)
+install.packages("rpart.plot")
+library(rpart.plot)
+rpart.plot(m.rpart, digits = 3)
+rpart.plot(m.rpart, digits = 4, fallen.leaves = TRUE,
+type = 3, extra = 101)
+predictedsatis=predict(m.rpart,newdata=testdata)
+sqrt(mean((predictedsatis-testdata$JobSatisfaction)^2))
+iris
+data("iris")
+data=iris
+iris.lda=lda(Species~Sepa.Length+Sepal.Width+Petal.Length+
+Petal.Width,data=data)
+library(MASS)
+iris.lda=lda(Species~Sepa.Length+Sepal.Width+Petal.Length+
+Petal.Width,data=data)
+iris.lda=lda(Species~Sepal.Length+Sepal.Width+Petal.Length+
+Petal.Width,data=data)
+summary(iris.lda)
+iris.lda
+plot(data)
+plot(iris.lda)
+#wilk's test
+X<-as.matrix(iris[-5])
+iris.manova<-manova(X~iris$Species)
+iris.wilks<-summary(iris.manova,test="Wilks")
+summary(iris.wilks)
+iris.wilks
+#Compare discriminant functions
+iris.lda$svd
+LD1<-predict(iris.lda)$x[,1]
+LD2<-predict(iris.lda)$x[,2]
+View(iris.lda)
+plot(LD1,LD2,xlab="first linear discriminant",ylab="second linear discriminant",type="n")
+text(cbind(LD1,LD2),labels=unclass(iris$Species))
+sum(LD1*(iris$Species=="setosa"))/sum(iris$Species=="setosa")
+sum(LD2*(iris$Species=="setosa"))/sum(iris$Species=="setosa")
+sum(LD1*(iris$Species=="versicolor"))/sum(iris$Species=="versicolor")
+sum(LD2*(iris$Species=="versicolor"))/sum(iris$Species=="versicolor")
+sum(LD1*(iris$Species=="virginica"))/sum(iris$Species=="virginica")
+sum(LD2*(iris$Species=="virginica"))/sum(iris$Species=="virginica")
+iris.predict<-predict(iris.lda,iris[,1:4])
+iris.classify<-iris.predict$class
+iris.classify
+iris.lda
+summary(iris.lda)
+iris.dla
+iris.lda
+LD1
+predict(iris.lda)
+iris.classify<-iris.predict$class
+iris.classify
+iris.classperc<-sum(iris.classify==iris[,5])/150
+iris.classperc
+predict(iris.lda)
+table(Original=iris$Species,Predicted=predict(iris.lda)$class)
+cor(iris[,1],LD1)
+cor(iris[,1],LD1)
+cor(iris[,2],LD1)
+cor(iris[,3],LD1)
+cor(iris[,4],LD1)
+LD1
+LD1[1]
+LD1[2]
+LD2[1]
+LD1
+a=sample(1:150,20,replace=FALSE)
+data=iris
+traindata=data[-a,]
+testdata=data[a,]
+library(MASS)
+iris.lda=lda(Species~Sepal.Length+Sepal.Width+Petal.Length+
+Petal.Width,data=traindata)
+iris.lda
+cor(traindata[,-5])
+cor(traindata[,1:@])
+cor(traindata[,1:2])
+library(MASS)
+iris.lda=lda(Species~Sepal.Length+Sepal.Width,data=traindata)
+iris.lda
+plot(data)
+plot(iris.lda)
+iris.lda=lda(Species~Sepal.Length+Sepal.Width+Petal.Length+
+Petal.Width,data=traindata)
+iris.lda
+plot(data)
+plot(iris.lda)
+X<-as.matrix(iris[-5])
+iris.manova<-manova(X~iris$Species)
+iris.wilks<-summary(iris.manova,test="Wilks")
+iris.wilks
+#Compare discriminant functions
+iris.lda$svd
+LD1<-predict(iris.lda)$x[,1]
+LD2<-predict(iris.lda)$x[,2]
+plot(LD1,LD2,xlab="first linear discriminant",ylab="second linear discriminant",type="n")
+text(cbind(LD1,LD2),labels=unclass(iris$Species))
+# 1="setosa"
+# 2="versicolor"
+# 3="virginica"
+# Group centroids
+sum(LD1*(iris$Species=="setosa"))/sum(iris$Species=="setosa")
+sum(LD2*(iris$Species=="setosa"))/sum(iris$Species=="setosa")
+sum(LD1*(iris$Species=="versicolor"))/sum(iris$Species=="versicolor")
+sum(LD2*(iris$Species=="versicolor"))/sum(iris$Species=="versicolor")
+sum(LD1*(iris$Species=="virginica"))/sum(iris$Species=="virginica")
+sum(LD2*(iris$Species=="virginica"))/sum(iris$Species=="virginica")
+#Predictions
+iris.predict<-predict(iris.lda,traindata[,1:4])
+#Predict class for all objects.
+iris.classify<-iris.predict$class
+#Get predicted class for all objects
+iris.classperc<-sum(iris.classify==iris[,5])/150
+iris.classperc<-sum(iris.classify==traindata[,5])/150
+iris.classperc
+table(Original=iris$Species,Predicted=predict(iris.lda)$class)
+table(Original=traindata$Species,Predicted=predict(iris.lda)$class)
+iris.classperc<-sum(iris.classify==traindata[,5])/130
+iris.classperc
+iris.predict1<-predict(iris.lda,testdata[,1:4])
+iris.classify1<-iris.predict1$class
+iris.classperc1<-sum(iris.classify1==testdata[,5])/20
+table(Original=testdata$Species,Predicted=iris.classify1)
+iris.classperc1
+setwd("C:/Users/laptop/Dropbox/iitkgp faculty/Courses/marketing analytics nptel/Sessions/Week7/Session 4")
+#links <- read.csv("links.csv")
+movies <- read.csv("movies.csv",stringsAsFactors=FALSE)
+ratings <- read.csv("ratings.csv")
+#tags <- read.csv("tags.csv")
+View(movies)
+View(ratings)
+library(recommenderlab)
+library(ggplot2)
+install.packages("recommenderlab")
+install.packages("ggplot2")
+library(recommenderlab)
+library(ggplot2)
+## Data pre-processing
+genres <- as.data.frame(movies$genres, stringsAsFactors=FALSE)
+library(data.table)
+install.packages("data.table")
+install.packages("data.table")
+genres2 <- as.data.frame(tstrsplit(genres[,1], '[|]',
+type.convert=TRUE),
+stringsAsFactors=FALSE)
+library(data.table)
+genres2 <- as.data.frame(tstrsplit(genres[,1], '[|]',
+type.convert=TRUE),
+stringsAsFactors=FALSE)
+View(genres2)
+View(genres)
+View(genres)
+genres <- as.data.frame(movies$genres, stringsAsFactors=FALSE)
+library(data.table)
+genres2 <- as.data.frame(tstrsplit(genres[,1], '[|]',
+type.convert=TRUE),
+stringsAsFactors=FALSE)
+colnames(genres2) <- c(1:10)
+View(genres2)
+View(genres2)
+genre_list <- c("Action", "Adventure", "Animation", "Children",
+"Comedy", "Crime","Documentary", "Drama", "Fantasy",
+"Film-Noir", "Horror", "Musical", "Mystery","Romance",
+"Sci-Fi", "Thriller", "War", "Western") # we have 18 genres in total
+genre_matrix <- matrix(0,10330,18) #empty matrix, 10330=no of movies+1, 18=no of genres
+genre_matrix[1,] <- genre_list #set first row to genre list
+colnames(genre_matrix) <- genre_list #set column names to genre list
+#iterate through matrix
+for (i in 1:nrow(genres2)) {
+for (c in 1:ncol(genres2)) {
+genmat_col = which(genre_matrix[1,] == genres2[i,c])
+genre_matrix[i+1,genmat_col] <- 1
+}
+}
+View(genre_matrix)
+#convert into dataframe
+genre_matrix2 <- as.data.frame(genre_matrix[-1,], stringsAsFactors=FALSE) #remove first row, which was the genre list
+for (c in 1:ncol(genre_matrix2)) {
+genre_matrix2[,c] <- as.integer(genre_matrix2[,c])
+} #convert from characters to integers
+View(genre_matrix)
+View(genre_matrix2)
+years <- as.data.frame(movies$title, stringsAsFactors=FALSE)
+library(data.table)
+substrRight <- function(x, n){
+substr(x, nchar(x)-n+1, nchar(x))
+}
+years <- as.data.frame(substr(substrRight(substrRight(years$`movies$title`, 6),5),1,4))
+search_matrix <- cbind(movies[,1], substr(movies[,2],1,nchar(movies[,2])-6), years, genre_matrix2)
+colnames(search_matrix) <- c("movieId", "title", "year", genre_list)
+View(search_matrix)
+write.csv(search_matrix, "search.csv")
+search_matrix <- read.csv("search.csv", stringsAsFactors=FALSE)
+# Example of search an Action movie produced in 1995:
+subset(search_matrix, Action == 1 & year == 1995)$title
+## Create a user profile
+binaryratings <- ratings
+for (i in 1:nrow(binaryratings)){
+if (binaryratings[i,3] > 3){
+binaryratings[i,3] <- 1
+}
+else{
+binaryratings[i,3] <- -1
+}
+}
+# convert binaryratings matrix to the correct format:
+binaryratings2 <- dcast(binaryratings, movieId~userId, value.var = "rating", na.rm=FALSE)
+for (i in 1:ncol(binaryratings2)){
+binaryratings2[which(is.na(binaryratings2[,i]) == TRUE),i] <- 0
+}
+binaryratings2 = binaryratings2[,-1]
+#Remove rows that are not rated from movies dataset
+movieIds <- length(unique(movies$movieId)) #10329
+ratingmovieIds <- length(unique(ratings$movieId)) #10325
+movies2 <- movies[-which((movies$movieId %in% ratings$movieId) == FALSE),]
+rownames(movies2) <- NULL
+genre_matrix3 <- genre_matrix2[-which((movies$movieId %in% ratings$movieId) == FALSE),]
+rownames(genre_matrix3) <- NULL
+View(genres)
+View(genre_matrix3)
+View(binaryratings2)
+result = matrix(0,18,668) # here, 668=no of users/raters, 18=no of genres
+for (c in 1:ncol(binaryratings2)){
+for (i in 1:ncol(genre_matrix3)){
+result[i,c] <- sum((genre_matrix3[,i]) * (binaryratings2[,c])) #ratings per genre
+}
+}
+View(result)
+for (c in 1:ncol(result)){
+for (i in 1:nrow(result)){
+if (result[i,c] < 0){
+result[i,c] <- 0
+}
+else {
+result[i,c] <- 1
+}
+}
+}
+View(result)
+library(reshape2)
+#Create ratings matrix. Rows = userId, Columns = movieId
+ratingmat <- dcast(ratings, userId~movieId, value.var = "rating", na.rm=FALSE)
+ratingmat <- as.matrix(ratingmat[,-1]) #remove userIds
+library(recommenderlab)
+#Convert rating matrix into a recommenderlab sparse matrix
+ratingmat <- as(ratingmat, "realRatingMatrix")
+similarity_users <- similarity(ratingmat[1:4, ],
+method = "cosine",
+which = "users")
+as.matrix(similarity_users)
+image(as.matrix(similarity_users), main = "User similarity")
+similarity_items <- similarity(ratingmat[, 1:4], method =
+"cosine", which = "items")
+as.matrix(similarity_items)
+image(as.matrix(similarity_items), main = "Item similarity")
+# Exploring values of ratings:
+vector_ratings <- as.vector(ratingmat@data)
+unique(vector_ratings) # what are unique values of ratings
+table_ratings <- table(vector_ratings) # what is the count of each rating value
+table_ratings
+vector_ratings <- vector_ratings[vector_ratings != 0] # rating == 0 are NA values
+vector_ratings <- factor(vector_ratings)
+qplot(vector_ratings) +
+ggtitle("Distribution of the ratings")
+# Exploring viewings of movies:
+views_per_movie <- colCounts(ratingmat) # count views for each movie
+table_views <- data.frame(movie = names(views_per_movie),
+views = views_per_movie) # create dataframe of views
+table_views <- table_views[order(table_views$views,
+decreasing = TRUE), ] # sort by number of views
+ggplot(table_views[1:6, ], aes(x = movie, y = views)) +
+geom_bar(stat="identity") +
+theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+scale_x_discrete(labels=subset(movies2, movies2$movieId == table_views$movie)$title) +
+ggtitle("Number of views of the top movies")
+image(ratingmat, main = "Heatmap of the rating matrix") # hard to read-too many dimensions
+image(ratingmat[1:10, 1:15], main = "Heatmap of the first rows and columns")
+image(ratingmat[rowCounts(ratingmat) > quantile(rowCounts(ratingmat), 0.99),
+colCounts(ratingmat) > quantile(colCounts(ratingmat), 0.99)],
+main = "Heatmap of the top users and movies")
+ratingmat_norm <- normalize(ratingmat)
+image(ratingmat_norm[rowCounts(ratingmat_norm) > quantile(rowCounts(ratingmat_norm), 0.99),
+colCounts(ratingmat_norm) > quantile(colCounts(ratingmat_norm), 0.99)],
+main = "Heatmap of the top users and movies")
+recommender_model <- Recommender(ratingmat_norm,
+method = "UBCF",
+param=list(method="Cosine",nn=30))
+model_details <- getModel(recommender_model)
+model_details$data
+recom <- predict(recommender_model,
+ratingmat[1],
+n=10) #Obtain top 10 recommendations for 1st user in dataset
+recom
+recom_list <- as(recom,
+"list")
+recom_result <- matrix(0,10)
+for (i in 1:10){
+recom_result[i] <- as.character(subset(movies,
+movies$movieId == as.integer(recom_list[[1]][i]))$title)
+}
+# Evaluation:
+evaluation_scheme <- evaluationScheme(ratingmat,
+method="cross-validation",
+k=5, given=3,
+goodRating=5) #k=5 meaning a 5-fold cross validation. given=3 meaning a Given-3 protocol
+evaluation_results <- evaluate(evaluation_scheme,
+method="UBCF",
+n=c(1,3,5,10,15,20))
+eval_results <- getConfusionMatrix(evaluation_results)[[1]]
+eval_results
+recom_result
+recom

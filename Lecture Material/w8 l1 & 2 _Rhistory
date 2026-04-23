@@ -1,0 +1,58 @@
+setwd("C:/Users/vgsom29/Dropbox/iitkgp faculty/Courses/marketing analytics nptel/Sessions/Week8/Session 1 and 2")
+df=read.table("https://raw.githubusercontent.com/CamDavidsonPilon/lifetimes/master/lifetimes/datasets/CDNOW_master.txt",header=TRUE)
+View(df)
+df[,2]=as.Date(as.character(df[,2]),"%Y%m%d")
+head(df)
+dim(df)
+uid=df[!duplicated(df[,1]),]
+dim(uid)
+library(tidyverse)
+install.packages("tidyverse")
+install.packages("callr")
+library(callr)
+library(dplyr)
+uid=uid %>%  mutate(recency = 10-ntile(timedist, 10),
+freq=ntile(number_of_cds, 10)-1,
+monetary=ntile(dollar_value, 10)-1)
+uid$timedist=Sys.Date()-uid$date
+uid=uid %>%  mutate(recency = 10-ntile(timedist, 10),
+freq=ntile(number_of_cds, 10)-1,
+monetary=ntile(dollar_value, 10)-1)
+View(uid)
+df=read.table("https://raw.githubusercontent.com/CamDavidsonPilon/lifetimes/master/lifetimes/datasets/CDNOW_master.txt",header=TRUE)
+#tranfer the the text column type to date type
+df[,2]=as.Date(as.character(df[,2]),"%Y%m%d")
+head(df)
+dim(df)
+uid=df[!duplicated(df[,1]),]
+dim(uid)
+View(uid)
+Sys.Date()
+uid$timedist=Sys.Date()-uid$date
+View(uid)
+library(dplyr)
+uid=uid %>%  mutate(recency = 10-ntile(timedist, 10),
+freq=ntile(number_of_cds, 10)-1,
+monetary=ntile(dollar_value, 10)-1)
+View(uid)
+hist(uid$recency)
+hist(uid$freq)
+hist(uid$monetary)
+uid$rfm=100*uid$recency+10*uid$freq+uid$monetary
+View(uid)
+101
+i recency 0 monetary and 1 frequenncy
+8/12
+uid$rfm=100*uid$recency+10*uid$freq+uid$monetary
+hist(uid$rfm)
+#Another check
+hist(as.numeric(uid$timedist))
+hist(uid$number_of_cds)
+hist(uid$dollar_value)
+uid=uid %>%  mutate(recency = 10-ntile(timedist, 10),
+freq=ntile(number_of_cds, 10)-1,
+monetary=findInterval(dollar_value, c(10,30,50,100,125,150,175,200,600)))
+hist(uid$monetary)
+uid$rfm=100*uid$recency+10*uid$freq+uid$monetary
+hist(uid$rfm)
+View(uid)

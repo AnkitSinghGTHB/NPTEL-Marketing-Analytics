@@ -1,0 +1,1 @@
+https://www.tidytextmining.com/sentiment.html#the-sentiments-dataset

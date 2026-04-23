@@ -1,0 +1,186 @@
+if (!require("tidyverse")) install.packages("tidyverse")
+library("tidyverse")
+path = "https://community.watsonanalytics.com/wp-content/uploads/2015/03/WA_Fn-UseC_-Telco-Customer-Churn.csv?cm_mc_uid=58920755505115141495567&cm_mc_sid_50200000=1514149556&cm_mc_sid_52640000=1514149556"
+db_churn = read_csv(path)
+#To see variables structure
+str(db_churn)
+View(db_churn)
+library("tidyverse")
+db_churn = read.csv(path)
+db_churn = read_csv(path)
+setwd("C:/Users/laptop/Dropbox/iitkgp faculty/Courses/marketing analytics nptel/Sessions/Week9/Session 1")
+db_churn = read_csv("churn.csv")
+db_churn = read_csv("churn.csv")
+#To see variables structure
+str(db_churn)
+db_churn$SeniorCitizen = as.factor(db_churn$SeniorCitizen)
+summary(db_churn)
+if (!require("janitor")) install.packages("janitor")
+library("janitor")
+prop = tabyl(db_churn$Churn)
+prop
+n_NA = db_churn %>%
+filter(is.na(TotalCharges)) %>%
+select(Churn)
+db_churn = db_churn %>%
+filter(!is.na(TotalCharges))
+if (!require("caret")) install.packages("caret")
+library("caret")
+set.seed(7)
+trainId = createDataPartition(db_churn$Churn,
+p=0.7, list=FALSE,times=1)
+db_train = db_churn[trainId,]
+db_test = db_churn[-trainId,]
+gather_train =gather(db_train %>%
+select(customerID, MonthlyCharges,TotalCharges, tenure),
+variable, value,
+-customerID)
+View(gather_train)
+ggplot(gather_train , aes(value)) + facet_wrap(~variable, scales = 'free_x') +
+geom_histogram() + theme_bw()
+hist(db_train$MonthlyCharges)
+hist(db_train$TotalCharges)
+hist(db_churn$MonthlyCharges)
+hist(db_churn$TotalCharges)
+hist(db_churn$tenure)
+normalize = function(x) {
+result = (x - min(x, na.rm = TRUE)
+) / (max(x, na.rm = TRUE) - min(x, na.rm = TRUE))
+return(result)
+}
+norm.train = lapply(db_train %>%
+select(MonthlyCharges, TotalCharges, tenure),
+normalize)
+norm.train = do.call(cbind, norm.train) %>%
+as.data.frame()
+View(norm.train)
+norm.train = lapply(db_train %>%
+select(MonthlyCharges, TotalCharges, tenure),
+normalize)
+View(norm.train)
+db_churn2=db_churn
+db_churn2$TotalCharges=normalize(db_churn2$TotalCharges)
+db_churn2=db_churn
+db_churn2$TotalCharges=normalize(db_churn2$TotalCharges)
+db_churn2$MonthlyCharges=normalize(db_churn2$MonthlyCharges)
+db_churn2$tenure=normalize(db_churn2$tenure)
+factor.train = lapply(db_train %>%
+select(-customerID,-MonthlyCharges,
+-TotalCharges, -tenure),
+function(x){
+x = gsub("No internet service", "No", x)
+x = gsub("No phone service", "No", x)
+return(x)
+})
+View(factor.train)
+View(db_churn2)
+summary(db_churn2)
+factor.train = do.call(cbind, factor.train) %>%
+as.data.frame()
+View(factor.train)
+summary(factor.train)
+names(data)
+names(db_churn2)
+for(i in c(1:5,7:16))db_churn2[,i]=as.factor(db_churn2[,i])
+summary(db_churn2)
+db_churn2=data.frame(db_churn)
+db_churn2$TotalCharges=normalize(db_churn2$TotalCharges)
+db_churn2$MonthlyCharges=normalize(db_churn2$MonthlyCharges)
+db_churn2$tenure=normalize(db_churn2$tenure)
+for(i in c(1:5,7:16))db_churn2[,i]=as.factor(db_churn2[,i])
+summary(db_churn2)
+?gsub
+db_churn2=data.frame(db_churn)
+db_churn2$TotalCharges=normalize(db_churn2$TotalCharges)
+db_churn2$MonthlyCharges=normalize(db_churn2$MonthlyCharges)
+db_churn2$tenure=normalize(db_churn2$tenure)
+for(i in c(1:5,7:16))gsub("No internet service", "No", db_churn2[,i])
+for(i in c(1:5,7:16))gsub("No phone service", "No", db_churn2[,i])
+for(i in c(1:5,7:16))db_churn2[,i]=as.factor(db_churn2[,i])
+summary(db_churn2)
+for(i in c(1:5,7:16))db_churn2[,i]=ifelse(db_churn2[,i]=="No internet service", "No", db_churn2[,i])
+db_churn2=data.frame(db_churn)
+db_churn2$TotalCharges=normalize(db_churn2$TotalCharges)
+db_churn2$MonthlyCharges=normalize(db_churn2$MonthlyCharges)
+db_churn2$tenure=normalize(db_churn2$tenure)
+for(i in c(1:5,7:16))db_churn2[,i]=ifelse(db_churn2[,i]=="No internet service", "No", db_churn2[,i])
+for(i in c(1:5,7:16))db_churn2[,i]=ifelse(db_churn2[,i]=="No phone service", "No", db_churn2[,i])
+for(i in c(1:5,7:16))db_churn2[,i]=as.factor(db_churn2[,i])
+summary(db_churn2)
+if (!require("caret")) install.packages("caret")
+library("caret")
+set.seed(7)
+trainId = createDataPartition(db_churn2$Churn,
+p=0.7, list=FALSE,times=1)
+db_train = db_churn2[trainId,]
+db_test = db_churn2[-trainId,]
+if (!require("rpart")) install.packages("rpart")
+library("rpart")
+if (!require("rpart.plot")) install.packages("rpart.plot")
+library("rpart.plot")
+View(db_train)
+tree = rpart(Churn ~., data = db_train[,-1], method="class")
+rpart.plot(tree)
+if (!require("randomForest")) install.packages("randomForest")
+library("randomForest")
+ctrl = trainControl(method = "cv", number=5,
+classProbs = TRUE, summaryFunction = twoClassSummary)
+model.rf = train(Churn ~., data = db_train[,-1],
+method = "rf",
+ntree = 75,
+tuneLength = 5,
+metric = "ROC",
+trControl = ctrl)
+model.rf
+#LOGISTIC REGRESSION
+db_train$ChurnNum = ifelse(db_train$Churn == "Yes",1,0)
+View(db_churn2)
+good_model = step(glm(ChurnNum ~.,data = db_train[,-c(1:21)],
+family=binomial(link='logit')),
+direction="both")
+good_model = step(glm(ChurnNum ~.,data = db_train[,-c(1,21)],
+family=binomial(link='logit')),
+direction="both")
+summary(good_model)
+#TESTING
+db_test$ChurnNum  = ifelse(db_test$Churn == "Yes", 1, 0)
+if (!require("ROSE")) install.packages("ROSE")
+library("ROSE")
+pred_tree = predict(tree, db_test[,-1], type = c("prob"))[,2]
+pred_rf = predict(object=model.rf, db_test[,-1], type='prob')[,2]
+pred_logistic = predict(good_model, db_test, type="response")
+roc_tree = roc.curve(response = db_test$ChurnNum, pred_tree,
+col = "#0d84da")
+roc_rf = roc.curve(response = db_test$ChurnNum, pred_rf,
+col = "#ef0a30", add.roc=TRUE)
+roc_logistic = roc.curve(response = db_test$ChurnNum, pred_logistic,
+col = "#45a163", add.roc=TRUE)
+legend("bottomright", legend=c("Decision Tree", "Random Forest",
+"Logistic Regression"),
+lwd = 2, col = c("#0d84da", "#ef0a30", "#45a163"))
+roc_tree = roc.curve(response = db_test$ChurnNum, pred_tree,
+col = "#0d84da")
+roc_rf = roc.curve(response = db_test$ChurnNum, pred_rf,
+col = "#ef0a30", add.roc=TRUE)
+roc_logistic = roc.curve(response = db_test$ChurnNum, pred_logistic,
+col = "#45a163", add.roc=TRUE)
+roc_tree = roc.curve(response = db_test$ChurnNum, pred_tree,
+col = "#0d84da")
+roc_tree = roc.curve(response = db_test$ChurnNum, pred_tree,
+col = "blue")
+roc_rf = roc.curve(response = db_test$ChurnNum, pred_rf,
+col = "red", add.roc=TRUE)
+roc_logistic = roc.curve(response = db_test$ChurnNum, pred_logistic,
+col = "green", add.roc=TRUE)
+df=read.csv("churn.csv")
+library(plyr)
+library(corrplot)
+library(ggplot2)
+library(gridExtra)
+library(ggthemes)
+library(caret)
+library(MASS)
+library(randomForest)
+library(party)
+churn=read.csv("churn.csv")
+sapply(churn, function(x) sum(is.na(x)))
