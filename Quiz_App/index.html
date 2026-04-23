@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPTEL Marketing Analytics Quiz</title>
+    <!-- Use Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+
+    <main class="container">
+        <header class="glass-panel">
+            <h1>Marketing Analytics Masterclass</h1>
+            <div class="score-board">
+                <span>Score: <strong id="score">0</strong> / <span id="total-questions">0</span></span>
+            </div>
+        </header>
+
+        <div id="quiz-container" class="glass-panel main-quiz-area">
+            <div id="start-screen" class="screen active">
+                <h2>Welcome to the Ultimate NPTEL Exam Prep!</h2>
+                <p>Test your knowledge with real practice questions. Are you ready?</p>
+                <button id="start-btn" class="btn primary-btn">Start Quiz</button>
+            </div>
+
+            <div id="question-screen" class="screen">
+                <div class="progress-bar-container">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+                <h3 id="question-text" class="question-text">Question goes here</h3>
+                <div id="options-container" class="options-container">
+                    <!-- Options injected here via JS -->
+                </div>
+                
+                <div id="feedback-container" class="feedback-container hidden">
+                    <h4 id="feedback-title">Correct!</h4>
+                    <p id="feedback-text">Explanation goes here.</p>
+                    <button id="next-btn" class="btn secondary-btn">Next Question</button>
+                </div>
+            </div>
+
+            <div id="end-screen" class="screen">
+                <h2>Quiz Complete!</h2>
+                <div class="final-score">
+                    <p>Your Final Score:</p>
+                    <h3 id="final-score-text">15 / 20</h3>
+                </div>
+                <p id="final-message">Great job! Review your notes and try again.</p>
+                <button id="restart-btn" class="btn primary-btn">Restart Quiz</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
