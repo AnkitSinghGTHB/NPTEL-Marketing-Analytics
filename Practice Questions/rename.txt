@@ -1,0 +1,44 @@
+import re
+from pathlib import Path
+
+def organize_nptel_pdfs():
+    # Set the target directory to the folder where this script is run
+    folder_path = Path('.') 
+    
+    # Grab all PDF files in the directory
+    pdf_files = list(folder_path.glob('*.pdf'))
+    
+    # This answers your first question programmatically
+    print(f"Total PDF files detected in folder: {len(pdf_files)}")
+    print("-" * 40)
+    
+    # Regex pattern to catch 'pqs_W<number>L<number>' 
+    # It dynamically captures the digits into groups so we can reuse them
+    pattern = re.compile(r'pqs_W(\d+)L(\d+)\.pdf', re.IGNORECASE)
+
+    renamed_count = 0
+
+    for file_path in pdf_files:
+        match = pattern.search(file_path.name)
+        
+        if match:
+            # Extract the captured numbers
+            week_num = match.group(1)
+            lecture_num = match.group(2)
+            
+            # Formulate the new, clean name
+            new_name = f"Week_{week_num}_Lecture_{lecture_num}.pdf"
+            new_path = file_path.with_name(new_name)
+            
+            # Rename the file on the OS
+            file_path.rename(new_path)
+            print(f"Success: {file_path.name}  -->  {new_name}")
+            renamed_count += 1
+        else:
+            print(f"Ignored (Doesn't match target pattern): {file_path.name}")
+
+    print("-" * 40)
+    print(f"Operation complete. Successfully renamed {renamed_count} files.")
+
+if __name__ == '__main__':
+    organize_nptel_pdfs()

@@ -64,6 +64,11 @@
     *   *3rd Degree:* Demographics (Student discount).
 6.  **Time Series Moving Average:**
     *   A simple moving average will ALWAYS lag behind and *underestimate* a strong upward trend.
+7.  **Trivia / Definitions from Practice Sets:**
+    *   *Social Network Analysis* was coined by **J.A. Barnes** (1954).
+    *   *Sell Deep* means monetizing the "long tail" with surprising recommendations.
+    *   *Net Consumer Surplus* = Utility in monetary terms - Price.
+    *   *R vs RStudio:* RStudio is generally more intuitive and user-friendly, but R itself is best suited for research-oriented work (compared to Python for deployment).
 
 ---
 

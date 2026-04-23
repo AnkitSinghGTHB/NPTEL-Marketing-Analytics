@@ -1,0 +1,48 @@
+--- WEEK 1 ---
+* Q1: R's user interface is inherently more intuitive and user-friendly than Excel's for marketing analytics tasks. The lecturer explicitly states that RStudio's UI is more user-friendly than R's own UI, but doesn't claim it's universally  more intuitive or user-friendly than Excel's UI. The other options are direct benefits mentioned for choosing R.
+* Q2: Excel struggles with data sizes where the number of rows exceeds approximately 6 lakhs. The lecturer specifically mentions that Excel becomes limited when the data size, or number of rows, is more than 6  lakhs (01:31.280 - 01:34.369).
+* Q3: R is more suited for research-oriented work, whereas Python is often used for software deployment and  automated problem-solving. The lecturer states that 'Python is more used in... for the deployment; when you create a software which will be  deployed for an automated kind of problem solving. But R is more good for research oriented work.' (02:12.260 -  02:27.890).
+--- WEEK 2 ---
+* Q1: To identify what consumers want by breaking options into combinations of multiple attributes. The lecture explicitly states, 'The major goal is to identify what consumers want as usual? And we actually what we do  is? We break options available into a combination of multiple attributes.'
+* Q2: Utility in the monetary term minus Price. The lecturer defines net consumer surplus as 'Utility in the monetary term minus price'.
+* Q3: Increasing value increases cost, which may lead to higher prices that reduce demand, impacting the profit  function. The lecture explains: 'If I increase value, then cost will go up, if I increase cost, the price will go up, if I increase price the  demand will come down.' This describes the dilemma.
+--- WEEK 3 ---
+* Q1: A The lecturer states that it becomes difficult for a company to cater to many people at once, thus requiring segmentation  to create manageable groups.
+* Q2: B Segmentation aims to group consumers such that people within the same group are similar to each other, and people in  different groups are very different from each other.
+* Q3: C The 'lukewarm tea' example illustrates that a 'middle path' or compromise offering often fails because it doesn't satisfy  the distinct preferences of any specific segment, leading to zero adoption.
+--- WEEK 4 ---
+* Q1: B) Demand forecasting and pricing strategies. The lecture explicitly states, 'we will be talking about demand forecasting and pricing in this particular module.'
+* Q2: C) As price increases, demand drops. The lecture states, 'demand is equal to a minus b p where a and b are both positive... That means price increases and  demand drops.'
+* Q3: C) Profit = p * D The lecturer states, 'My profit is basically nothing but price into demand because unit cost is 0.'
+--- WEEK 5 ---
+* Q1: Setting a high initial price and gradually lowering it over time. The lecture defines skimming as starting with a very large (high) price and then reducing it over time (01:45-02:05).
+* Q2: To capture maximum revenue by selling to different customer segments over time. The lecture states that skimming allows the seller to 'slowly slowly slowly slowly capturing the whole market possible'  and 'eat up' all the consumer surplus to get higher revenue (02:20-02:29, 01:13-01:19, 01:45-01:52).
+* Q3: Technology companies. The lecture specifically mentions, 'So, that is something that often times the technology companies do. Which is called  skimming pricing, they charge it high' (02:29-02:36).
+--- WEEK 6 ---
+* Q1: From micro-level customer analysis to macro-level cost analysis and marketing decisions. The lecture states that previous weeks focused on micro-level analysis of customers (what consumers want, willingness  to pay), and the current week shifts to macro-level cost analysis and how marketing decisions affect customers.
+* Q2: Customer, Cost, Convenience, Communication The lecture explicitly lists 'Customer, Cost, Convenience, Communication' as the four Cs that define a customer or  customer segment.
+* Q3: The emotional attachment to a brand. The lecture defines 'Cost' beyond just the price, including information search costs and travel costs. Emotional  attachment is a psychological aspect of the 'Customer' but not a 'Cost' in this context.
+--- WEEK 7 ---
+* Q1: Lower cost and wider availability of internet access. The lecturer explicitly states that 'Internet is becoming cheap' and 'people who are in rural areas also can access  Internet because availability of internet is also there means the connection is also good,' attributing the rise of e- commerce to this trend (1:08-1:31).
+* Q2: Monetizing the 'long tail' with surprising recommendations for incremental sales. The lecture defines 'sell deep' as 'monetize the long tail with surprising recommendations,' emphasizing the importance  of incremental sales for products beyond the initially sought items (3:20-3:31).
+* Q3: A moment of surprise or serendipitous discovery. The lecturer mentions that recommendations create an 'aaha' feeling, which is described as 'a surprise that comes into  your mind' (6:58-7:01).
+--- WEEK 8 ---
+* Q1: Recency 'R' in RFM stands for Recency, which measures how recently a customer made a purchase.
+* Q2: Frequency 'F' in RFM stands for Frequency, indicating how often a customer makes purchases within a given period.
+* Q3: Monetary 'M' in RFM stands for Monetary, which represents the total expenditure a customer has made.
+--- WEEK 9 ---
+* Q1: The total amount of profit a company can generate from a customer over their entire relationship with the  company. The lecture clearly defines CLV as 'the total amount of profit that a company can generate, from a customer... over the  lifetime of the customer' (00:44.230 - 00:54.780).
+* Q2: The period during which the customer is actively engaged with the company. The lecture clarifies that 'lifetime of the customer means not his whole till his death but till the customer is there with this  company' (00:54.780 - 01:03.049).
+* Q3: Maruti car manufacturer The speaker uses Maruti cars as an example, detailing how they create a service network including 'DPS services,'  'driving license services,' 'second hand card selling services,' 'insurance company,' 'fuel company and spare parts' to  generate value over the customer's lifetime (02:23.709 - 02:53.390).
+--- WEEK 10 ---
+* Q1: A The lecturer explicitly states at 0:34:020 that 'tokenization severely limits the context'.
+* Q2: B The lecture mentions removing stop words, punctuations, and sometimes stemming before converting to token sets  (0:55:500-1:07:030).
+* Q3: C Term frequency (tfij) is defined as 'a measure of importance of term i in document j' (08:00:630).
+--- WEEK 11 ---
+* Q1: B) Naive Bayes The lecturer explicitly states, 'Here we will actually use that in sentiment mining. So we will use Naive Bayes for  sentiment mining in this session.' (00:43-00:46)
+* Q2: B) Focusing on the text part of the reviews The lecturer mentions, 'The same dataset we have been using here, but with the text part.' and 'I want to know that what  kind of extra insights we can bring in using the text also'. (02:43-02:44, 02:47-02:51)
+* Q3: B) P(A and B) / P(B) The lecture states, 'Probability of A given B is probability of A and B by probability of B'. (03:22-03:28)
+--- WEEK 12 ---
+* Q1: B) Analyzing connections between people for business decision-making. The lecturer explicitly states that SNA is 'not exactly social media marketing' and is 'more concerned about how the  connections between the people... can help in various kinds of business decision making.' (01:07, 01:43)
+* Q2: C) A unidirectional relationship where perceived strength differs between actors. The lecture uses the bank teller and customer example to illustrate how 'My strength of relationship with that person  and his strength of relationship with me might be different' and can be unidirectional in terms of perceived importance or  recognition. (03:11-04:55)
+* Q3: B) J.A. Barnes The lecturer states, 'Social network analysis, the term was coined by J. A. Barnes in 1954.' (06:53)

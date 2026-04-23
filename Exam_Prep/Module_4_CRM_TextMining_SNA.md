@@ -128,3 +128,26 @@ Figuring out if a text is positive, negative, or neutral.
 *   **Are Ties actors and Nodes relationships?** FALSE. (Nodes are actors, Ties are relationships).
 *   **What is an example of a Dyad?** A patient and therapist, a husband and wife. (A pair of nodes).
 *   **What is Betweenness Centrality?** It quantifies the number of times a node acts as a bridge along the shortest path between two other nodes.
+
+---
+
+## 🎯 Practice Questions Highlights (Weeks 9-12)
+
+**Week 9:**
+*   **What is CLV?** The total amount of profit a company can generate from a customer over their entire relationship with the company.
+*   **What does 'lifetime' mean in CLV?** The period during which the customer is actively engaged with the company (not their biological lifetime).
+*   **CLV Example:** Maruti car manufacturer creates a service network (insurance, fuel, spare parts) to generate value over the customer's lifetime.
+
+**Week 10:**
+*   **What is a major limitation of tokenization?** It severely limits the context (you lose the sentence structure).
+*   **What is Inverse Document Frequency (IDF)?** A measure of the general importance of the term. If a word like 'hotel' appears in nearly all reviews, it is less distinctive and has a low IDF.
+
+**Week 11:**
+*   **Which algorithm is heavily used for sentiment mining?** Naive Bayes.
+*   **Why use text?** To focus on the text part of reviews to see what kind of extra insights can be brought in, beyond just numeric ratings.
+*   **Bayes formula basis:** Probability of A given B is probability of A and B divided by probability of B.
+
+**Week 12:**
+*   **What is the core of SNA?** Analyzing connections between people for business decision-making. (It is NOT just social media marketing!).
+*   **Are relationships always bidirectional?** No. A unidirectional relationship is where perceived strength differs between actors (e.g., Bank teller and customer).
+*   **Who coined Social Network Analysis?** J.A. Barnes in 1954.

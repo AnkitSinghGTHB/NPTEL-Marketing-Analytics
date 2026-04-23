@@ -62,9 +62,9 @@ Welcome to Module 2! Here we learn how to predict the future (Sales Forecasting)
 
 ---
 
-## 3. Advertising & Media Analytics (Week 6)
+## 3. Marketing Mix Modeling & Advertising (Week 6 - Lectures 29-33)
 
-**Summary:** How do we know if our TV, radio, or Facebook ads are actually working?
+**Summary:** How do we know if our TV, radio, or Facebook ads are actually working? We use Marketing Mix Modeling (MMM) to estimate the impact of various marketing tactics on sales.
 
 ### Key Metrics to Memorize
 
@@ -121,3 +121,22 @@ If you see an R output for an advertising regression model (e.g., `Sales ~ TV_Sp
 *   **What is the Halo Effect?** The tendency for positive impressions in one area to positively influence opinions in another.
 *   **By default, what does the `optim` function in R do?** It performs MINIMIZATION (So the statement "it performs maximization" is FALSE).
 *   **Does Trade Promotion increase short-term sales by increasing customer awareness?** TRUE. (Actually, wait, the assignment says this is FALSE. Why? Because trade promotions are aimed at *retailers/distributors*, NOT directly increasing *customer* awareness! Watch out for this trap!).
+
+---
+
+## 🎯 Practice Questions Highlights (Weeks 4-6)
+
+**Week 4:**
+*   **What are we focusing on?** Demand forecasting and pricing strategies.
+*   **How does price relate to demand?** As price increases, demand drops (demand is equal to $a - bp$ where $a$ and $b$ are positive).
+*   **What is the profit formula when unit cost is zero?** Profit = Price $\times$ Demand.
+
+**Week 5:**
+*   **What is Price Skimming?** Setting a high initial price and gradually lowering it over time.
+*   **Why use Skimming?** To capture maximum revenue by slowly selling to different customer segments over time, eating up consumer surplus.
+*   **Who uses Skimming mostly?** Technology companies.
+
+**Week 6:**
+*   **What is the focus of Week 6?** Shifting from micro-level customer analysis to macro-level cost analysis and marketing decisions.
+*   **What are the 4 Cs?** Customer, Cost, Convenience, Communication.
+*   **Is emotional attachment a 'Cost'?** No, it is a psychological aspect of the 'Customer'.

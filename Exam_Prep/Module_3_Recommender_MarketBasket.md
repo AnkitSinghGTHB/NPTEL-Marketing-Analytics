@@ -105,3 +105,17 @@ The main package used for Market Basket Analysis in R is `arules`, and the funct
 *   **What does `read.table()` do?** Reads a file in table format and creates a data frame.
 *   **Does `is.date()` convert character objects to date class?** FALSE. The correct function is `as.Date()`.
 *   **What does RFM Segmentation allow marketers to do?** Target specific clusters of customers with highly relevant communications.
+
+---
+
+## 🎯 Practice Questions Highlights (Weeks 7-8)
+
+**Week 7:**
+*   **Why is e-commerce rising?** Lower cost and wider availability of internet access.
+*   **What does "sell deep" mean?** Monetizing the "long tail" with surprising recommendations for incremental sales.
+*   **What makes a good recommendation?** Creating a moment of surprise or serendipitous discovery (the "aaha" feeling).
+
+**Week 8:**
+*   **Recency (R) in RFM:** Measures how recently a customer made a purchase.
+*   **Frequency (F) in RFM:** Indicates how often a customer makes purchases within a given period.
+*   **Monetary (M) in RFM:** Represents the total expenditure a customer has made.

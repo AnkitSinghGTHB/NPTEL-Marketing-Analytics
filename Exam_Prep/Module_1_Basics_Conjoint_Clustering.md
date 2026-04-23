@@ -150,3 +150,22 @@ Here are actual questions from past assignments that you should memorize. They r
 *   **What does `hcluster()` do?** It is the command used for hierarchical clustering.
 *   **Do marketers consider religious/political beliefs?** YES.
 *   **Is "Point of Differentiation" important?** Yes, it is the way goods/services differ from competitors.
+
+---
+
+## 🎯 Practice Questions Highlights (Weeks 1-3)
+
+**Week 1:**
+*   **Why choose R over Excel?** R handles large data sizes (>6 lakh rows) where Excel becomes limited, and it's open-source.
+*   **What is R more suited for?** R is more suited for research-oriented work, whereas Python is often used for software deployment.
+*   **How does RStudio compare to R's UI?** RStudio's UI is generally considered more intuitive and user-friendly with more options.
+
+**Week 2:**
+*   **What is the goal of Conjoint?** To identify what consumers want by breaking options into combinations of multiple attributes.
+*   **How is net consumer surplus defined?** Utility in monetary terms minus Price.
+*   **What is the pricing dilemma?** Increasing value increases cost -> increases price -> reduces demand.
+
+**Week 3:**
+*   **Why is segmentation needed?** It is difficult to cater to everyone at once, requiring manageable groups.
+*   **What is the ideal segment?** People within the group are similar to each other, and different from people in other groups.
+*   **The "Lukewarm Tea" example:** A 'middle path' offering often fails because it doesn't satisfy the distinct preferences of any specific segment.
