@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let score = 0;
     
     // Total questions to show (we can limit it so the quiz isn't too long)
-    const MAX_QUESTIONS = Math.min(quizQuestions.length, 25);
+    const MAX_QUESTIONS = Math.min(quizQuestions.length, 100);
     
     // Shuffle array function to randomize options
     function shuffleArray(array) {
