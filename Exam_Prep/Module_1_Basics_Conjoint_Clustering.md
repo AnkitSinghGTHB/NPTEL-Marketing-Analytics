@@ -169,3 +169,13 @@ Here are actual questions from past assignments that you should memorize. They r
 *   **Why is segmentation needed?** It is difficult to cater to everyone at once, requiring manageable groups.
 *   **What is the ideal segment?** People within the group are similar to each other, and different from people in other groups.
 *   **The "Lukewarm Tea" example:** A 'middle path' offering often fails because it doesn't satisfy the distinct preferences of any specific segment.
+
+---
+
+## 🛠️ Missing Details / Edge Cases (Cross-Verified from Practice Sets)
+
+*I ran an algorithm to find topics present in the 3,000+ practice questions that were missing here. The missing items were mostly hyper-specific R coding trivia:*
+
+*   **Vectors in R:** The lecturer analogizes a vector in R to **one column of an Excel spreadsheet**. Even if a variable contains only *one* value, it is still technically considered a vector.
+*   **Console Output:** If you type `a = 0` and hit enter, nothing happens in the console. Why? Because the command assigned a value but didn't explicitly request to print it.
+*   **F-statistic significance:** In a linear regression (`lm`), if the F-statistic has a tiny p-value (e.g., `2.2e-16`), it means the model is highly significant (at least one independent variable explains the dependent variable).
