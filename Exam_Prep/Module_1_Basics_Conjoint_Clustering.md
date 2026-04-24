@@ -172,13 +172,26 @@ Here are actual questions from past assignments that you should memorize. They r
 
 ---
 
-## 🛠️ Missing Details / Edge Cases (Cross-Verified from Practice Sets)
+## 🛠️ Missing Details / Edge Cases (Cross-Verified from Practice Sets & Mock Exams)
 
-*I ran an algorithm to find topics present in the 3,000+ practice questions that were missing here. The missing items were mostly hyper-specific R coding trivia:*
+*I ran an algorithm to find topics present in the practice questions and mock exams that were missing here. The missing items cover edge cases and specific theoretical nuances:*
 
+### R Programming Edge Cases
 *   **Vectors in R:** The lecturer analogizes a vector in R to **one column of an Excel spreadsheet**. Even if a variable contains only *one* value, it is still technically considered a vector.
 *   **Console Output:** If you type `a = 0` and hit enter, nothing happens in the console. Why? Because the command assigned a value but didn't explicitly request to print it.
+*   **`str()` vs `class()`:** `str()` displays the internal *structure* of an R object (like seeing all columns of a data frame and their types), while `class()` just tells you the *type* of the object itself.
+*   **`na.rm = TRUE`:** When performing statistical calculations (like `mean()` or `sd()`), if your data has missing values (`NA`), the result will be `NA` unless you explicitly tell R to ignore them using `na.rm = TRUE`.
+*   **Combining Types in Matrices:** A matrix strictly holds one data type. If you use `cbind()` to combine an integer vector, a numeric vector, and a character vector into a matrix, R coerces *all* elements to the most flexible type, which is **character**.
+*   **Factor Variables Internally:** R stores factor variables (categorical data) internally as **numeric codes** (integers) with associated labels (levels). Using `as.numeric()` reveals these internal codes.
+*   **`matrix()` Default Fill:** When using the `matrix()` function with `nrow` specified, the default behavior is to fill the matrix **column-wise** unless `byrow = TRUE` is specified.
+*   **Packages:** Use `install.packages("name")` to download it from CRAN, and `library(name)` to load it into your current session.
+
+### Conjoint & Clustering Nuances
 *   **F-statistic significance:** In a linear regression (`lm`), if the F-statistic has a tiny p-value (e.g., `2.2e-16`), it means the model is highly significant (at least one independent variable explains the dependent variable).
+*   **Significance Filtering:** When performing individual-level regressions in Conjoint Analysis, we filter out coefficients that aren't statistically significant. This ensures that only meaningful, reliable preferences contribute to a consumer's profile, preventing "noise" from distorting segment formation.
+*   **The "None of these" Option in CBC:** In Choice-Based Conjoint, including a "none of these" option is crucial to establish a **'cut-off utility'** or threshold below which consumers are simply unwilling to buy any product.
+*   **Skimming Pricing Objective:** The goal isn't just a quick profit; it's to maximize *total revenue* by gradually lowering prices over time to capture different customer segments according to their willingness to pay.
+*   **Factor Analysis in STP:** In the Segmentation, Targeting, and Positioning framework, Factor Analysis is used initially to reduce a large number of observed behavioral variables into fewer latent, meaningful underlying dimensions before clustering.
 
 
 ## Mock Exam 1 Questions

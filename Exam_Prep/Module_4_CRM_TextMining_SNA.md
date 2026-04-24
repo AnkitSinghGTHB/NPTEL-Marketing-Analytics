@@ -129,6 +129,28 @@ Figuring out if a text is positive, negative, or neutral.
 *   **What is an example of a Dyad?** A patient and therapist, a husband and wife. (A pair of nodes).
 *   **What is Betweenness Centrality?** It quantifies the number of times a node acts as a bridge along the shortest path between two other nodes.
 
+## 🛠️ Missing Details / Edge Cases (Cross-Verified from Practice Sets & Mock Exams)
+
+*I analyzed the mock exams to extract these crucial theoretical nuances and definitions:*
+
+### CRM & Churn Edge Cases
+*   **Partial Churn:** This occurs when a customer appears active but has covertly shifted a significant portion of their business to a competitor. It is much harder to detect than complete churn.
+*   **Economic Switching Barriers (ESB):** These are the monetary costs or direct financial losses associated with switching, such as contract termination fees or lost loyalty points (not emotional or social costs).
+*   **Cox Proportional Hazard Model:** Unlike the Kaplan-Meier estimator (which just looks at survival over time), the Cox model allows you to incorporate multiple customer characteristics (covariates) to see how they influence the hazard rate (the risk of churning).
+
+### Text Mining & NLP Nuances
+*   **Unstructured Data:** Information not organized in a pre-defined tabular format, such as text, images, or audio.
+*   **Lemmatization/Stemming:** The process of reducing words to their base or root form to standardize analysis and accurately count frequencies across variations of the same word.
+*   **Dependency Parsing:** Unlike simple tokenization (which loses grammatical context), dependency parsing analyzes the grammatical structure of sentences and identifies the exact relationships between words.
+*   **NRC Lexicon:** Unlike the Bing lexicon (which just does Positive/Negative), the NRC Lexicon categorizes words into positive/negative sentiment AND 8 basic emotions, offering multi-dimensional insights.
+*   **Laplace Estimator (Add-1 Smoothing):** In the Naive Bayes algorithm, if a category has zero occurrences of a feature in the training data, it results in a "zero probability" that nullifies the overall calculation. The Laplace Estimator adds a small constant to all counts to mitigate this zero-frequency problem.
+*   **Polarity vs. Helpfulness:** Research shows that extreme sentiment polarity (especially high arousal negative emotions) in a review's main text and title can actually negatively impact its perceived helpfulness to other readers. However, low arousal negative emotions (like sadness) can sometimes make a review seem more helpful/authentic.
+
+### SNA Nuances
+*   **Structural Hole:** The absence of a direct connection between two nodes who belong to otherwise connected groups. A person who "bridges" this hole is extremely valuable because they control information flow.
+*   **Node (or Actor):** An individual entity within a network.
+*   **Influence vs. Data:** In the Bullwhip Effect game, SNA revealed that a group can perform worse even with communication if a highly central/influential node provides incorrect guidance, which the group blindly follows due to social pressure and hierarchy.
+
 ---
 
 ## 🎯 Practice Questions Highlights (Weeks 9-12)

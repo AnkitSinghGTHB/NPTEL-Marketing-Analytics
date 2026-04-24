@@ -142,6 +142,20 @@ If you see an R output for an advertising regression model (e.g., `Sales ~ TV_Sp
 *   **Is emotional attachment a 'Cost'?** No, it is a psychological aspect of the 'Customer'.
 
 
+## 🛠️ Missing Details / Edge Cases (Cross-Verified from Practice Sets & Mock Exams)
+
+*I analyzed the mock exams to extract these crucial theoretical nuances and definitions:*
+
+### Pricing Edge Cases
+*   **Powered Blocked Pricing:** In an all-units discount model (powered blocked pricing), if a customer's consumption crosses the "cut-off" value, the lower price is applied to the **entire consumption** (all units), not just the units beyond the cut-off.
+*   **Point of Parity (POP) vs. Point of Difference (POD):** In brand positioning, POP establishes a brand's **legitimacy** (the basic requirements to be considered in the category), while POD creates the **competitive advantage** (why you should choose this brand over others).
+
+### Advertising & Modeling Nuances
+*   **Bass Diffusion Model (Coefficient of Innovation, $p$):** This coefficient represents the impact of external influences (like advertising) and the eagerness of innovators to adopt the product. It is vital for driving early success before word-of-mouth takes over.
+*   **Adstock Model:** In marketing mix modeling, the Adstock model is specifically designed to capture the **long-term, carryover effect** of past advertising on current sales. It accounts for the fact that an ad seen today might still influence a purchase next week.
+*   **Interaction Models (`price * ad_spend`):** Using an interaction term in a regression model reveals if the variables influence each other. For example, it might show that the impact of a price change on sales is significantly different depending on the level of ad spend.
+
+
 ## Mock Exam 2 Questions
 
 **Q: [Mock Exam 2] Which RStudio pane is primarily used for writing and saving your R code scripts?**

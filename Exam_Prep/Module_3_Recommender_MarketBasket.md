@@ -121,6 +121,19 @@ The main package used for Market Basket Analysis in R is `arules`, and the funct
 *   **Monetary (M) in RFM:** Represents the total expenditure a customer has made.
 
 
+## 🛠️ Missing Details / Edge Cases (Cross-Verified from Practice Sets & Mock Exams)
+
+*I analyzed the mock exams to extract these crucial theoretical nuances and definitions:*
+
+### Recommender Systems Nuances
+*   **Item-Based vs User-Based Scalability:** Item-Based Collaborative Filtering (ICF) is generally **more scalable** for platforms with a very large number of users and fewer items (like Amazon). This is because the relationships between items are more stable than the rapidly changing preferences of millions of users.
+*   **Sparse Matrices:** A Document Term Matrix (DTM) or a User-Item rating matrix is usually stored as a "sparse matrix". Why? Because most elements are zero (a user hasn't rated most items, or a word doesn't appear in most documents). Storing it this way drastically reduces memory usage and computation time.
+
+### Market Basket & RFM Edge Cases
+*   **Interpreting Lift > 1:** If the Lift value is greater than 1, it means the items are purchased together **more often than expected by chance**, suggesting a strong positive correlation (e.g., Bread and Butter).
+*   **RFM Recency Weighting:** Why are customers with the most recent purchases given the highest Recency score? Because behavioral data shows they are typically **more engaged, more responsive to current promotions, and more likely to make another purchase** compared to customers who haven't bought anything in a long time.
+
+
 ## Mock Exam 3 Questions
 
 **Q: [Mock Exam 3] What is the primary purpose of RStudio in R programming?**
