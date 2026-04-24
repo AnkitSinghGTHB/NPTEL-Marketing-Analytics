@@ -1,16 +1,5 @@
 const quizQuestions = [
   {
-    "question": "[Week 1] Which of the following is NOT a primary reason for choosing R programming for marketing \nanalytics over Excel, as discussed in the lecture?",
-    "options": [
-      "R is better suited for larger data sizes where Excel becomes limited.",
-      "R is open source and freely available, unlike Excel which is proprietary.",
-      "R has a huge online community support and resources.",
-      "R's user interface is inherently more intuitive and user-friendly than Excel's for marketing analytics tasks."
-    ],
-    "correctAnswer": "R's user interface is inherently more intuitive and user-friendly than Excel's for marketing analytics tasks.",
-    "explanation": "R's user interface is inherently more intuitive and user-friendly than Excel's for marketing analytics tasks. The lecturer explicitly states that RStudio's UI is more user-friendly than R's own UI, but doesn't claim it's universally  more intuitive or user-friendly than Excel's UI. The other options are direct benefits mentioned for choosing R."
-  },
-  {
     "question": "[Week 1] According to the lecture, what is the main limitation of Microsoft Excel when dealing with large \ndatasets?",
     "options": [
       "Excel requires a paid license, unlike open-source alternatives.",
@@ -44,17 +33,6 @@ const quizQuestions = [
     "explanation": "It is open source and has huge community support. The lecturer explicitly states, 'But we have chosen R, because one reason it is open source. The second reason is it has  huge support.' (01:52.889 - 01:58.849)."
   },
   {
-    "question": "[Week 1] Which institution does Dr. Swagato Chatterjee represent?",
-    "options": [
-      "Indian Institute of Management Bangalore",
-      "Vinod Gupta School of Management, IIT Kharagpur",
-      "Indian School of Business Hyderabad",
-      "Faculty of Management Studies, University of Delhi"
-    ],
-    "correctAnswer": "Vinod Gupta School of Management, IIT Kharagpur",
-    "explanation": "Vinod Gupta School of Management, IIT Kharagpur The instructor introduces himself as 'Dr. Swagato Chatterjee, Vinod Gupta School of Management, IIT  Kharagpur' (00:20.670 - 00:22.570)."
-  },
-  {
     "question": "[Week 1] Where should a user go to download the base R programming software?",
     "options": [
       "RStudio's official website",
@@ -75,17 +53,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "Install R first, then RStudio.",
     "explanation": "Install R first, then RStudio. The lecture first describes the installation of R (03:13.720 - 04:20.120) and then moves on to RStudio, noting 'Now we  actually use R Studio over R.' implying R needs to be present for RStudio to interface with it."
-  },
-  {
-    "question": "[Week 1] What was the latest R version mentioned in the lecture at the time of recording?",
-    "options": [
-      "R 4.0.0",
-      "R 3.6.1",
-      "R 2.15.0",
-      "R 3.0.0"
-    ],
-    "correctAnswer": "R 3.6.1",
-    "explanation": "R 3.6.1 The lecturer states, 'currently the latest version is R3.6.1.' (03:51.040 - 04:01.771)."
   },
   {
     "question": "[Week 1] What should a user with a 32-bit system do if the latest RStudio version is primarily focused on \n64-bit systems?",
@@ -363,17 +330,6 @@ const quizQuestions = [
     "explanation": "1, 3, 5, 7, 9 The lecturer demonstrates this exact example, stating, 'It is giving 1,3,5,7,9. That mean it starts at 1, ends at 9 each  jump is 2.' (28:47.230 - 28:55.910)."
   },
   {
-    "question": "[Week 1] Why does the instructor recommend typing code manually rather than just copying it?",
-    "options": [
-      "Typing is faster than copying in RStudio.",
-      "RStudio often has issues with pasted code.",
-      "Typing allows you to make mistakes and learn from them, which is crucial for coding.",
-      "Manual typing helps with memorizing R functions and syntax."
-    ],
-    "correctAnswer": "Typing allows you to make mistakes and learn from them, which is crucial for coding.",
-    "explanation": "Typing allows you to make mistakes and learn from them, which is crucial for coding. The lecturer advises, 'it is very good practice that you type on your own because when you type on your own, you do  the mistakes. And when you do the mistake, you learn from those mistakes. It is very important to do mistakes as until  and unless you do mistakes in coding, you will not learn how to code.' (12:28.200 - 12:41.780)."
-  },
-  {
     "question": "[Week 1] What is considered a good practice for managing multiple open files in RStudio?",
     "options": [
       "Keep all files open for quick access.",
@@ -462,17 +418,6 @@ const quizQuestions = [
     "explanation": "The command assigned a value, but didn't explicitly request to print it. The lecturer contrasts this by saying, 'So 0 gets saved in a but nothing comes as output. In the next line, I have written  a, and pressed an enter. Now I am calling a. So whatever value is in a, gets comes out.' (19:52.800 - 20:06.490).  Assignments implicitly save values to the environment, but do not print output to the console unless explicitly requested  (e.g., by typing the variable name)."
   },
   {
-    "question": "[Week 1] In the context of learning R, what does the instructor suggest regarding memorization?",
-    "options": [
-      "Memorizing all functions and syntax is crucial for efficiency.",
-      "It's impossible to remember all functions, so focus on understanding concepts.",
-      "Memorization is important for basic functions, but not for advanced ones.",
-      "Only memorize functions that are frequently used in marketing analytics."
-    ],
-    "correctAnswer": "It's impossible to remember all functions, so focus on understanding concepts.",
-    "explanation": "It's impossible to remember all functions, so focus on understanding concepts. The lecturer advises, 'It has to be, it has, it should come from your inside that okay this kind or if it is not coming from  the inside, you should have a resource to fall back on and that should not be something which is your notes. So do not  write down.' (15:09.610 - 15:19.990) and later, 'For a single human being it is almost impossible to remember all the  functions, their syntax and its.' (29:33.350 - 29:43.751)."
-  },
-  {
     "question": "[Week 1] What distinguishes the RStudio user interface (UI) from R's own UI, as perceived by the \ninstructor?",
     "options": [
       "R's UI is faster for complex computations.",
@@ -550,17 +495,6 @@ const quizQuestions = [
     "explanation": "Download the newest available version. The lecturer advises, 'When we actually see this video, probably more recent version of R might be available. If it is  available, download that.' (04:01.771 - 04:08.660)."
   },
   {
-    "question": "[Week 1] The instructor mentions that the `practice.r` file was created and saved. What is the file \nextension for R scripts?",
-    "options": [
-      ".txt",
-      ".r",
-      ".rmd",
-      ".Rproj"
-    ],
-    "correctAnswer": ".r",
-    "explanation": ".r The lecturer says, 'I have probably write probably something like \u201cpractice.r\u201d. Now once I write that and save that, this  particular file gets saved.' (09:30.400 - 09:38.760)."
-  },
-  {
     "question": "[Week 1] What is the implication of R being 'research-oriented' in the context of Marketing Analytics?",
     "options": [
       "It means R is only for academic use and not for industry applications.",
@@ -572,17 +506,6 @@ const quizQuestions = [
     "explanation": "It is suitable for in-depth analysis and exploration of data, which often underlies marketing analytics. The lecturer says, 'But R is more good for research oriented work. And Marketing Analytics often backend research  oriented work, so we will focus on R Programming.' (02:19.890 - 02:35.250). This suggests a deep analytical capability."
   },
   {
-    "question": "[Week 1] What was the latest RStudio version mentioned in the lecture at the time of recording for \nWindows?",
-    "options": [
-      "RStudio 1.1.463",
-      "RStudio 1.2.5001",
-      "RStudio 1.3.1093",
-      "RStudio 1.4.1717"
-    ],
-    "correctAnswer": "RStudio 1.2.5001",
-    "explanation": "RStudio 1.2.5001 The lecturer states, 'The latest version currently available is RStudio 1.2.5001.' (05:30.479 - 05:37.449)."
-  },
-  {
     "question": "[Week 1] What is the primary reason for running multiple codes in the editor before cleaning the console?",
     "options": [
       "To intentionally generate errors for learning purposes.",
@@ -592,17 +515,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "To identify which code provides the desired outputs.",
     "explanation": "To identify which code provides the desired outputs. The lecturer explains, 'often time we actually write lots of codes in the editor and run the codes. And we run multiple  codes to see that which code is actually working, which code is actually giving out the outputs that I want.' (15:45.130 -  15:57.029)."
-  },
-  {
-    "question": "[Week 1] What specific file (`.r` extension) does the instructor open and work with during the \ndemonstration of R basics?",
-    "options": [
-      "practice.r",
-      "w1s1.r",
-      "introduction.r",
-      "marketing_analysis.r"
-    ],
-    "correctAnswer": "w1s1.r",
-    "explanation": "w1s1.r The lecturer says, 'So in the file section, you find out there is file called w1s1.r, so week1session1.r. So I am double  clicking on that file and it will open something like this.' (13:01.090 - 13:16.840)."
   },
   {
     "question": "[Week 1] The lecture states that a vector can have one value or multiple values. If a variable contains only \none value, is it still considered a vector?",
@@ -636,28 +548,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "In the bottom-right pane (fourth quadrant) under the 'Help' tab.",
     "explanation": "In the bottom-right pane (fourth quadrant) under the 'Help' tab. The lecturer states, 'And in the right side you will see that how the help documentation is coming, all the help  documentation. So you can read it a little bit. So that is how I am showing in the fourth quadrant, one tab I am showing  which is called the help tab.' (27:56.720 - 28:11.330)."
-  },
-  {
-    "question": "[Week 1] What are the names of the two individuals involved in the lecture (instructor and implied \nstudent)?",
-    "options": [
-      "Dr. Swagato Chatterjee and Dr. Vinod Gupta.",
-      "Dr. Swagato Chatterjee and the students in the course.",
-      "Dr. Swagato Chatterjee and Dr. RStudio.",
-      "Dr. Swagato Chatterjee and Dr. IIT Kharagpur."
-    ],
-    "correctAnswer": "Dr. Swagato Chatterjee and Dr. Vinod Gupta.",
-    "explanation": "Dr. Swagato Chatterjee and the students in the course. The instructor introduces himself as Dr. Swagato Chatterjee and addresses the audience as 'everybody' and 'you'  throughout the lecture, indicating students."
-  },
-  {
-    "question": "[Week 1] Before learning actual marketing analytics, what does the instructor plan to cover in a few \nsessions?",
-    "options": [
-      "Advanced statistical modeling techniques.",
-      "Database management with SQL.",
-      "Basic R Programming concepts like vector, matrix, data manipulation, and if-else functions.",
-      "Python programming fundamentals."
-    ],
-    "correctAnswer": "Basic R Programming concepts like vector, matrix, data manipulation, and if-else functions.",
-    "explanation": "Basic R Programming concepts like vector, matrix, data manipulation, and if-else functions. The lecturer states, 'We will have a few sessions on R Programming, before we jump in the actual marketing analytics...  And then today we will cover these aspects like vector matrix, data manipulation and little bit if-else functions in a few  probably one or two sessions.' (02:45.560 - 03:13.720)."
   },
   {
     "question": "[Week 1] What is the common method for installing R after downloading its executable file?",
@@ -735,17 +625,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "Press Ctrl + L.",
     "explanation": "Press Ctrl + L. The lecturer specifically teaches to 'press control L to clean my console.' (15:57.029 - 16:03.000)."
-  },
-  {
-    "question": "[Week 1] What is meant by 'huge support' for R programming, as mentioned in the lecture?",
-    "options": [
-      "Dedicated customer service lines for all users.",
-      "Extensive online resources, forums, and communities available for learning and problem-solving.",
-      "Direct technical assistance from the R core development team.",
-      "Financial backing from large corporations."
-    ],
-    "correctAnswer": "Extensive online resources, forums, and communities available for learning and problem-solving.",
-    "explanation": "Extensive online resources, forums, and communities available for learning and problem-solving. The lecturer explains, 'The second reason is it has huge support. So there are lots of resources available online. You  can learn it on your own.' (01:57.069 - 02:04.460)."
   },
   {
     "question": "[Week 1] If you want to view a brief description of a function directly in the console, which alternative to \n`help()` can also be used in R (though not explicitly shown in the demo)?",
@@ -968,17 +847,6 @@ const quizQuestions = [
     "explanation": "`c()` The example for creating `m` (a character vector) explicitly uses `c()` to join repeated character strings, like  `c(rep(\"png\", 5), rep(\"hul\", 10), rep(\"marico\", 5))`."
   },
   {
-    "question": "[Week 1] After creating a vector `m` containing character strings, what function would you use to check \nits data type or storage mode, as shown in the lecture?",
-    "options": [
-      "`type(m)`",
-      "`typeof(m)`",
-      "`class(m)`",
-      "`mode(m)`"
-    ],
-    "correctAnswer": "`class(m)`",
-    "explanation": "`class(m)` The lecturer uses `class(m)` to determine that `m` is a 'character variable'."
-  },
-  {
     "question": "[Week 1] What happens if you try to forcefully convert a character vector (e.g., `m` from the lecture, \ncontaining \"png\", \"hul\", \"marico\") to a numeric form using `as.numeric(m)`?",
     "options": [
       "It converts each unique string to a distinct number.",
@@ -1056,17 +924,6 @@ const quizQuestions = [
     "explanation": "`levels(mm)[2] = \"Nestle\"` The lecture demonstrates changing a specific level by its index in the `levels()` vector, e.g., `levels of mm, what is the  second entry of that, second entry of levels of mm is marico this value... change it to Nestle`."
   },
   {
-    "question": "[Week 1] To change all levels of a factor `mm` from its original \"hul\", \"marico\", \"png\" to new names \n\"Swagato\", \"Arpita\", \"Anubhav\" respectively, what is the correct syntax demonstrated in the lecture?",
-    "options": [
-      "`levels(mm) = c(\"Swagato\", \"Arpita\", \"Anubhav\")`",
-      "`mm = factor(c(\"Swagato\", \"Arpita\", \"Anubhav\"))`",
-      "`rename_levels(mm, c(\"Swagato\", \"Arpita\", \"Anubhav\"))`",
-      "`levels(mm)[c(1,2,3)] = c(\"Swagato\", \"Arpita\", \"Anubhav\")`"
-    ],
-    "correctAnswer": "`levels(mm) = c(\"Swagato\", \"Arpita\", \"Anubhav\")`",
-    "explanation": "`levels(mm) = c(\"Swagato\", \"Arpita\", \"Anubhav\")` The lecture shows setting all levels at once by assigning a new vector of names to `levels(mm)`."
-  },
-  {
     "question": "[Week 1] What statistical measure does `mean(a)` calculate for a numeric vector `a`?",
     "options": [
       "The middle value of the vector.",
@@ -1142,17 +999,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "The middle value of any variable when it is ordered.",
     "explanation": "The middle value of any variable when it is ordered. The lecturer defines median as 'the middle value of any variable when it is ordered in a either ascending order or  descending order'."
-  },
-  {
-    "question": "[Week 1] The lecturer states that R is an \"open software.\" What implication of this was highlighted \nregarding available help and resources?",
-    "options": [
-      "It primarily means R is free to download and use.",
-      "It means R's core source code can be modified by any user.",
-      "It means there are abundant online help, community resources, and pre-built packages.",
-      "It implies R is less secure for sensitive data compared to proprietary software."
-    ],
-    "correctAnswer": "It means there are abundant online help, community resources, and pre-built packages.",
-    "explanation": "It means there are abundant online help, community resources, and pre-built packages. The lecturer connects 'open software' to 'lots of helps available online' and the existence of 'millions, probably lakhs of  functions that are there inbuilt, developed by somebody and stored in a package in R'."
   },
   {
     "question": "[Week 1] In the multi-storey building analogy used for vector subsetting, what does a \"floor number\" \ncorrespond to in an R vector?",
@@ -1540,17 +1386,6 @@ const quizQuestions = [
     "explanation": "B While not explicitly stated in a single sentence, the creation of data frames with `a` (numeric), `b` (numeric), and `c`  (character) vectors as columns implies that data frames do not suffer from the same single-data-type constraint as  matrices."
   },
   {
-    "question": "[Week 1] How are column names assigned when creating a data frame using the `data.frame()` function, \nas shown in the lecture?",
-    "options": [
-      "A. Column names are automatically generated as 'Col1', 'Col2', etc.",
-      "B. By specifying `col.names = c('name1', 'name2')`.",
-      "C. By using the syntax `new_column_name = vector_name` within `data.frame()`.",
-      "D. Column names are taken from the vector names by default."
-    ],
-    "correctAnswer": "C. By using the syntax `new_column_name = vector_name` within `data.frame()`.",
-    "explanation": "C The lecture demonstrates this: `data.frame(gh = a, ij = b, kl = c)`, where 'gh', 'ij', and 'kl' become the column names."
-  },
-  {
     "question": "[Week 1] Which of the following is a characteristic of a data frame's representation in the RStudio Global \nEnvironment, as described in the lecture?",
     "options": [
       "A. It is shown as 'Matrix [rows x columns]'",
@@ -1923,17 +1758,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "B. The elements in the 1st, 5th, and 10th rows, but only from the 2nd column.",
     "explanation": "B The `c()` function is used to specify multiple indices. `M[c(rows), column]` extracts specific rows from a single column.  So it will return three elements, one from each specified row, all from the second column."
-  },
-  {
-    "question": "[Week 1] Which basic plotting types are specifically mentioned by the instructor as things students \nshould 'go and search how to do it'?",
-    "options": [
-      "A. Histogram, Heatmap, Density Plot",
-      "B. Bar Chart, Box Plot, Pie Chart",
-      "C. Violin Plot, Scatter Plot, Line Plot",
-      "D. Area Chart, Bubble Chart, Contour Plot"
-    ],
-    "correctAnswer": "B. Bar Chart, Box Plot, Pie Chart",
-    "explanation": "B The lecture advises, 'for example the bar chart is something that you should know, you should go and search how to do  it... how to plot bar chart, how to plot a box plot, how to plot a Pi chart these are some of the basic things that you can  learn.'"
   },
   {
     "question": "[Week 1] When `matrix(data, nrow=3)` is used with `data` containing 9 values, what can be inferred about \nthe number of columns?",
@@ -4125,17 +3949,6 @@ const quizQuestions = [
     "explanation": "The exact monetary value or 'part-worth' utility customers assign to different levels of attributes, and their  willingness to make trade-offs. The core of Conjoint Analysis is breaking down options into attributes and finding 'how customers value those attributes'  and their combinations, thereby quantifying trade-offs and implicit valuations, which simple direct questions do not."
   },
   {
-    "question": "[Week 2] What are the roles of 'Dr. Swagato Chatterjee' and 'VGSoM IIT, Kharagpur' in the context of the \nlecture?",
-    "options": [
-      "They are the authors of the Conjoint Analysis method.",
-      "They are competitors in the marketing analytics field.",
-      "Dr. Swagato Chatterjee is the lecturer from VGSoM IIT, Kharagpur.",
-      "They are examples of product attributes being discussed."
-    ],
-    "correctAnswer": "Dr. Swagato Chatterjee is the lecturer from VGSoM IIT, Kharagpur.",
-    "explanation": "Dr. Swagato Chatterjee is the lecturer from VGSoM IIT, Kharagpur. The lecture introduces: 'this is Dr. Swagato Chatterjee from VGSoM IIT, Kharagpur who is taking this session.' ---"
-  },
-  {
     "question": "[Week 2] What is the primary purpose of Conjoint Analysis as introduced in the lecture?",
     "options": [
       "To segment customers into different groups.",
@@ -5203,17 +5016,6 @@ const quizQuestions = [
     "explanation": "B. It is a baseline or average rating upon which attribute utilities are added or subtracted. The lecturer says, 'this is, it would just take 10 is the intercept and then for each of them you are taking the values.' This  implies it's a base value from which part-worth utilities are adjusted. (08:42-08:45)"
   },
   {
-    "question": "[Week 2] Which of the following is NOT explicitly mentioned as a type of conjoint analysis in the lecture?",
-    "options": [
-      "A. Rating-based conjoint.",
-      "B. Choice-based conjoint.",
-      "C. Adaptive or hybrid conjoint.",
-      "D. Preference-ranking conjoint."
-    ],
-    "correctAnswer": "D. Preference-ranking conjoint.",
-    "explanation": "D. Preference-ranking conjoint. The lecture discusses rating-based (implicitly through the 'scores' and 'ratings'), choice-based, and adaptive/hybrid  conjoint analyses. Preference-ranking conjoint is not explicitly mentioned. (21:21-21:35)"
-  },
-  {
     "question": "[Week 2] What is the primary objective of conjoint analysis from a marketing perspective, as alluded to at \nthe beginning of the market share modeling discussion?",
     "options": [
       "A. To understand product manufacturing processes.",
@@ -5300,17 +5102,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "C. The new product will capture a significant market share, affecting existing competitors.",
     "explanation": "C. The new product will capture a significant market share, affecting existing competitors. The lecture shows that with a high-scoring new product ('Option 1' at 10.2), its market share becomes substantial  (39.73%), drawing share away from all existing competitors. (19:54-20:46)"
-  },
-  {
-    "question": "[Week 2] When the lecturer states that marketing analytics requires one to be a 'business guy' and not \njust a 'number cruncher,' what skill is he advocating for?",
-    "options": [
-      "A. Advanced statistical programming.",
-      "B. The ability to translate analytical results into practical business strategies.",
-      "C. Exclusive use of qualitative research methods.",
-      "D. A deep understanding of accounting principles."
-    ],
-    "correctAnswer": "B. The ability to translate analytical results into practical business strategies.",
-    "explanation": "B. The ability to translate analytical results into practical business strategies. Being a 'business guy' in this context means understanding the 'so what' \u2013 how to use analytical findings to make  informed decisions that impact the business, not just producing numbers. (07:03-07:13)"
   },
   {
     "question": "[Week 2] In the market share modeling, if the initial 'alpha' value chosen was 5, and the actual market \nshares were 45, 35, 20, what was the next step before using Solver?",
@@ -5520,17 +5311,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "Exit interview",
     "explanation": "Exit interview The speaker explicitly states, 'So, now this is something is like exit interview in case of HR problems. So, it is like when  somebody is leaving the service provider, why he is leaving.'"
-  },
-  {
-    "question": "[Week 2] Which of the following is NOT listed as a type of switching barrier in the lecture?",
-    "options": [
-      "Economic switching barriers",
-      "Technological switching barriers",
-      "Social and psychological switching barriers",
-      "Procedural switching barriers"
-    ],
-    "correctAnswer": "Technological switching barriers",
-    "explanation": "Technological switching barriers The lecture discusses economic, social and psychological, procedural, and option-related switching barriers.  Technological switching barriers were not mentioned."
   },
   {
     "question": "[Week 2] A customer loses their accumulated balance on their SIM card when porting to a new service \nprovider. This is an example of which type of switching barrier?",
@@ -7161,17 +6941,6 @@ const quizQuestions = [
     "explanation": "A Attitude, lifestyle, and preferences towards life (what you want to be, do, etc.) are all components of psychographic  segmentation."
   },
   {
-    "question": "[Week 3] The lecturer states that 'all information is experienced electronically' by which group, making \nthem love multi-tasking and being co-creators?",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "correctAnswer": "C",
-    "explanation": "C These characteristics are described for the Gen Y (Millennial) cohort, emphasizing their digital nativity."
-  },
-  {
     "question": "[Week 3] When defining 'segments,' what kind of detail is expected by the lecturer?",
     "options": [
       "A",
@@ -7764,17 +7533,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "\"Stay away\" from this segment.",
     "explanation": "\"Stay away\" from this segment. The lecture's matrix implies moving from \"stay away\" (low-low) towards \"perfect\" (high-high). Low attractiveness and low  competitive strength clearly fall into the \"stay away\" category."
-  },
-  {
-    "question": "[Week 3] When the lecturer states that targeting decisions are \"not based on the money that you are \ngetting,\" what other crucial aspect does he emphasize is equally important?",
-    "options": [
-      "The emotional connection consumers have with the brand.",
-      "The company's capability and resources to effectively capture that market.",
-      "The historical performance of the segment over the last decade.",
-      "The ethical implications of targeting that specific segment."
-    ],
-    "correctAnswer": "The company's capability and resources to effectively capture that market.",
-    "explanation": "The company's capability and resources to effectively capture that market. The lecturer states, \"it is not based on the money that you are getting... It also depends on whether you are capable,  whether you have enough resources to capture that market or not.\" This refers to competitive strength."
   },
   {
     "question": "[Week 3] \"Share of mind\" and \"share of heart\" are concepts mentioned in the lecture related to:",
@@ -12188,17 +11946,6 @@ const quizQuestions = [
     "explanation": "Block pricing, especially for high users, can lead to significantly higher profits. The professor highlights: 'when you are doing price, maximize you have profit maximization with one single price you  are getting 9 dollar, when you are doing it with two possible prices, you are actually charging less for certain point  peoples... And you are getting more money.'"
   },
   {
-    "question": "[Week 5] What role does 'Dr. Swagato Chatterjee' play in the course 'Marketing Analytics'?",
-    "options": [
-      "Course administrator",
-      "Guest lecturer",
-      "Professor",
-      "Teaching assistant"
-    ],
-    "correctAnswer": "Professor",
-    "explanation": "Professor The introduction states, 'This is Doctor Swagato Chatterjee from VGSOM, IIT Kharagpur who is taking this course.'"
-  },
-  {
     "question": "[Week 5] When developing a block pricing strategy, what is the significance of conducting surveys or \nstudies related to willingness to pay?",
     "options": [
       "To determine production costs.",
@@ -12309,17 +12056,6 @@ const quizQuestions = [
     "explanation": "By looking up the corresponding total price for the units bought using VLOOKUP. The lecture explains, 'That is basically you can say VLOOKUP, VLOOKUP this value into this cell and fourth column...  corresponding to 12 I am paying 39 dollars.' This implies looking up the total cost based on the total units."
   },
   {
-    "question": "[Week 5] What is the primary benefit of implementing a block pricing strategy over a single-price \nstrategy, as shown in the lecture's example?",
-    "options": [
-      "It reduces administrative costs.",
-      "It simplifies customer billing.",
-      "It can capture more consumer surplus and increase overall profit.",
-      "It ensures all customers pay the same effective price."
-    ],
-    "correctAnswer": "It can capture more consumer surplus and increase overall profit.",
-    "explanation": "It can capture more consumer surplus and increase overall profit. The comparison shows profit increasing from $9 with single pricing to $18 with block pricing, indicating a more effective  way to capture willingness to pay at different consumption levels."
-  },
-  {
     "question": "[Week 5] Why did the professor mention 'week 5' in the introduction?",
     "options": [
       "To indicate the duration of the entire course.",
@@ -12329,17 +12065,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "To specify the current stage of the course curriculum.",
     "explanation": "To specify the current stage of the course curriculum. The professor says, 'And we are in week 5 and we are discussing about pricing.' This simply places the lecture within  the course timeline."
-  },
-  {
-    "question": "[Week 5] Which of the following is NOT typically a factor determining different electricity prices, as \nmentioned in the lecture?",
-    "options": [
-      "Time periods of usage",
-      "Type of user (domestic vs. industrial)",
-      "Geographic location of the user",
-      "Consumption levels (blocks)"
-    ],
-    "correctAnswer": "Geographic location of the user",
-    "explanation": "Geographic location of the user The lecture mentions 'various time periods,' 'various kinds of users (domestic, industrial),' and 'multiple levels of pricing'  based on consumption blocks, but not geographic location."
   },
   {
     "question": "[Week 5] What happens to the profit calculation if the units bought (determined by maximum surplus) is \n0?",
@@ -12771,17 +12496,6 @@ const quizQuestions = [
     "explanation": "Higher profit generation. The lecturer repeatedly states that these models lead to 'better profits' and are 'most profit generating.'"
   },
   {
-    "question": "[Week 5] In the Solver setup shown in the lecture, what specific cell reference was being maximized for \nprofit?",
-    "options": [
-      "F1",
-      "F2",
-      "J6",
-      "D6"
-    ],
-    "correctAnswer": "J6",
-    "explanation": "J6 The lecturer states, 'I am maximizing J6, I am maximizing J6 means this one' (referring to the profit cell)."
-  },
-  {
     "question": "[Week 5] In the specific block pricing model discussed, what does 'F3' generally represent when \noptimizing for profit?",
     "options": [
       "The fixed monthly fee.",
@@ -12835,17 +12549,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "They allow different pricing parameters (cutoffs, fixed fees, variable rates) to be optimized.",
     "explanation": "They allow different pricing parameters (cutoffs, fixed fees, variable rates) to be optimized. The lecturer shows how F1, F2, F3 (cutoffs, prices) can be changed and optimized, allowing for a tailored approach."
-  },
-  {
-    "question": "[Week 5] The lecturer states that 'all these utility companies understand' that a single pricing is not the \n'most profit generating.' This implies they use complex models to:",
-    "options": [
-      "Match competitor pricing.",
-      "Simplify marketing efforts.",
-      "Optimize their financial outcomes.",
-      "Encourage lower consumption."
-    ],
-    "correctAnswer": "Optimize their financial outcomes.",
-    "explanation": "Optimize their financial outcomes. The core message is about profit maximization through differentiated pricing."
   },
   {
     "question": "[Week 5] If the fixed cost (F2) is $10 and the variable cost (F3) is $2, and a customer consumes 15 units, \nwhat is the revenue from this customer?",
@@ -14531,17 +14234,6 @@ const quizQuestions = [
     "explanation": "Because increasing ad spend always leads to higher sales, but also higher costs, and decreasing price  leads to higher sales but lower revenue per unit. The lecture explains: 'if I reduce price, my sales will go up; if I increase my ad spend, my sales will go up. But we have  to think about that if you are a profit maximizer, there is a dilemma. Because see, if you, price goes up means what?  Advertisement spend goes up means sales goes up, but advertisement goes up means cost.' It further explains the  profit equation: Profit = Sales * Price - Ad Cost."
   },
   {
-    "question": "[Week 6] What profit equation is presented in the lecture for the Coca-Cola case study?",
-    "options": [
-      "Profit = Sales + Price - Ad Cost",
-      "Profit = Sales * Price + Ad Cost",
-      "Profit = Sales * Price - Ad Cost",
-      "Profit = (Sales / Price) - Ad Cost"
-    ],
-    "correctAnswer": "Profit = Sales * Price + Ad Cost",
-    "explanation": "Profit = Sales * Price - Ad Cost The lecture explicitly writes out the formula as 'profit is equal to sales into basically sales into your price minus all the  costs that is involved here. So, this is something that we have to optimize, then we have to find out this particular thing'.  And then 'assuming that since promotion does not have any cost, right now... Profit is equal to sales into price minus ad  cost'."
-  },
-  {
     "question": "[Week 6] What did the aggregate analysis of sales by BOTH price and ad spend reveal about the \ninteraction between them?",
     "options": [
       "Price and ad spend had no observable relationship.",
@@ -14630,17 +14322,6 @@ const quizQuestions = [
     "explanation": "predict() The lecture explicitly states, 'I am using the predict function of LM. In the linear regression there is a predict function to  predict using the model no.'"
   },
   {
-    "question": "[Week 6] Based on the final profit calculation in the Coca-Cola case study, which combination yielded the \nhighest profit?",
-    "options": [
-      "Price 12, Ad Spend 1",
-      "Price 10, Ad Spend 2",
-      "Price 8, Ad Spend 2",
-      "Price 8, Ad Spend 1"
-    ],
-    "correctAnswer": "Price 8, Ad Spend 2",
-    "explanation": "Price 8, Ad Spend 2 The lecturer summarizes: 'the profit goes highest when you are doing advertisement of 2, that means high, 5000 rupees  per retail store and your price is 8 rupees per unit product.'"
-  },
-  {
     "question": "[Week 6] What counter-intuitive insight was revealed about pricing strategy when ad spend was low (Ad \nSpend 1)?",
     "options": [
       "The lowest price generated the highest profit.",
@@ -14661,17 +14342,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "Rent for warehouses and margin paid to channel partners.",
     "explanation": "Rent for warehouses and margin paid to channel partners. The lecture states, 'These places are basically what then? These places are basically the rent that you pay to  warehouses or let us say the margin that you pay to your channel partners... all these decisions are actually place  decisions.'"
-  },
-  {
-    "question": "[Week 6] What type of experimental design was used in the Coca-Cola case study to ensure price and ad \nspend were independent variables?",
-    "options": [
-      "Sequential experimental design",
-      "Randomized controlled trial",
-      "Orthogonal experimental design",
-      "Factorial ANOVA design"
-    ],
-    "correctAnswer": "Orthogonal experimental design",
-    "explanation": "Orthogonal experimental design The lecture states, 'this kind of orthogonal experimental design is what you have catered. Orthogonal means that there  is no correlation between this price and this advertisement spend'."
   },
   {
     "question": "[Week 6] In the context of the Coca-Cola experiment, how many retail stores were used in total?",
@@ -14993,17 +14663,6 @@ const quizQuestions = [
     "explanation": "Price of 12 rupees. The lecture states, 'when the ad spend is 1 the highest price [12 rupees] is giving me the highest profit.' This highlights  the interaction effect and the optimal strategy changing based on ad spend."
   },
   {
-    "question": "[Week 6] The lecture refers to the profit maximization in the Coca-Cola case study as an 'interesting \nsituation that gets created.' What is the primary reason for this assessment?",
-    "options": [
-      "The sales data was highly unpredictable.",
-      "The optimal pricing strategy changed significantly based on the level of advertisement expenditure.",
-      "The advertising campaign was not effective.",
-      "The cost of production was higher than expected."
-    ],
-    "correctAnswer": "The optimal pricing strategy changed significantly based on the level of advertisement expenditure.",
-    "explanation": "The optimal pricing strategy changed significantly based on the level of advertisement expenditure. The 'interesting situation' refers to the 'twing' where 'if you want to maximize your profit, depending on what kind of  advertisements you are doing, you should do different kind of pricing'. This is the core interplay revealed by the  interaction effect."
-  },
-  {
     "question": "[Week 6] What is the key takeaway from the lecture regarding the relationship between marketing mix \nelements (Product, Price, Place, Promotion)?",
     "options": [
       "They are independent and should be managed separately.",
@@ -15123,17 +14782,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "B. Negative",
     "explanation": "B. Negative The lecture shows `margin of competitor to the power E4` (24:19-24:20), and earlier in the price section, it describes  competitor effects with an exponent of `minus elasticity E dash` (23:18-23:23). If a competitor increases their margin,  retailers are incentivized to push the competitor's product, leading to a decrease in your product's sales. This implies a  negative relationship."
-  },
-  {
-    "question": "[Week 6] Which of the following elements is NOT explicitly mentioned as a component in the detailed \nsales formula discussed in the lecture?",
-    "options": [
-      "A. Seasonal index",
-      "B. Trend",
-      "C. Raw advertising expenditure",
-      "D. Adstock (digital, TV, print)"
-    ],
-    "correctAnswer": "C. Raw advertising expenditure",
-    "explanation": "C. Raw advertising expenditure The formula explicitly includes 'digital stock', 'TV stock', and 'print stock' (25:07-25:47), which are derived from  advertising expenditure but represent the decaying impact (stock), not the raw expenditure itself."
   },
   {
     "question": "[Week 6] The lecture suggests including interaction terms like 'digital stock * TV stock' in the sales \nmodel. What is the primary reason for incorporating such terms?",
@@ -16993,17 +16641,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "Consumers are overwhelmed by information and increasingly rely on suggestions.",
     "explanation": "Consumers are overwhelmed by information and increasingly rely on suggestions. This statement suggests a shift in how consumers interact with products, moving from active information seeking to  passively receiving and trusting recommendations to guide their choices (7:06-7:13)."
-  },
-  {
-    "question": "[Week 7] Which of the following is NOT an example of a type of recommendation discussed in the lecture?",
-    "options": [
-      "Frequently bought together.",
-      "Customers who bought this item also bought these items.",
-      "Customers who returned this item also bought these items.",
-      "What other items do customers buy after viewing this item?"
-    ],
-    "correctAnswer": "Customers who returned this item also bought these items.",
-    "explanation": "Customers who returned this item also bought these items. The lecture explicitly discusses 'frequently bought together,' 'customer who bought this item also bought these items,'  and 'what other items do customers buy after viewing this item?' as common recommendation types. Returns are not  mentioned in this context (11:05-12:09)."
   },
   {
     "question": "[Week 7] For the recommendation type 'Frequently bought together,' what is the primary data source \nrequired?",
@@ -19305,17 +18942,6 @@ const quizQuestions = [
     "explanation": "It removes the first column of the dataset. At 08:14.280, the lecturer says, 'transpose of data dot Germany comma minus 1, means first column you drop, first  column gets dropped, that means this particular column gets dropped.'"
   },
   {
-    "question": "[Week 7] Which of the following is NOT mentioned as a similarity measurement technique for \ncollaborative filtering in the lecture?",
-    "options": [
-      "Correlation",
-      "Cosine",
-      "Standardized Euclidean distance",
-      "Jaccard index"
-    ],
-    "correctAnswer": "Standardized Euclidean distance",
-    "explanation": "Jaccard index At 07:44.490, the lecturer lists 'correlation, it can be measured by cosine, it can be also measured by let us say  Standardized Euclidean distance.' Jaccard index is not mentioned."
-  },
-  {
     "question": "[Week 7] What is the purpose of the `order` function mentioned when generating final recommendations?",
     "options": [
       "To randomly shuffle the recommendation scores.",
@@ -20271,17 +19897,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "They are a customer who needs to be reactivated.",
     "explanation": "They are a customer who needs to be reactivated. A low RFM score suggests the customer hasn't purchased recently, infrequently, or spent little, implying they might be  dormant and need reactivation."
-  },
-  {
-    "question": "[Week 8] Which R function is used to load data from a text file located at a URL, as shown in the lecture?",
-    "options": [
-      "load.data()",
-      "read.csv()",
-      "read.table()",
-      "import.txt()"
-    ],
-    "correctAnswer": "read.table()",
-    "explanation": "read.table() The lecture explicitly uses `read.table()` to load data from a URL where the data is formatted like a notepad file."
   },
   {
     "question": "[Week 8] When using `read.table()` in R, what argument should be set to `TRUE` if the first row of the data \nfile contains column names?",
@@ -21846,17 +21461,6 @@ const quizQuestions = [
     "explanation": "It immediately discards {Item A, Item B, Item C} without calculating its support. This is a direct application of the Apriori principle: if a subset is not large, its superset cannot be large. This is the  pruning mechanism."
   },
   {
-    "question": "[Week 8] Which of the following terms is NOT directly used to define a 'large itemset' in the lecture?",
-    "options": [
-      "Minimum support.",
-      "Support percentage.",
-      "Number of occurrences.",
-      "Confidence level."
-    ],
-    "correctAnswer": "Confidence level.",
-    "explanation": "Confidence level. The lecture defines a large itemset based on its support and minimum support: 'one whose support is at least had the  minimum support' (3:31-3:42) and 'minimum number of occurrences' (2:51). Confidence is a measure for rules, not  itemsets themselves."
-  },
-  {
     "question": "[Week 8] The Apriori algorithm primarily focuses on finding:",
     "options": [
       "Only single-item purchases.",
@@ -22451,17 +22055,6 @@ const quizQuestions = [
     "explanation": "R The lecture explicitly refers to R files (`Market Basket analysis.r`) and uses R commands like `install.packages`,  `library()`, `data()`, `itemFrequencyPlot()`, and `Apriori()`."
   },
   {
-    "question": "[Week 8] According to the summary of rules shown in the lecture, which rule length (LHS + RHS items) \nhad the highest count of generated rules?",
-    "options": [
-      "3 items",
-      "4 items",
-      "5 items",
-      "6 items"
-    ],
-    "correctAnswer": "3 items",
-    "explanation": "4 items The lecture states, 'Four items rules there are 229 such rules', which is the highest count among the rule lengths  provided (29 for 3 items, 140 for 5 items, 12 for 6 items)."
-  },
-  {
     "question": "[Week 8] Why might a rule with very high confidence still have a relatively low lift if the consequent item \n(RHS) is a popular product?",
     "options": [
       "High confidence implies that the antecedent is also very popular.",
@@ -22724,28 +22317,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "Ability to cross-sell properties through loyalty programs.",
     "explanation": "Ability to cross-sell properties through loyalty programs. Corporate chains could use loyalty cards to allow customers to redeem points across different hotels in the chain,  increasing the probability of a customer staying within the network and reducing churn (09:24.079 - 10:10.779)."
-  },
-  {
-    "question": "[Week 9] In the initial comparison of hotel performance (2001-2003), which hotel chain was consistently \nthe leader in occupancy rate?",
-    "options": [
-      "Rosewood",
-      "Four Seasons",
-      "Ritz Carlton",
-      "Orient Express Hotels"
-    ],
-    "correctAnswer": "Ritz Carlton",
-    "explanation": "Ritz Carlton The speaker notes, 'Ritz Carlton was always be the leader' (11:16.820 - 11:19.190) in occupancy rate."
-  },
-  {
-    "question": "[Week 9] Which hotel chain had the highest Average Daily Rate (ADR) in the initial comparison \n(2001-2003)?",
-    "options": [
-      "Ritz Carlton",
-      "Rosewood",
-      "Four Seasons",
-      "Orient Express Hotels"
-    ],
-    "correctAnswer": "Rosewood",
-    "explanation": "Rosewood Referring to the lines on the chart for ADR, the speaker states, 'this blue line is for Rosewood, which is the  highest' (12:03.819 - 12:10.959)."
   },
   {
     "question": "[Week 9] What does RevPAR (Revenue Per Available Room, though misstated in transcript) conceptually \nrepresent in the context of the Redwoods case?",
@@ -23032,17 +22603,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "It was successfully working and showing positive results.",
     "explanation": "It was successfully working and showing positive results. In 2007, 'they could actually say after three years of calculations, they would say that their branding strategy the  corporate leve,l umbrella branding strategy was working' (32:07.030 - 32:16.090)."
-  },
-  {
-    "question": "[Week 9] Which of the following is NOT a component of Customer Lifetime Value (CLV) mentioned or \nimplied in the lecture?",
-    "options": [
-      "Customer acquisition cost.",
-      "Gross profit generated from the customer.",
-      "The customer's social media influence.",
-      "Retention rate and discount factor."
-    ],
-    "correctAnswer": "The customer's social media influence.",
-    "explanation": "The customer's social media influence. The lecture focuses on financial aspects like acquisition cost, gross profit, marketing expenses, retention, and  discounting. Social media influence, while relevant to marketing, is not a direct quantitative component of CLV as  discussed."
   },
   {
     "question": "[Week 9] Why did individually branded hotels typically have lower occupancy rates compared to \ncorporate chains, besides high ADR?",
@@ -23650,17 +23210,6 @@ const quizQuestions = [
     "explanation": "Non-loyal customers have a higher hazard rate of churn. A steeper drop in the survival curve signifies that a higher proportion of customers are experiencing the event (churn) in  that time period, which directly translates to a higher hazard rate."
   },
   {
-    "question": "[Week 9] Which industry application for survival analysis was NOT explicitly mentioned in the lecture?",
-    "options": [
-      "Telecommunication.",
-      "Insurance.",
-      "Healthcare.",
-      "Education."
-    ],
-    "correctAnswer": "Education.",
-    "explanation": "Education. The lecture mentioned Telecommunication, Insurance, Mortgages, Mail order catalogue, Retail, Manufacturing, Public  Sector, and alluded to healthcare (ovarian cancer example), but did not explicitly list 'Education' as an application."
-  },
-  {
     "question": "[Week 9] When interpreting the `summary(fit.coxph)` output, what information helps determine the \nstatistical significance of a covariate?",
     "options": [
       "Only the beta coefficient's value.",
@@ -23747,17 +23296,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "Determining factors that influence the time until a patient recovers from a specific illness.",
     "explanation": "Determining factors that influence the time until a patient recovers from a specific illness. Survival analysis is perfectly suited for 'time-to-event' data, where the 'event' is recovery and the 'time' is the duration  until recovery, and one might want to understand influencing factors."
-  },
-  {
-    "question": "[Week 9] If a hazard rate for a group is 'much lower' than another group, as described in the lecture with \nincome groups, how would their survival curves visually compare?",
-    "options": [
-      "The group with the much lower hazard rate would have a curve that drops much steeper.",
-      "The group with the much lower hazard rate would have a curve that drops much flatter (stays higher).",
-      "Both curves would be identical, only shifted horizontally.",
-      "The curves would frequently intersect each other."
-    ],
-    "correctAnswer": "The group with the much lower hazard rate would have a curve that drops much steeper.",
-    "explanation": "The group with the much lower hazard rate would have a curve that drops much flatter (stays higher). A lower hazard rate means a lower instantaneous risk of the event, so more individuals survive for longer, resulting in a  survival curve that stays higher and drops less steeply."
   },
   {
     "question": "[Week 9] What is the primary role of a 'covariate' (like age, gender, or treatment group) in a Cox \nProportional Hazard Model?",
@@ -24266,17 +23804,6 @@ const quizQuestions = [
     "explanation": "Revenue generation often occurs over multiple interactions rather than a single transaction. The lecture emphasizes 'you do not get all your money in one single interaction,' and the goal is to create 'multiple  moments-of-truth' to maximize value."
   },
   {
-    "question": "[Week 9] The introductory remarks by Dr. Swagato Chatterjee identify his affiliation as:",
-    "options": [
-      "Harvard Business School",
-      "VG SOM, IIT Kharagpur",
-      "Indian Institute of Management Bangalore",
-      "Stanford University"
-    ],
-    "correctAnswer": "VG SOM, IIT Kharagpur",
-    "explanation": "VG SOM, IIT Kharagpur The lecturer introduces himself as 'Doctor Swagato Chatterjee from VG SOM, IIT Kharagpur'."
-  },
-  {
     "question": "[Week 9] What is the lecturer's primary aim for students by the end of the week's study on churn and \nCLV?",
     "options": [
       "To be able to develop new services from scratch.",
@@ -24319,17 +23846,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "Promotion",
     "explanation": "Promotion The lecturer states, 'In advertising models, we majorly focused on the promotion part.'"
-  },
-  {
-    "question": "[Week 9] Which of these industries was NOT explicitly given as an example of a service in the lecture?",
-    "options": [
-      "Airlines",
-      "Hospitality",
-      "Manufacturing of consumer electronics",
-      "Restaurants"
-    ],
-    "correctAnswer": "Airlines",
-    "explanation": "Manufacturing of consumer electronics Airlines, hospitality, and restaurants were given as examples of services. Manufacturing is a product-based industry,  contrasting with services."
   },
   {
     "question": "[Week 9] The lecturer mentions that the definition of 'whether a customer is alive or not alive' changes \nbased on situations. This implies that:",
@@ -25828,17 +25344,6 @@ const quizQuestions = [
     "explanation": "6% The transcript shows '6 customers in brand 4' when describing the initial market share distribution based on 100  customers, which translates to 6%."
   },
   {
-    "question": "[Week 9] What would be the likely outcome if a brand manager decided *not* to use promotions, based \non the long-term market share analysis in the lecture?",
-    "options": [
-      "The brand would achieve a higher long-term market share",
-      "The brand's long-term market share would stagnate at a lower level (e.g., 5%)",
-      "The brand would quickly lose all its customers",
-      "The brand's customer lifetime value would significantly increase"
-    ],
-    "correctAnswer": "The brand's long-term market share would stagnate at a lower level (e.g., 5%)",
-    "explanation": "The brand's long-term market share would stagnate at a lower level (e.g., 5%) The lecture concludes that without promotion, Brand 4 'will saturate at a 5 percent level', which is lower than the 10%  with promotion."
-  },
-  {
     "question": "[Week 9] The lecture demonstrates how marketing decisions, like promotions, can be evaluated using \nwhat kind of analytical outcome?",
     "options": [
       "Immediate sales uplift only",
@@ -25969,17 +25474,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "D. 34 percent",
     "explanation": "D. 34 percent The lecture breaks down the costs: '35 percent customer expenses, 35 percent fuel, 14 percent is service spares, 7  percent is financial and only 34 percent comes from the product' (09:16-09:23)."
-  },
-  {
-    "question": "[Week 9] Which of the following is NOT one of the four major sources contributing to Customer Lifetime \nValue (CLV) mentioned in the lecture?",
-    "options": [
-      "A. Lifetime of the customer relationship",
-      "B. Average revenue generated per year",
-      "C. Market share percentage of the company",
-      "D. Referral business generated by the customer"
-    ],
-    "correctAnswer": "C. Market share percentage of the company",
-    "explanation": "C. Market share percentage of the company The lecture lists 'the lifetime, the average revenue per year, the reference generated...additional  purchases' (09:51-10:29) as major sources. Market share is mentioned separately as a focus but not as a component of  an *individual customer's* CLV."
   },
   {
     "question": "[Week 9] What is the typical sequence of 'making money' from a customer in terms of customer lifetime \nvalue, as described in the lecture?",
@@ -26475,17 +25969,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "B. To quantify the long-term financial worth of a customer relationship.",
     "explanation": "B. To quantify the long-term financial worth of a customer relationship. CLV is introduced as the way to 'monetize or measure that whether keeping relationship with person x versus keeping  relationship with person y, which one is more profitable or which one is more, more better' (04:43-05:05), emphasizing  long-term financial worth."
-  },
-  {
-    "question": "[Week 9] Which type of company is Dr. Swagato Chatterjee affiliated with, according to the introduction?",
-    "options": [
-      "A. A private marketing analytics firm.",
-      "B. A government research institute.",
-      "C. VGSOM IIT, Kharagpur.",
-      "D. IIM Bangalore."
-    ],
-    "correctAnswer": "C. VGSOM IIT, Kharagpur.",
-    "explanation": "C. VGSOM IIT, Kharagpur. The introduction states, 'this is Dr. Swagato Chatterjee from VGSOM IIT, Kharagpur, who is taking this  course' (00:26-00:29)."
   },
   {
     "question": "[Week 9] In the B2C resort example, the costs associated with customer stays are assumed to increase \nannually. What rate of increase is given for these costs?",
@@ -27036,17 +26519,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "A",
     "explanation": "A Stopwords (like 'the', 'a', 'is') are common words that appear frequently across many documents but carry little semantic  meaning. Removing them prevents them from artificially inflating TF or deflating IDF of truly important terms  (00:55:500-01:02:170)."
-  },
-  {
-    "question": "[Week 10] Which of the following is NOT typically a part of the preprocessing steps before tokenization \nmentioned in the lecture?",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "correctAnswer": "D",
-    "explanation": "D The lecture explicitly mentions removing stopwords, punctuations, and sometimes stemming/lemmatization  (0:55:500-1:07:030). Sentiment analysis is a goal/application, not a preprocessing step for tokenization itself."
   },
   {
     "question": "[Week 10] After tokenization and preprocessing, what is done with each unique word?",
@@ -27907,17 +27379,6 @@ const quizQuestions = [
     "explanation": "It indicates that Text Mining is a mature and advanced topic, building upon previous weeks' content. Week 10, session 3 implies it's late in the course, suggesting Text Mining is a substantial topic, likely building on earlier  marketing analytics concepts, rather than being a brief introduction. ---"
   },
   {
-    "question": "[Week 10] What is the primary topic of discussion for Week 10, Session 4, as stated by Dr. Swagato \nChatterjee?",
-    "options": [
-      "Sentiment Analytics Advanced",
-      "Data Pre-processing Techniques",
-      "Text Mining and Spam Detection",
-      "Martin Luther King's Data Analysis"
-    ],
-    "correctAnswer": "Text Mining and Spam Detection",
-    "explanation": "Text Mining and Spam Detection The lecture explicitly states, 'We are in week 10, session 4 and we will be discussing about Text Mining. ... I will discuss  about a new thing which is called spam detection'."
-  },
-  {
     "question": "[Week 10] Which algorithm is introduced for spam detection in this lecture?",
     "options": [
       "Decision Trees",
@@ -28578,17 +28039,6 @@ const quizQuestions = [
     "explanation": "SMS spam data The lecture clearly states, 'A data set is given to you, it is the SMS spam data' (00:35)."
   },
   {
-    "question": "[Week 10] Before applying the Naive Bayes algorithm, the raw SMS data undergoes several preprocessing \nsteps. Which of the following is NOT a step mentioned in the lecture's text cleaning process?",
-    "options": [
-      "Converting text to lowercase.",
-      "Removing stop words.",
-      "Correcting spelling errors.",
-      "Stripping whitespace."
-    ],
-    "correctAnswer": "Correcting spelling errors.",
-    "explanation": "Correcting spelling errors. The lecturer mentions transforming to lowercase, removing numbers, removing stop words, removing punctuation, and  stripping whitespace (02:36-02:47). Correcting spelling errors is not mentioned."
-  },
-  {
     "question": "[Week 10] What is the approximate proportion of 'ham' messages in the initial SMS spam data set, as stated \nin the lecture?",
     "options": [
       "50%",
@@ -28697,17 +28147,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "By transforming counts greater than zero to 1, and zero counts to 0.",
     "explanation": "By transforming counts greater than zero to 1, and zero counts to 0. The `convert_counts` function is created for this purpose: 'if the x\u2019s value is greater than 0, any positive value, it will  make it 1, otherwise 0' (10:23-10:35)."
-  },
-  {
-    "question": "[Week 10] Consider the `convert_counts` function introduced in the lecture. If a word appears 3 times in a \nmessage, and after applying `convert_counts`, it is represented as 'yes', what would be the \nrepresentation if the word did not appear at all?",
-    "options": [
-      "'yes'",
-      "'no'",
-      "1",
-      "0"
-    ],
-    "correctAnswer": "'yes'",
-    "explanation": "'no' The function converts positive counts to 1 (labeled 'yes') and 0 counts to 0 (labeled 'no') (10:23-10:39). If a word did not  appear, its count would be 0, thus represented as 'no'."
   },
   {
     "question": "[Week 10] Which R package is explicitly mentioned for implementing the Naive Bayes algorithm in this \nlecture?",
@@ -29313,17 +28752,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "B) Converting to lowercase",
     "explanation": "B) Converting to lowercase The lecturer states, 'I first content transform to lower that means I change the whole dataset to the lower  case.' (15:03-15:06)"
-  },
-  {
-    "question": "[Week 11] Which of the following is NOT mentioned as a text preprocessing step applied in the lecture?",
-    "options": [
-      "A) Removing punctuation",
-      "B) Removing numbers",
-      "C) Stemming words",
-      "D) Removing stop words"
-    ],
-    "correctAnswer": "C) Stemming words",
-    "explanation": "C) Stemming words Stemming was mentioned as a possibility ('I should have done something called stemming to remove this room and  rooms thing'), but not explicitly performed as part of the cleaning steps. (22:18-22:24)"
   },
   {
     "question": "[Week 11] Why was the `review_content` chosen for analysis over `review_title`?",
@@ -30325,17 +29753,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "Their goal is to apply existing tools for marketing insights, not to advance computer science.",
     "explanation": "Their goal is to apply existing tools for marketing insights, not to advance computer science. The lecture states, 'we are marketing guys, we are not computer science guys. So we will not be trying to create new  libraries that might not be our goal. Our goal will be using the algorithms and techniques... in the context of marketing.'"
-  },
-  {
-    "question": "[Week 11] In the word cloud example shown in the lecture, what colors were used to distinguish between \npositive and negative words?",
-    "options": [
-      "Red and Blue",
-      "Green and Yellow",
-      "Gray 20 and Gray 80",
-      "Black and White"
-    ],
-    "correctAnswer": "Gray 20 and Gray 80",
-    "explanation": "Gray 20 and Gray 80 The speaker notes, 'we have changed taken two colors gray 20 and gray 80. So gray 80 is basically positive and gray 20  is negative.'"
   },
   {
     "question": "[Week 11] What types of real-world text data were mentioned as commonly used for validating sentiment \nlexicons?",
@@ -31570,17 +30987,6 @@ const quizQuestions = [
     "explanation": "Customer ratings and recommendations. The name of the paper is 'explaining customer ratings and recommendations by combining qualitative and quantitative  user generated content.' And the models were built for 'overall ratings which is 1 to 10 point scale and recommendation  behavior'."
   },
   {
-    "question": "[Week 11] What does the phrase 'P is smaller than 0.05' (P<0.05) signify in statistical terms, as explained \nin the lecture regarding star annotations?",
-    "options": [
-      "A very strong correlation (3 stars).",
-      "A moderate level of statistical significance (1 star).",
-      "No statistical significance.",
-      "A negative relationship between variables."
-    ],
-    "correctAnswer": "A moderate level of statistical significance (1 star).",
-    "explanation": "A moderate level of statistical significance (1 star). The speaker clarifies: '1 star is P is smaller than 0.05'. This indicates that the result is statistically significant at the 5%  level, meaning there's a 5% chance the observed effect is due to random chance."
-  },
-  {
     "question": "[Week 11] Which of the following describes the sentiment of a sentence like 'The seats were terribly \ncramped, but the staff was excellent' with respect to the 'comfort' aspect using the methodology?",
     "options": [
       "Overall positive sentiment.",
@@ -31722,17 +31128,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "The model is explaining less of the variance in the dependent variable.",
     "explanation": "The model is explaining more of the variance in the dependent variable, adjusted for the number of  predictors. The speaker notes, 'as we included the other attributes only the Adjusted R squared went up, okay.' A higher Adjusted  R-squared indicates a better fit of the model to the data, considering the number of independent variables."
-  },
-  {
-    "question": "[Week 11] Which of the following would NOT be considered a 'core' service for an airline, based on the \ndefinitions in the lecture?",
-    "options": [
-      "Transportation from origin to destination.",
-      "On-time departure and arrival (punctuality).",
-      "Seat comfort.",
-      "Premium in-flight entertainment system."
-    ],
-    "correctAnswer": "Premium in-flight entertainment system.",
-    "explanation": "Premium in-flight entertainment system. Core services are basic benefits. Punctuality and safe transport are fundamental. Seat comfort is borderline but  considered a core rating in the model findings. In-flight entertainment is explicitly listed as an 'augmented' or 'ancillary'  aspect in the conclusions."
   },
   {
     "question": "[Week 11] What kind of information about a reviewer was mentioned as potentially qualitative in a \nTripAdvisor example, besides the review text itself?",
@@ -32593,17 +31988,6 @@ const quizQuestions = [
     "explanation": "C) By the number and strength of connections they have with students and other faculty. The lecturer explicitly analyzes the university network to identify 'which professor is most popular' and 'least popular' by  visually observing their connections and connection strengths. (23:32-24:15)"
   },
   {
-    "question": "[Week 12] Which of the following is NOT listed in the lecture as a potential type of 'tie' or 'connection' in a \nsocial network?",
-    "options": [
-      "A) Friendship or liking.",
-      "B) Business transactions (who pays whom).",
-      "C) Individual personality traits.",
-      "D) Jointly belonging to the same social club."
-    ],
-    "correctAnswer": "C) Individual personality traits.",
-    "explanation": "C) Individual personality traits. The lecture lists many types of ties including 'evaluation of person by another... friendship... business transactions...  association of affiliations... belonging to the same social club,' but not individual personality traits. (24:55-26:06)"
-  },
-  {
     "question": "[Week 12] What does 'centrality' refer to in the context of Social Network Analysis?",
     "options": [
       "A) The geographical center of a network map.",
@@ -33385,17 +32769,6 @@ const quizQuestions = [
     "explanation": "B) An External Reporting (ER) system for real-time reporting. \"They had to create ER system real-time reporting to both Alphexo and its suppliers... the ER system was a proper  solution.\""
   },
   {
-    "question": "[Week 12] In the Alphexo case study, what factor was found to have a positive impact on people's \nwillingness to adopt the new ER system?",
-    "options": [
-      "A) Years in Alphexo",
-      "B) Organizational rank",
-      "C) Network centrality",
-      "D) Departmental affiliation"
-    ],
-    "correctAnswer": "C) Network centrality",
-    "explanation": "C) Network centrality \"network centrality has a positive impact...So the major thing that is important is how central in the network you are.\""
-  },
-  {
     "question": "[Week 12] Which of the following factors were found to NOT significantly matter for technology adoption in \nthe Alphexo case?",
     "options": [
       "A) Network centrality.",
@@ -33990,17 +33363,6 @@ const quizQuestions = [
     "explanation": "Isolated nodes The lecturer notes that 'these three guys have not talked with anybody,' which in network analysis terminology makes  them isolated nodes."
   },
   {
-    "question": "[Week 12] Which of the following was NOT identified as a stakeholder in the supply chain game mentioned \nin the lecture?",
-    "options": [
-      "Retailers",
-      "Wholesalers",
-      "Manufacturers",
-      "Consumers"
-    ],
-    "correctAnswer": "Consumers",
-    "explanation": "Consumers The roles mentioned in the supply chain game were retailers, wholesalers, and manufacturers (the organization itself).  Consumers were not explicitly mentioned as active players in the game structure."
-  },
-  {
     "question": "[Week 12] The instructor noted that the video might look different due to what external event?",
     "options": [
       "Technical difficulties with the studio equipment.",
@@ -34329,17 +33691,6 @@ const quizQuestions = [
     ],
     "correctAnswer": "Bridge node",
     "explanation": "Bridge node While not explicitly named 'bridge node' or 'betweenness centrality' in the lecture, the concept of a node connecting  different parts of a network and having high importance due to this function is referred to as a bridge or having high  betweenness centrality. The lecture focuses more on degree centrality (number of connections) but this is a related  concept in SNA."
-  },
-  {
-    "question": "[Week 12] What is the primary output generated by the R script `sna patch dot R` as shown in the lecture?",
-    "options": [
-      "A statistical report of communication frequency.",
-      "A CSV file containing raw survey data.",
-      "A graphical visualization of the social network.",
-      "A predictive model for supply chain demand."
-    ],
-    "correctAnswer": "A graphical visualization of the social network.",
-    "explanation": "A graphical visualization of the social network. The script calls the `igraph` library to 'make the graph' and then 'plot it', clearly indicating that its primary output is a  graphical representation of the social network."
   },
   {
     "question": "[Week 12] What specific type of training program was Dr. Chatterjee conducting where this case study \ntook place?",
@@ -35506,5 +34857,1733 @@ const quizQuestions = [
     ],
     "correctAnswer": "B) To visualize different key performance indicators (KPIs) and breakdowns.",
     "explanation": "B) To visualize different key performance indicators (KPIs) and breakdowns. The lecture visualizes these specific breakdowns as essential components for the dashboard, indicating they represent  key insights or KPIs. ---"
+  },
+  {
+    "question": "[Mock Exam 1] What is the primary purpose of RStudio?",
+    "options": [
+      "To store large datasets",
+      "To provide a user-friendly interface for R",
+      "To replace Microsoft Excel",
+      "To manage hardware resources"
+    ],
+    "correctAnswer": "To provide a user-friendly interface for R",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] Which RStudio pane displays the output of executed R commands?",
+    "options": [
+      "Editor",
+      "Global Environment",
+      "Console",
+      "Files"
+    ],
+    "correctAnswer": "Console",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] What symbol is used to denote a comment in R code?",
+    "options": [
+      "//",
+      "--",
+      "#",
+      "/* */"
+    ],
+    "correctAnswer": "#",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] What is the key difference between a Matrix and a Data Frame in R regarding data types?",
+    "options": [
+      "Matrices can store only numeric data, while Data Frames can store any data type.",
+      "All elements in a Matrix must be of the same data type, while each column in a Data Frame can have\na different data type.",
+      "Data Frames are 1-dimensional, while Matrices are 2-dimensional.",
+      "Matrices are used for text, Data Frames for numbers."
+    ],
+    "correctAnswer": "All elements in a Matrix must be of the same data type, while each column in a Data Frame can have\na different data type.",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] Which `dplyr` function is used to add new variables or transform existing ones while\npreserving the original dataset's row count?",
+    "options": [
+      "summarise()",
+      "group_by()",
+      "mutate()",
+      "filter()"
+    ],
+    "correctAnswer": "mutate()",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] When performing statistical calculations in R with potentially missing values, which\nargument is crucial to ensure accurate results?",
+    "options": [
+      "na.omit = TRUE",
+      "remove.na = TRUE",
+      "na.rm = TRUE",
+      "ignore.na = TRUE"
+    ],
+    "correctAnswer": "na.rm = TRUE",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] What is 'unstructured data'?",
+    "options": [
+      "Information organized in a pre-defined tabular format.",
+      "Information not organized in a pre-defined tabular format, such as text or images.",
+      "Numerical data ready for statistical analysis.",
+      "Data stored in a database."
+    ],
+    "correctAnswer": "Information not organized in a pre-defined tabular format, such as text or images.",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] What is the primary purpose of the `tm_map` function in R's `tm` package?",
+    "options": [
+      "To create a Document Term Matrix.",
+      "To apply various cleaning steps to a text corpus.",
+      "To calculate TF-IDF scores.",
+      "To visualize word clouds."
+    ],
+    "correctAnswer": "To apply various cleaning steps to a text corpus.",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] What is the main advantage of using the NRC Lexicon over the Bing Lexicon in\nsentiment analysis?",
+    "options": [
+      "NRC is simpler and only classifies words as positive or negative.",
+      "NRC provides a continuous sentiment score from -5 to +5.",
+      "NRC categorizes words into positive/negative sentiment and 8 basic emotions, offering\nmulti-dimensional insights.",
+      "NRC is specifically designed for Indian English."
+    ],
+    "correctAnswer": "NRC categorizes words into positive/negative sentiment and 8 basic emotions, offering\nmulti-dimensional insights.",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] In the context of the Naive Bayes algorithm for spam detection, what problem does the\nLaplace Estimator (Add-1 Smoothing) address?",
+    "options": [
+      "Overfitting to the training data.",
+      "The zero-frequency problem, where a feature has zero occurrences in a category.",
+      "Multicollinearity between features.",
+      "Handling continuous variables."
+    ],
+    "correctAnswer": "The zero-frequency problem, where a feature has zero occurrences in a category.",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] In Social Network Analysis (SNA), what does a 'node' typically represent?",
+    "options": [
+      "A connection between entities",
+      "An individual entity within a network",
+      "The strength of a relationship",
+      "A gap in the network"
+    ],
+    "correctAnswer": "An individual entity within a network",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] What is the primary purpose of a 'slicer' in an Excel dashboard?",
+    "options": [
+      "To create new data tables.",
+      "To perform complex calculations.",
+      "To provide an interactive, visual filter for data.",
+      "To generate static reports."
+    ],
+    "correctAnswer": "To provide an interactive, visual filter for data.",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] What is the key advantage of Conjoint Analysis over directly asking customers what\nfeatures they prefer?",
+    "options": [
+      "It is less expensive to implement.",
+      "It forces consumers to make realistic trade-offs, mimicking real-world purchasing decisions.",
+      "It can be used for products that already exist in the market.",
+      "It provides qualitative insights into consumer emotions."
+    ],
+    "correctAnswer": "It forces consumers to make realistic trade-offs, mimicking real-world purchasing decisions.",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] In the hotel review analysis, which attribute was found to be the most important driver\nof overall rating?",
+    "options": [
+      "Location",
+      "Cleanliness",
+      "Value for Money",
+      "Service"
+    ],
+    "correctAnswer": "Value for Money",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] What does the 'none of these' option in Choice-Based Conjoint (CBC) analysis help to\nestablish?",
+    "options": [
+      "The most preferred product configuration.",
+      "A 'cut-off utility' or threshold below which consumers are unwilling to buy.",
+      "The demographic profile of non-buyers.",
+      "The interaction effects between attributes."
+    ],
+    "correctAnswer": "A 'cut-off utility' or threshold below which consumers are unwilling to buy.",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] When performing individual-level regressions in Conjoint Analysis, what is the purpose\nof 'significance filtering'?",
+    "options": [
+      "To remove outliers from the dataset.",
+      "To ensure that only statistically reliable preferences contribute to a consumer's profile in the\npreference matrix.",
+      "To combine similar attribute levels into one.",
+      "To normalize the part-worth utilities."
+    ],
+    "correctAnswer": "To ensure that only statistically reliable preferences contribute to a consumer's profile in the\npreference matrix.",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] According to the lecture, which type of data is prioritized for *initial* market\nsegmentation in modern marketing analytics?",
+    "options": [
+      "Geographic data",
+      "Demographic data",
+      "Psychographic data",
+      "Behavioral data"
+    ],
+    "correctAnswer": "Behavioral data",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] What is the primary purpose of the 'elbow method' (often using a scree plot) in cluster\nanalysis?",
+    "options": [
+      "To visualize the dendrogram.",
+      "To determine the optimal number of clusters (k).",
+      "To calculate Euclidean distance.",
+      "To perform factor analysis."
+    ],
+    "correctAnswer": "To determine the optimal number of clusters (k).",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] What is the difference between a Point of Parity (POP) and a Point of Difference (POD)\nin positioning?",
+    "options": [
+      "POP makes a brand unique, while POD establishes its legitimacy.",
+      "POP establishes a brand's legitimacy, while POD creates competitive advantage.",
+      "POP is about price, while POD is about quality.",
+      "POP is for new products, while POD is for established products."
+    ],
+    "correctAnswer": "POP establishes a brand's legitimacy, while POD creates competitive advantage.",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] What is the main objective of 'skimming pricing' strategy?",
+    "options": [
+      "To set a single, low price to capture maximum market share quickly.",
+      "To maximize total revenue by gradually lowering prices over time to capture different customer\nsegments.",
+      "To match competitor prices exactly.",
+      "To sell products only in bundles."
+    ],
+    "correctAnswer": "To maximize total revenue by gradually lowering prices over time to capture different customer\nsegments.",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] What is the significance of the 'coefficient of innovation (p)' in the Bass Diffusion\nModel?",
+    "options": [
+      "It represents the rate at which potential adopters purchase due to word-of-mouth.",
+      "It reflects the maximum possible number of adopters in the market.",
+      "It represents the impact of external influences and the eagerness of innovators, vital for early success.",
+      "It measures the decay rate of product popularity."
+    ],
+    "correctAnswer": "It represents the impact of external influences and the eagerness of innovators, vital for early success.",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] What is the primary purpose of an 'Adstock' model in marketing mix modeling?",
+    "options": [
+      "To measure the immediate sales impact of an advertisement.",
+      "To capture the long-term, carryover effect of past advertising on current sales.",
+      "To determine the optimal price for a product.",
+      "To calculate the cost-per-click for digital ads."
+    ],
+    "correctAnswer": "To capture the long-term, carryover effect of past advertising on current sales.",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] Which type of collaborative filtering is generally more scalable for platforms with a very\nlarge number of users and fewer items?",
+    "options": [
+      "User-Based Collaborative Filtering (UCF)",
+      "Item-Based Collaborative Filtering (ICF)",
+      "Content-Based Recommendation",
+      "Cluster Models"
+    ],
+    "correctAnswer": "Item-Based Collaborative Filtering (ICF)",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] In RFM analysis, why are customers with the most recent purchases given the highest\nRecency score?",
+    "options": [
+      "They are typically less engaged and responsive.",
+      "They are often more engaged, more responsive to current promotions, and more likely to make\nanother purchase.",
+      "They represent the highest total monetary value.",
+      "They indicate customer loyalty over a long period."
+    ],
+    "correctAnswer": "They are often more engaged, more responsive to current promotions, and more likely to make\nanother purchase.",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] What does a 'Lift' value greater than 1 in Market Basket Analysis indicate?",
+    "options": [
+      "The items are frequently purchased together purely by chance.",
+      "The observed co-occurrence of items is less than expected by chance.",
+      "The items are purchased together more often than expected by chance, suggesting a positive\ncorrelation.",
+      "The confidence of the rule is very low."
+    ],
+    "correctAnswer": "The items are purchased together more often than expected by chance, suggesting a positive\ncorrelation.",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] What is 'Partial Churn' in the context of customer churn?",
+    "options": [
+      "When a customer completely cancels their service.",
+      "When a customer appears active but has shifted a significant portion of their business to a competitor.",
+      "When a customer reduces their usage temporarily due to seasonal factors.",
+      "When a customer refers a new customer to the company."
+    ],
+    "correctAnswer": "When a customer appears active but has shifted a significant portion of their business to a competitor.",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 1] What is the main advantage of the Cox Proportional Hazard Model over the\nKaplan-Meier Estimator in survival analysis?",
+    "options": [
+      "Cox model is non-parametric and does not assume a specific distribution.",
+      "Cox model is simpler to implement in R.",
+      "Cox model allows incorporating multiple customer characteristics (covariates) to influence the hazard\nrate.",
+      "Cox model only works for binary outcomes."
+    ],
+    "correctAnswer": "Cox model allows incorporating multiple customer characteristics (covariates) to influence the hazard\nrate.",
+    "explanation": "Source: Mock Exam 1",
+    "mock_file": "mock_exam_1.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] Which RStudio pane is primarily used for writing and saving your R code scripts?",
+    "options": [
+      "Console",
+      "Global Environment",
+      "Editor",
+      "Files/Plots/Packages/Help"
+    ],
+    "correctAnswer": "Editor",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] In R, what does the symbol `NA` represent?",
+    "options": [
+      "Not Applicable",
+      "Not Available",
+      "New Assignment",
+      "Numeric Average"
+    ],
+    "correctAnswer": "Not Available",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] What is the primary difference between an R `matrix` and a `data.frame` regarding the\ndata types of their elements?",
+    "options": [
+      "A matrix can only store numeric data, while a data frame can store any type.",
+      "All elements in a matrix must be of the same data type, while each column in a data frame can have a\ndifferent data type.",
+      "A matrix is 1-dimensional, while a data frame is 2-dimensional.",
+      "Data frames are used for mathematical operations, while matrices are for general data analysis."
+    ],
+    "correctAnswer": "All elements in a matrix must be of the same data type, while each column in a data frame can have a\ndifferent data type.",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] Which `dplyr` function is used to add new variables or transform existing ones while\npreserving the original dataset's row count?",
+    "options": [
+      "`summarise()`",
+      "`filter()`",
+      "`mutate()`",
+      "`group_by()`"
+    ],
+    "correctAnswer": "`mutate()`",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] What term describes information that is not organized in a pre-defined tabular format,\nsuch as text, images, or audio?",
+    "options": [
+      "Structured Data",
+      "Quantitative Data",
+      "Unstructured Data",
+      "Relational Data"
+    ],
+    "correctAnswer": "Unstructured Data",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] In text mining, what is a Document Term Matrix (DTM)?",
+    "options": [
+      "A matrix showing relationships between documents.",
+      "A matrix where rows are documents, columns are unique terms, and cell values indicate term\nfrequency.",
+      "A matrix of terms and their definitions.",
+      "A matrix used only for sentiment analysis."
+    ],
+    "correctAnswer": "A matrix where rows are documents, columns are unique terms, and cell values indicate term\nfrequency.",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] In the context of email or SMS filtering, what does \"Spam\" refer to?",
+    "options": [
+      "Legitimate and useful messages.",
+      "Messages from known contacts.",
+      "Unsolicited or undesirable messages.",
+      "Messages containing attachments."
+    ],
+    "correctAnswer": "Unsolicited or undesirable messages.",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] In Social Network Analysis (SNA), what is an individual entity within a network, such as\na person or an organization, commonly referred to as?",
+    "options": [
+      "A Path",
+      "A Tie",
+      "A Node (or Actor)",
+      "A Dyad"
+    ],
+    "correctAnswer": "A Node (or Actor)",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] What is the primary purpose of a dashboard in marketing analytics?",
+    "options": [
+      "To replace all other forms of reporting.",
+      "To provide a visual display of key performance indicators (KPIs) and facilitate data exploration.",
+      "To perform predictive analytics automatically.",
+      "To store raw data for later analysis."
+    ],
+    "correctAnswer": "To provide a visual display of key performance indicators (KPIs) and facilitate data exploration.",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] According to the lecture, what are basic necessities required for human survival, such\nas food, shelter, and safety?",
+    "options": [
+      "Wants",
+      "Desires",
+      "Needs",
+      "Demands"
+    ],
+    "correctAnswer": "Needs",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] What is a key advantage of R for Marketing Analytics compared to Excel, as highlighted\nin the lecture?",
+    "options": [
+      "R is easier to learn for beginners.",
+      "R is open-source, free, and handles massive datasets more efficiently.",
+      "R is primarily a graphical interface, making it more intuitive.",
+      "R is better for small, one-off tasks."
+    ],
+    "correctAnswer": "R is open-source, free, and handles massive datasets more efficiently.",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] In R, which logical operator would you use to select elements from a vector `a` that are\nboth greater than 15 AND less than 20?",
+    "options": [
+      "`|` (OR)",
+      "`!` (NOT)",
+      "`&` (AND)",
+      "`==` (Equality)"
+    ],
+    "correctAnswer": "`&` (AND)",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] When combining vectors of different data types (e.g., integer, numeric, character) using\n`cbind()` to form a matrix, what is the typical outcome regarding the data types in the\nresulting matrix?",
+    "options": [
+      "Each column retains its original data type.",
+      "R coerces all elements in the matrix to the most \"flexible\" data type present, usually character.",
+      "The operation will result in an error due to incompatible types.",
+      "Only numeric data types are allowed in matrices, so character vectors are ignored."
+    ],
+    "correctAnswer": "R coerces all elements in the matrix to the most \"flexible\" data type present, usually character.",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] What is the main functional difference between `mutate()` and `summarise()` in the\n`dplyr` package?",
+    "options": [
+      "`mutate()` is for filtering rows, while `summarise()` is for selecting columns.",
+      "`mutate()` adds new columns and keeps the same number of rows, while `summarise()` aggregates\ndata to fewer rows.",
+      "`mutate()` works only on numeric data, while `summarise()` works on character data.",
+      "`mutate()` is for single variables, while `summarise()` is for multiple variables."
+    ],
+    "correctAnswer": "`mutate()` adds new columns and keeps the same number of rows, while `summarise()` aggregates\ndata to fewer rows.",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] When calculating the mean of a vector in R that contains `NA` values, what argument\nshould be used within the `mean()` function to ensure an accurate result by ignoring missing\nvalues?",
+    "options": [
+      "`na.omit = TRUE`",
+      "`remove.na = TRUE`",
+      "`na.rm = TRUE`",
+      "`ignore.na = TRUE`"
+    ],
+    "correctAnswer": "`na.rm = TRUE`",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] What is the primary limitation of the \"Bag-of-Tokens\" approach in text mining, as\ndiscussed in the lecture?",
+    "options": [
+      "It is computationally very expensive.",
+      "It requires extensive manual labeling of data.",
+      "It loses all information about the original word order and immediate context.",
+      "It cannot handle large volumes of text data."
+    ],
+    "correctAnswer": "It loses all information about the original word order and immediate context.",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] What is the \"naive\" assumption made by the Naive Bayes algorithm?",
+    "options": [
+      "That all features are equally important.",
+      "That features are strongly independent of each other given the class.",
+      "That the data follows a normal distribution.",
+      "That there are no missing values in the dataset."
+    ],
+    "correctAnswer": "That features are strongly independent of each other given the class.",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] When preparing a Document Term Matrix (DTM) for a Naive Bayes classifier, why might\nit be beneficial to convert term frequencies to a binary occurrence (presence/absence)\nrepresentation?",
+    "options": [
+      "To increase the dimensionality of the data.",
+      "To make the DTM denser and use more memory.",
+      "Because Naive Bayes often performs optimally by considering only the presence or absence of words,\nreducing noise from specific counts.",
+      "To make the model more complex and harder to interpret."
+    ],
+    "correctAnswer": "Because Naive Bayes often performs optimally by considering only the presence or absence of words,\nreducing noise from specific counts.",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] In Social Network Analysis, what is a \"Structural Hole\"?",
+    "options": [
+      "A node with very few connections.",
+      "The absence of a direct connection between two nodes who belong to otherwise connected groups.",
+      "A node that is central to all communication.",
+      "A connection that flows in only one direction."
+    ],
+    "correctAnswer": "The absence of a direct connection between two nodes who belong to otherwise connected groups.",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] What is the primary output or goal of an effective descriptive analytics dashboard, as\nemphasized in the lecture?",
+    "options": [
+      "To provide definitive answers to all business questions.",
+      "To generate questions, hunches, and hypotheses for further investigation.",
+      "To replace the need for human analysts.",
+      "To automatically make strategic business decisions."
+    ],
+    "correctAnswer": "To generate questions, hunches, and hypotheses for further investigation.",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] Which analytical technique involves creating hypothetical product or service options\nwith varying attributes to gauge customer preferences, especially when real-world\nbehavioral data isn't available for new products?",
+    "options": [
+      "Regression Analysis",
+      "Conjoint Analysis",
+      "Factor Analysis",
+      "Market Basket Analysis"
+    ],
+    "correctAnswer": "Conjoint Analysis",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] What are \"Economic Switching Barriers (ESB)\" in the context of customer churn?",
+    "options": [
+      "Emotional or social costs of switching.",
+      "The difficulty or complexity of the switching process itself.",
+      "Monetary costs or losses associated with switching, such as contract termination fees.",
+      "The lack of appealing alternatives in the market."
+    ],
+    "correctAnswer": "Monetary costs or losses associated with switching, such as contract termination fees.",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] How does R internally represent a factor variable, and which function can be used to\nreveal this internal representation?",
+    "options": [
+      "As character strings; `as.character()`",
+      "As integers with associated labels (levels); `as.numeric()`",
+      "As logical (TRUE/FALSE) values; `as.logical()`",
+      "As numeric values; `as.integer()`"
+    ],
+    "correctAnswer": "As integers with associated labels (levels); `as.numeric()`",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] When using the `matrix()` function in R to create a matrix from a vector of values, what\nis the default order in which the values are filled into the matrix?",
+    "options": [
+      "Row-wise",
+      "Column-wise",
+      "Diagonally",
+      "Randomly"
+    ],
+    "correctAnswer": "Column-wise",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] For a dependent variable that is ordered categorical (e.g., customer satisfaction ratings\nfrom 1 to 5), why is `polr()` (Ordinal Logit Regression) considered a more theoretically\nappropriate model than `lm()` (Linear Regression)?",
+    "options": [
+      "`lm()` is computationally more expensive for categorical data.",
+      "`polr()` can handle missing values better than `lm()`.",
+      "`polr()` accounts for the ordered nature of the categories and models non-linear effects, whereas\n`lm()` assumes a continuous, interval scale.",
+      "`lm()` can only be used for binary dependent variables."
+    ],
+    "correctAnswer": "`polr()` accounts for the ordered nature of the categories and models non-linear effects, whereas\n`lm()` assumes a continuous, interval scale.",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] What is the \"Zero-Frequency Problem\" in the Naive Bayes algorithm, and what\ntechnique is commonly used to mitigate it?",
+    "options": [
+      "It occurs when a feature appears too frequently, leading to overfitting; mitigated by removing common\nwords.",
+      "It occurs when a particular category in the training data has zero occurrences of a feature, leading to a\nzero probability that can nullify overall probabilities; mitigated by Laplace Estimator (Add-1 Smoothing).",
+      "It occurs when the model predicts zero probability for all classes; mitigated by increasing the training\ndata size.",
+      "It occurs when features are highly correlated; mitigated by dimensionality reduction."
+    ],
+    "correctAnswer": "It occurs when a particular category in the training data has zero occurrences of a feature, leading to a\nzero probability that can nullify overall probabilities; mitigated by Laplace Estimator (Add-1 Smoothing).",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] In the analytical framework for Segmentation, Targeting, and Positioning, what is the\nprimary role of Factor Analysis in the initial phase of data reduction?",
+    "options": [
+      "To directly assign customers to segments based on demographics.",
+      "To group customers into clusters based on their overall spending.",
+      "To reduce a large number of observed behavioral variables into fewer latent, meaningful underlying\ndimensions.",
+      "To predict future customer behavior based on past actions."
+    ],
+    "correctAnswer": "To reduce a large number of observed behavioral variables into fewer latent, meaningful underlying\ndimensions.",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] In the advanced segmentation workflow that extracts individual consumer preferences,\nwhy is \"significance filtering\" (setting non-statistically significant coefficients to zero)\napplied to the regression coefficients for each individual?",
+    "options": [
+      "To simplify the model and reduce computational time.",
+      "To ensure that only meaningful and statistically reliable preferences contribute to a consumer's profile,\npreventing noise from distorting segment formation.",
+      "To make the preference matrix denser and easier to interpret.",
+      "To convert all preference coefficients into positive values."
+    ],
+    "correctAnswer": "To ensure that only meaningful and statistically reliable preferences contribute to a consumer's profile,\npreventing noise from distorting segment formation.",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 2] In the \"Powered Blocked Pricing\" model (all-units discount) discussed, what is the key\ndifference in how the price is applied if a customer's consumption crosses the defined\n\"cut-off\" value?",
+    "options": [
+      "Only the units consumed *beyond* the cut-off are charged at the lower price.",
+      "The price per unit remains the same regardless of consumption volume.",
+      "The *entire* consumption (all units) is charged at the lower price.",
+      "The customer receives a refund for the initial units charged at the higher price."
+    ],
+    "correctAnswer": "The *entire* consumption (all units) is charged at the lower price.",
+    "explanation": "Source: Mock Exam 2",
+    "mock_file": "mock_exam_2.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] What is the primary purpose of RStudio in R programming?",
+    "options": [
+      "To store large datasets",
+      "To provide a user-friendly interface for R",
+      "To directly perform statistical calculations without R",
+      "To manage R packages only"
+    ],
+    "correctAnswer": "To provide a user-friendly interface for R",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] In R, what does `NA` represent?",
+    "options": [
+      "Not Applicable",
+      "No Action",
+      "Not Available",
+      "New Assignment"
+    ],
+    "correctAnswer": "Not Available",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] What is the key difference between a Matrix and a Data Frame in R regarding data types?",
+    "options": [
+      "Matrices are 1-dimensional, Data Frames are 2-dimensional",
+      "All elements in a Matrix must be of the same data type, while Data Frame columns can have different\ndata types",
+      "Data Frames are only for numeric data",
+      "Matrices can store character data, Data Frames cannot"
+    ],
+    "correctAnswer": "All elements in a Matrix must be of the same data type, while Data Frame columns can have different\ndata types",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] Which R function is used to install a new library from CRAN?",
+    "options": [
+      "`load.library()`",
+      "`library()`",
+      "`install.packages()`",
+      "`get.package()`"
+    ],
+    "correctAnswer": "`install.packages()`",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] Which R function is used to display the first few rows (default 6) of a data frame?",
+    "options": [
+      "`tail()`",
+      "`str()`",
+      "`head()`",
+      "`View()`"
+    ],
+    "correctAnswer": "`head()`",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] What is the purpose of `barplot()` in R?",
+    "options": [
+      "To create scatter plots",
+      "To visualize categorical data comparisons",
+      "To perform linear regression",
+      "To display data frame structures"
+    ],
+    "correctAnswer": "To visualize categorical data comparisons",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] What is the definition of \"Unstructured Data\"?",
+    "options": [
+      "Information organized in a pre-defined tabular format",
+      "Information not organized in a pre-defined tabular format",
+      "Numerical data only",
+      "Data that has been cleaned and processed"
+    ],
+    "correctAnswer": "Information not organized in a pre-defined tabular format",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] What is the primary purpose of a Word Cloud?",
+    "options": [
+      "To perform statistical regression",
+      "To visually represent text data where word size indicates frequency",
+      "To analyze grammatical structure",
+      "To identify abstract topics in documents"
+    ],
+    "correctAnswer": "To visually represent text data where word size indicates frequency",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] In text mining, what is a \"Corpus\"?",
+    "options": [
+      "A type of statistical model",
+      "A special data structure used by the `tm` package to store and manage text documents",
+      "A numerical matrix of word frequencies",
+      "A list of stopwords"
+    ],
+    "correctAnswer": "A special data structure used by the `tm` package to store and manage text documents",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] In the context of spam detection, what does \"Ham\" refer to?",
+    "options": [
+      "Unsolicited messages",
+      "Legitimate and useful messages",
+      "Messages with attachments",
+      "Encrypted messages"
+    ],
+    "correctAnswer": "Legitimate and useful messages",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] Which RStudio pane displays the output of executed R commands and provides\nimmediate feedback during development?",
+    "options": [
+      "Editor",
+      "Global Environment",
+      "Console",
+      "Files"
+    ],
+    "correctAnswer": "Console",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] When calculating statistical functions like `mean()` or `sd()` in R, what argument should\nbe used to ensure `NA` values do not cause the function to return `NA`?",
+    "options": [
+      "`ignore.na = TRUE`",
+      "`na.handle = TRUE`",
+      "`na.rm = TRUE`",
+      "`remove.na = TRUE`"
+    ],
+    "correctAnswer": "`na.rm = TRUE`",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] If you combine an integer vector, a numeric vector, and a character vector using\n`cbind()` to create a matrix, what will be the data type of all elements in the resulting matrix?",
+    "options": [
+      "Integer",
+      "Numeric",
+      "Character",
+      "Logical"
+    ],
+    "correctAnswer": "Character",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] What is the primary difference between `mutate()` and `summarise()` functions in\n`dplyr`?",
+    "options": [
+      "`mutate()` adds new rows, `summarise()` adds new columns",
+      "`mutate()` modifies existing variables, `summarise()` creates new ones",
+      "`mutate()` adds new variables while preserving row count, `summarise()` aggregates to fewer rows",
+      "`mutate()` is for single variables, `summarise()` is for multiple variables"
+    ],
+    "correctAnswer": "`mutate()` adds new variables while preserving row count, `summarise()` aggregates to fewer rows",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] In the hotel analytics problem, if the `overall_rating` for a hotel is below average, what\nis the *next* logical step to identify contributing factors?",
+    "options": [
+      "Immediately increase marketing spend",
+      "Compare average attribute-wise ratings for the hotel against benchmarks",
+      "Change the hotel's location",
+      "Reduce the hotel's price"
+    ],
+    "correctAnswer": "Compare average attribute-wise ratings for the hotel against benchmarks",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] Why is `beside = TRUE` a crucial argument when using `barplot()` to compare two\nhotels across various attributes?",
+    "options": [
+      "It stacks the bars on top of each other",
+      "It displays bars side-by-side for direct comparison",
+      "It changes the color of the bars",
+      "It adds a legend to the plot"
+    ],
+    "correctAnswer": "It displays bars side-by-side for direct comparison",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] What is the key distinction between Text Mining and Natural Language Processing\n(NLP)?",
+    "options": [
+      "Text Mining is only for structured data, NLP for unstructured",
+      "Text Mining is a broad technique, NLP is a specific type considering linguistic characteristics",
+      "NLP is only for machine-generated text",
+      "Text Mining focuses on grammar, NLP on word frequency"
+    ],
+    "correctAnswer": "Text Mining is a broad technique, NLP is a specific type considering linguistic characteristics",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] What is the primary purpose of Inverse Document Frequency (IDF) in TF-IDF\ncalculation?",
+    "options": [
+      "To count how often a term appears in a document",
+      "To upweight rare, distinctive words and downweight common words across a corpus",
+      "To remove stopwords",
+      "To identify grammatical relationships between words"
+    ],
+    "correctAnswer": "To upweight rare, distinctive words and downweight common words across a corpus",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] Why are Document Term Matrices (DTMs) typically stored as sparse matrices?",
+    "options": [
+      "To make them easier to read",
+      "Because most elements are zero, reducing memory usage and computation time",
+      "To hide sensitive information",
+      "To allow for non-numeric data"
+    ],
+    "correctAnswer": "Because most elements are zero, reducing memory usage and computation time",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] What problem does the \"Naive\" assumption in Naive Bayes algorithm address?",
+    "options": [
+      "It simplifies calculations by assuming features are independent given the class",
+      "It ensures all features are equally important",
+      "It removes missing values from the dataset",
+      "It converts continuous variables into categorical ones"
+    ],
+    "correctAnswer": "It simplifies calculations by assuming features are independent given the class",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] In the context of Naive Bayes for text classification, why might converting term\nfrequencies to binary occurrence features be beneficial?",
+    "options": [
+      "It makes the DTM denser",
+      "It simplifies the model and aligns better with the algorithm's assumptions",
+      "It increases the dimensionality of the data",
+      "It is required for all machine learning models"
+    ],
+    "correctAnswer": "It simplifies the model and aligns better with the algorithm's assumptions",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] In sentiment analysis, why are adjectives often considered more critical than nouns in\nconveying sentiment?",
+    "options": [
+      "Nouns are always stopwords",
+      "Adjectives directly describe the quality or feeling associated with a noun",
+      "Adjectives are easier to count",
+      "Nouns are only used in negative reviews"
+    ],
+    "correctAnswer": "Adjectives directly describe the quality or feeling associated with a noun",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] The lecture notes state that R infers `integer` for whole number sequences (e.g., `1:10`)\nbut uses `numeric` for combined lists (e.g., `c()`). What is the primary reason R uses\n`numeric` for combined lists in this context?",
+    "options": [
+      "`numeric` is always more memory-efficient",
+      "`numeric` is a safer default, anticipating potential decimal values in combined lists",
+      "`integer` cannot store more than 10 elements",
+      "`c()` function only works with `numeric` types"
+    ],
+    "correctAnswer": "`numeric` is a safer default, anticipating potential decimal values in combined lists",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] Which statement accurately describes R's internal representation and manipulation of\nFactor variables?",
+    "options": [
+      "Factors store character data directly, allowing for easy arithmetic operations",
+      "R stores factors as numeric codes with associated labels (levels), and `as.numeric()` reveals these\ninternal codes",
+      "Factors are identical to character vectors but use less memory",
+      "`levels()` function is used to convert factors to numeric data for statistical modeling"
+    ],
+    "correctAnswer": "R stores factors as numeric codes with associated labels (levels), and `as.numeric()` reveals these\ninternal codes",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] When using the `matrix()` function in R with `nrow` specified but `byrow` not, what is\nthe default fill order for the matrix?",
+    "options": [
+      "Row-wise",
+      "Column-wise",
+      "Randomly",
+      "Diagonally"
+    ],
+    "correctAnswer": "Column-wise",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] A marketing analyst needs to calculate the growth rate of revenue for each company\nover financial years, where the growth rate for a given year depends on the previous year's\nrevenue. Which R programming construct is explicitly mentioned as suitable for automating\nsuch an iterative calculation?",
+    "options": [
+      "`mutate()` with `group_by()`",
+      "`summarise()` with `group_by()`",
+      "A `for` loop",
+      "The `ifelse()` function"
+    ],
+    "correctAnswer": "A `for` loop",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] In the hotel analytics problem, the lecture notes highlight that `Date of Review` is\ninitially a `factor` variable. What is the significance of this observation for future analysis?",
+    "options": [
+      "It means the date is already in a perfect format for time-series analysis",
+      "It indicates a potential need for data type conversion (e.g., to character then to date) for proper\ntime-series analysis",
+      "Factor variables are always preferred for date information in R",
+      "It signifies that the `Date of Review` is a categorical variable and cannot be used in any numerical\nanalysis"
+    ],
+    "correctAnswer": "It indicates a potential need for data type conversion (e.g., to character then to date) for proper\ntime-series analysis",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] In the context of the `polr()` (Ordinal Logit) model for predicting\n`Review_Overall_Rating` (1-5 scale), what is the primary reason this model is considered\nmore theoretically appropriate than `lm()` (Linear Regression)?",
+    "options": [
+      "`polr()` is faster to compute",
+      "`lm()` cannot handle multiple independent variables",
+      "The dependent variable is ordered categorical, making `polr()` suitable for non-linear effects",
+      "`polr()` automatically handles missing values"
+    ],
+    "correctAnswer": "The dependent variable is ordered categorical, making `polr()` suitable for non-linear effects",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] What is the primary purpose of Lemmatization/Stemming in the NLP preprocessing\npipeline?",
+    "options": [
+      "To remove common words like \"the\" and \"is\"",
+      "To identify the grammatical role of each word",
+      "To reduce words to their base or root form to standardize analysis and accurately count frequencies",
+      "To convert text into a bag-of-tokens"
+    ],
+    "correctAnswer": "To reduce words to their base or root form to standardize analysis and accurately count frequencies",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 3] What is the core limitation of simple tokenization that Dependency Parsing aims to\naddress?",
+    "options": [
+      "It cannot handle numerical data",
+      "It loses all information about word order and grammatical context",
+      "It is computationally too expensive",
+      "It only works for English text"
+    ],
+    "correctAnswer": "It loses all information about word order and grammatical context",
+    "explanation": "Source: Mock Exam 3",
+    "mock_file": "mock_exam_3.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] What is the primary purpose of the hash symbol (`#`) in R programming?",
+    "options": [
+      "To define a new variable",
+      "To indicate a comment, making the line non-executable",
+      "To perform a mathematical operation",
+      "To create a new function\nE) To mark the end of a code block"
+    ],
+    "correctAnswer": "To indicate a comment, making the line non-executable",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] Which RStudio pane displays the results of executed commands and provides\nimmediate feedback?",
+    "options": [
+      "Editor",
+      "Console",
+      "Global Environment",
+      "Files/Plots/Packages/Help\nE) Source"
+    ],
+    "correctAnswer": "Console",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] Which R function is used to generate regular sequences of numbers?",
+    "options": [
+      "`c()`",
+      "`rep()`",
+      "`seq()`",
+      "`length()`\nE) `class()`"
+    ],
+    "correctAnswer": "`seq()`",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] What is the main difference between a Matrix and a Data Frame in R regarding data\ntypes?",
+    "options": [
+      "Matrices can only store character data, while Data Frames can store numeric.",
+      "Matrices are 1-dimensional, Data Frames are 2-dimensional.",
+      "All elements in a Matrix must be of the same data type, while each column in a Data Frame can have\na different data type.",
+      "Data Frames are limited to 100 rows, while Matrices have no size limit.\nE) Matrices are used for statistical analysis, Data Frames for plotting."
+    ],
+    "correctAnswer": "All elements in a Matrix must be of the same data type, while each column in a Data Frame can have\na different data type.",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] Which `dplyr` function is used to load an installed library into the current R session?",
+    "options": [
+      "`install.packages()`",
+      "`load.library()`",
+      "`library()`",
+      "`get.package()`\nE) `require.library()`"
+    ],
+    "correctAnswer": "`library()`",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] What is the purpose of the `str()` function in R?",
+    "options": [
+      "To create a string variable",
+      "To display the internal structure of an R object",
+      "To concatenate strings",
+      "To convert an object to a string\nE) To search for a string pattern"
+    ],
+    "correctAnswer": "To display the internal structure of an R object",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] What is the primary purpose of a Word Cloud?",
+    "options": [
+      "To perform complex statistical analysis on text data.",
+      "To visually represent text data where the size of each word indicates its frequency or importance.",
+      "To convert text into numerical vectors for machine learning.",
+      "To identify grammatical structures within sentences.\nE) To filter out common words from a text corpus."
+    ],
+    "correctAnswer": "To visually represent text data where the size of each word indicates its frequency or importance.",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] In text mining, what is a 'Corpus'?",
+    "options": [
+      "A single text document.",
+      "A special data structure used by the `tm` package to store and manage text documents.",
+      "A list of common words to be removed from text.",
+      "A numerical representation of text data.\nE) A graphical visualization of word frequencies."
+    ],
+    "correctAnswer": "A special data structure used by the `tm` package to store and manage text documents.",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] What is the definition of 'Spam' in the context of spam detection?",
+    "options": [
+      "Legitimate and useful messages.",
+      "Messages containing only numbers.",
+      "Unsolicited or undesirable messages.",
+      "Messages sent from known contacts.\nE) Encrypted messages."
+    ],
+    "correctAnswer": "Unsolicited or undesirable messages.",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] What is the main goal of Markdown Pricing?",
+    "options": [
+      "To keep prices consistently high to maintain brand image.",
+      "To set a single, fixed price for a product over its entire lifecycle.",
+      "To intentionally lower prices at specific times or periods to attract price-sensitive customers.",
+      "To only sell products in bundles.\nE) To match competitor prices exactly."
+    ],
+    "correctAnswer": "To intentionally lower prices at specific times or periods to attract price-sensitive customers.",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] Which of the following best describes the 'Global Environment' pane in RStudio?",
+    "options": [
+      "The area where R commands are executed and their output is displayed.",
+      "The area where you write and save your R scripts.",
+      "The pane that lists all active objects (variables, datasets, functions) in your current R session.",
+      "The tab that displays documentation for R functions.\nE) The tab for managing R packages."
+    ],
+    "correctAnswer": "The pane that lists all active objects (variables, datasets, functions) in your current R session.",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] In R, if you have a numeric vector `a` and you want to extract only those elements that\nare greater than 7, which syntax would you use?",
+    "options": [
+      "`a(a > 7)`",
+      "`a[a > 7]`",
+      "`a > 7`",
+      "`filter(a, a > 7)`\nE) `select(a, a > 7)`"
+    ],
+    "correctAnswer": "`a[a > 7]`",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] When combining vectors of different data types (e.g., integer, numeric, character) using\n`cbind()` to form a matrix, what happens to the data types in the resulting matrix?",
+    "options": [
+      "The matrix will retain the original data type of each column.",
+      "All elements in the resulting matrix will be coerced to the most 'flexible' data type present (e.g.,\ncharacter).",
+      "The operation will result in an error due to incompatible data types.",
+      "The matrix will automatically convert all data to numeric.\nE) Only the first vector's data type will be preserved."
+    ],
+    "correctAnswer": "All elements in the resulting matrix will be coerced to the most 'flexible' data type present (e.g.,\ncharacter).",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] What is the key difference between `mutate()` and `summarise()` functions in `dplyr`?",
+    "options": [
+      "`mutate()` is used for filtering rows, while `summarise()` is for selecting columns.",
+      "`mutate()` adds new variables while preserving the original row count, while `summarise()` reduces\nmultiple values to a single summary statistic, often reducing the row count.",
+      "`mutate()` works only with numeric data, while `summarise()` works only with character data.",
+      "`summarise()` creates new columns, while `mutate()` aggregates rows.\nE) Both functions perform the same action, but `summarise()` is an older version."
+    ],
+    "correctAnswer": "`mutate()` adds new variables while preserving the original row count, while `summarise()` reduces\nmultiple values to a single summary statistic, often reducing the row count.",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] When performing statistical calculations on data that may contain missing values\n(`NA`), which argument is crucial to include in functions like `mean()` or `sd()` to ensure\naccurate results?",
+    "options": [
+      "`na.handle = TRUE`",
+      "`na.fill = 0`",
+      "`na.rm = TRUE`",
+      "`na.omit = FALSE`\nE) `na.replace = MEAN`"
+    ],
+    "correctAnswer": "`na.rm = TRUE`",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] Which of the following best describes the concept of 'Multicollinearity' in regression\nanalysis?",
+    "options": [
+      "When the dependent variable has multiple categories.",
+      "When there is a high correlation between independent variables in a regression model.",
+      "When the model includes too many variables, leading to overfitting.",
+      "When the residuals of the model are not normally distributed.\nE) When the independent variables are not statistically significant."
+    ],
+    "correctAnswer": "When there is a high correlation between independent variables in a regression model.",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] What is the primary distinction between 'Text Mining' and 'Natural Language\nProcessing (NLP)' as discussed in the lectures?",
+    "options": [
+      "Text Mining only deals with structured data, while NLP deals with unstructured data.",
+      "NLP is a broader field encompassing all text analysis, while Text Mining is a specific technique.",
+      "Text Mining is any process to extract information from text, while NLP specifically considers the\nlinguistic characteristics of human language.",
+      "NLP is only for spoken language, while Text Mining is for written text.\nE) Text Mining is an older concept, replaced entirely by NLP."
+    ],
+    "correctAnswer": "Text Mining is any process to extract information from text, while NLP specifically considers the\nlinguistic characteristics of human language.",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] What is the main purpose of the 'Inverse Document Frequency (IDF)' component in\nTF-IDF?",
+    "options": [
+      "To count how often a term appears in a single document.",
+      "To downweight very common words that appear in many documents and upweight rarer, more\ndistinctive words.",
+      "To convert all words to their root form.",
+      "To remove stopwords from the text.\nE) To identify the grammatical role of each word."
+    ],
+    "correctAnswer": "To downweight very common words that appear in many documents and upweight rarer, more\ndistinctive words.",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] What is a 'Document Term Matrix (DTM)'?",
+    "options": [
+      "A matrix where rows represent documents and columns represent unique terms, with cell values\nindicating term frequency.",
+      "A matrix used only for numerical data, not text.",
+      "A matrix that stores the grammatical structure of sentences.",
+      "A list of all unique words in a corpus.\nE) A matrix that shows the sentiment score of each document."
+    ],
+    "correctAnswer": "A matrix where rows represent documents and columns represent unique terms, with cell values\nindicating term frequency.",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] Which of the following best describes the 'Naive' assumption in the Naive Bayes\nalgorithm?",
+    "options": [
+      "It assumes all features are equally important.",
+      "It assumes that features (words) are independent of each other given the class (e.g., spam or ham).",
+      "It assumes the data is normally distributed.",
+      "It assumes there are no missing values in the dataset.\nE) It assumes a linear relationship between features and the target variable."
+    ],
+    "correctAnswer": "It assumes that features (words) are independent of each other given the class (e.g., spam or ham).",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] What is the primary purpose of 'Negative Correlation of Preferences' in the context of\nbundle pricing?",
+    "options": [
+      "It means customers dislike both products in the bundle.",
+      "It indicates that customers are unwilling to pay for any product.",
+      "It is the primary driver for effective bundling, allowing sellers to capture value from both segments by\nsmoothing out individual WTP fluctuations.",
+      "It suggests that products should always be sold individually.\nE) It implies that the demand for one product increases when the price of another decreases."
+    ],
+    "correctAnswer": "It is the primary driver for effective bundling, allowing sellers to capture value from both segments by\nsmoothing out individual WTP fluctuations.",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] In the context of time series analysis, what does the 'Trend (Tt)' component represent?",
+    "options": [
+      "Patterns that repeat over a fixed and known period.",
+      "The unpredictable, random component of the time series.",
+      "The long-term, underlying direction or movement of the time series.",
+      "The impact of external marketing variables like price or promotions.\nE) The average value of the series over a short period."
+    ],
+    "correctAnswer": "The long-term, underlying direction or movement of the time series.",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] You are analyzing a vector `x` in R that contains both integer and numeric values. If you\nconvert this vector to a factor and then try to convert it directly to numeric using\n`as.numeric(as.factor(x))`, what will be the likely outcome?",
+    "options": [
+      "The original numeric values will be perfectly restored.",
+      "The function will return `NA` values because factors cannot be converted to numeric.",
+      "R will return the internal integer codes that represent the factor levels, not the original numeric values.",
+      "The vector will be converted to a character vector.\nE) An error will occur because of mixed data types."
+    ],
+    "correctAnswer": "R will return the internal integer codes that represent the factor levels, not the original numeric values.",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] In the hotel review problem, if the dependent variable (Overall Rating) is an ordered\ncategorical variable (1-5 stars), which regression model is considered more theoretically\nappropriate than a simple linear regression (`lm()`)?",
+    "options": [
+      "Multiple Linear Regression",
+      "Logistic Regression",
+      "Ordered Logit Regression (`polr()`)",
+      "Poisson Regression\nE) Ridge Regression"
+    ],
+    "correctAnswer": "Ordered Logit Regression (`polr()`)",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] When dealing with the 'Zero-Frequency Problem' in Naive Bayes, where a particular\nfeature might have zero occurrences in a category, which technique is used to mitigate it by\nensuring no zero probabilities?",
+    "options": [
+      "Feature Scaling",
+      "Principal Component Analysis",
+      "Laplace Estimator (Add-1 Smoothing)",
+      "Cross-Validation\nE) Removing the feature entirely"
+    ],
+    "correctAnswer": "Laplace Estimator (Add-1 Smoothing)",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] In the context of dynamic pricing for a fixed quantity of goods over multiple periods,\nwhat is the impact of introducing a per-unit production cost on the optimal price points?",
+    "options": [
+      "It has no impact, as dynamic pricing only focuses on revenue maximization.",
+      "It fundamentally alters the optimal price points and the resulting total earnings by shifting the\noptimization from maximizing total revenue to maximizing total *profit*.",
+      "It causes all prices to increase uniformly across all periods.",
+      "It simplifies the optimization problem, making it easier to solve.\nE) It only affects the demand function, not the pricing strategy."
+    ],
+    "correctAnswer": "It fundamentally alters the optimal price points and the resulting total earnings by shifting the\noptimization from maximizing total revenue to maximizing total *profit*.",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] In the context of building a comprehensive Marketing Mix Model in R, what is the\nprimary purpose of defining `lower` and `upper` bounds for parameters in the `optim`\nfunction?",
+    "options": [
+      "To speed up the optimization process by limiting the search space, but without affecting realism.",
+      "To ensure that optimization results are realistic and interpretable (e.g., lambda between 0 and 1, ad\neffects positive), often leading to better model fit.",
+      "To prevent the model from converging to a solution.",
+      "To simplify the model by removing non-significant parameters.\nE) To force all parameters to be integers."
+    ],
+    "correctAnswer": "To ensure that optimization results are realistic and interpretable (e.g., lambda between 0 and 1, ad\neffects positive), often leading to better model fit.",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] What is the 'Recommender Problem' as described in the lecture, specifically regarding\nthe objectives of a recommendation engine?",
+    "options": [
+      "To only recommend the most popular items to all users.",
+      "To balance recommendations for 'fit' (relevance), 'incrementality' (items users wouldn't find otherwise),\nand 'taste expansion' (introducing new items).",
+      "To always recommend items that users have already purchased.",
+      "To minimize the computational cost of generating recommendations, even if it compromises\nrelevance.\n\nE) To ensure all recommendations are based solely on demographic data."
+    ],
+    "correctAnswer": "To balance recommendations for 'fit' (relevance), 'incrementality' (items users wouldn't find otherwise),\nand 'taste expansion' (introducing new items).",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 4] Which of the following best describes the 'Apriori Principle' in the Apriori algorithm?",
+    "options": [
+      "If an itemset is frequent, then none of its subsets can be frequent.",
+      "If an itemset is frequent, then all of its subsets must also be frequent.",
+      "All itemsets must be checked against the minimum support threshold, regardless of their subsets.",
+      "The algorithm prioritizes itemsets with the highest confidence.\nE) It states that only 1-itemsets are relevant for market basket analysis."
+    ],
+    "correctAnswer": "If an itemset is frequent, then all of its subsets must also be frequent.",
+    "explanation": "Source: Mock Exam 4",
+    "mock_file": "mock_exam_4.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] Which RStudio pane displays the results of executed R commands and their output?",
+    "options": [
+      "Editor",
+      "Console",
+      "Global Environment",
+      "Files/Plots/Packages/Help"
+    ],
+    "correctAnswer": "Console",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] What is the primary purpose of the `#` symbol in R code?",
+    "options": [
+      "To define a new function",
+      "To indicate a mathematical operation",
+      "To add non-executable comments for explanation",
+      "To create a new variable"
+    ],
+    "correctAnswer": "To add non-executable comments for explanation",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] In R, what is the purpose of the `na.rm = TRUE` argument in functions like `mean()` or\n`sd()`?",
+    "options": [
+      "To round the result to the nearest integer",
+      "To include all NA values in the calculation",
+      "To remove NA (Not Available) values before computation",
+      "To replace NA values with zero"
+    ],
+    "correctAnswer": "To remove NA (Not Available) values before computation",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] What is the key difference between a matrix and a data frame in R regarding data types?",
+    "options": [
+      "A matrix can only store character data, while a data frame can store numeric.",
+      "All elements in a matrix must be of the same data type, while each column in a data frame can have a\ndifferent data type.",
+      "A matrix is one-dimensional, while a data frame is two-dimensional.",
+      "Data frames are limited to numeric data, while matrices can store any type."
+    ],
+    "correctAnswer": "All elements in a matrix must be of the same data type, while each column in a data frame can have a\ndifferent data type.",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] What is the primary function of the `dplyr` package in R?",
+    "options": [
+      "To create interactive plots",
+      "To perform complex statistical modeling",
+      "To efficiently manipulate and analyze data",
+      "To manage R packages"
+    ],
+    "correctAnswer": "To efficiently manipulate and analyze data",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] Which R function is used to display the first few rows of a data frame, providing a quick\nglance at its content?",
+    "options": [
+      "`str()`",
+      "`names()`",
+      "`View()`",
+      "`head()`"
+    ],
+    "correctAnswer": "`head()`",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] Which of the following best describes 'unstructured data' in the context of Text Mining?",
+    "options": [
+      "Information organized in a pre-defined tabular format.",
+      "Data that is easily searchable and ready for statistical analysis.",
+      "Information not organized in a pre-defined tabular format, such as text or images.",
+      "Numerical data collected from surveys."
+    ],
+    "correctAnswer": "Information not organized in a pre-defined tabular format, such as text or images.",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] What is a 'Word Cloud' primarily used for in text analysis?",
+    "options": [
+      "To perform statistical regression on text data.",
+      "To visually represent text data where word size indicates frequency or importance.",
+      "To identify grammatical errors in a document.",
+      "To convert text into numerical vectors for machine learning."
+    ],
+    "correctAnswer": "To visually represent text data where word size indicates frequency or importance.",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] What is the primary purpose of removing 'stopwords' during text preprocessing?",
+    "options": [
+      "To convert all words to lowercase.",
+      "To eliminate common words that carry little semantic meaning for analysis.",
+      "To identify proper nouns in the text.",
+      "To combine words with similar meanings."
+    ],
+    "correctAnswer": "To eliminate common words that carry little semantic meaning for analysis.",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] What is the main application of the Naive Bayes algorithm discussed in the context of\ntext mining?",
+    "options": [
+      "Generating word clouds",
+      "Performing complex statistical regressions",
+      "Classifying text, such as spam detection",
+      "Creating interactive data visualizations"
+    ],
+    "correctAnswer": "Classifying text, such as spam detection",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] Which of the following R code snippets correctly subsets a vector `a` to extract\nelements greater than 7?",
+    "options": [
+      "`a[7]`",
+      "`a > 7`",
+      "`a[a > 7]`",
+      "`a[c(1, 2, 3)]`"
+    ],
+    "correctAnswer": "`a[a > 7]`",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] In `dplyr`, what is the fundamental difference between `mutate()` and `summarise()`?",
+    "options": [
+      "`mutate()` is for character variables, `summarise()` is for numeric variables.",
+      "`mutate()` adds new columns while preserving the original row count, `summarise()` aggregates data\nto fewer rows.",
+      "`mutate()` works only with grouped data, `summarise()` works with ungrouped data.",
+      "`mutate()` removes rows, `summarise()` adds rows."
+    ],
+    "correctAnswer": "`mutate()` adds new columns while preserving the original row count, `summarise()` aggregates data\nto fewer rows.",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] When using `dplyr` for hotel review analysis, if you want to calculate the mean overall\nrating for each hotel, which two functions would you primarily use in sequence?",
+    "options": [
+      "`filter()` and `select()`",
+      "`arrange()` and `mutate()`",
+      "`group_by()` and `summarise()`",
+      "`join()` and `slice()`"
+    ],
+    "correctAnswer": "`group_by()` and `summarise()`",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] According to the lecture, what is the definition of an outlier based on the Z-score\nmethod for detection?",
+    "options": [
+      "Any value that is exactly equal to the mean.",
+      "A value with a Z-score (standardized value) greater than 3 in absolute terms.",
+      "The smallest or largest value in a dataset.",
+      "Any value that is not normally distributed."
+    ],
+    "correctAnswer": "A value with a Z-score (standardized value) greater than 3 in absolute terms.",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] What is the primary distinction between Text Mining and Natural Language Processing\n(NLP) as described in the lecture?",
+    "options": [
+      "Text Mining is only for structured data, while NLP is for unstructured data.",
+      "Text Mining is a broad technique to extract patterns from any text, while NLP specifically considers\nlinguistic characteristics of human language.",
+      "NLP is an older technique, while Text Mining is modern.",
+      "Text Mining focuses on grammar, while NLP focuses on word frequency."
+    ],
+    "correctAnswer": "Text Mining is a broad technique to extract patterns from any text, while NLP specifically considers\nlinguistic characteristics of human language.",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] Which concept does TF-IDF address that simple Term Frequency (TF) alone does not,\nparticularly in a corpus of documents?",
+    "options": [
+      "The grammatical structure of sentences.",
+      "The order of words in a document.",
+      "The varying importance of words across an entire collection of documents, downweighting common\nwords.",
+      "The emotional tone of words."
+    ],
+    "correctAnswer": "The varying importance of words across an entire collection of documents, downweighting common\nwords.",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] Why are Document Term Matrices (DTMs) typically stored as 'sparse matrices'?",
+    "options": [
+      "To ensure all elements are integers.",
+      "To reduce memory usage and computation time because most elements are zero.",
+      "To allow for non-numeric data types.",
+      "To facilitate conversion to a regular matrix."
+    ],
+    "correctAnswer": "To reduce memory usage and computation time because most elements are zero.",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] What is the 'Zero-Frequency Problem' in the Naive Bayes algorithm?",
+    "options": [
+      "When the algorithm predicts zero accuracy.",
+      "When a particular category in the training data has zero occurrences of a feature, leading to a zero\nprobability.",
+      "When the dataset contains no numerical features.",
+      "When all features have the same frequency."
+    ],
+    "correctAnswer": "When a particular category in the training data has zero occurrences of a feature, leading to a zero\nprobability.",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] In the context of sentiment analysis, what is a 'Median Split' used for?",
+    "options": [
+      "To divide a text into sentences.",
+      "To convert continuous rating scales into binary sentiment labels (positive/negative).",
+      "To calculate the average sentiment score.",
+      "To remove the middle portion of a review."
+    ],
+    "correctAnswer": "To convert continuous rating scales into binary sentiment labels (positive/negative).",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] Which `tidytext` function is essential for transforming a text column into multiple rows,\nwith one word per row, to prepare it for joining with sentiment lexicons?",
+    "options": [
+      "`group_by()`",
+      "`summarise()`",
+      "`unnest_tokens()`",
+      "`mutate()`"
+    ],
+    "correctAnswer": "`unnest_tokens()`",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] What is the primary purpose of the Variance Inflation Factor (VIF) in regression\nanalysis, as discussed in the context of sentiment modeling?",
+    "options": [
+      "To measure the overall fit of the model.",
+      "To quantify the severity of multicollinearity among independent variables.",
+      "To determine the statistical significance of individual predictors.",
+      "To identify outliers in the dependent variable."
+    ],
+    "correctAnswer": "To quantify the severity of multicollinearity among independent variables.",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] According to the study on review helpfulness, what was the impact of 'polarity'\n(sentiment bias) in a review's main text and title on its perceived helpfulness?",
+    "options": [
+      "Higher polarity positively impacted helpfulness.",
+      "Higher polarity negatively impacted helpfulness.",
+      "Polarity had no significant impact on helpfulness.",
+      "Only positive polarity impacted helpfulness, negative did not."
+    ],
+    "correctAnswer": "Higher polarity negatively impacted helpfulness.",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] When combining vectors of different data types (e.g., integer, numeric, character) using\n`cbind()` to create a matrix, what happens to the data types of the elements in the resulting\nmatrix?",
+    "options": [
+      "All elements are converted to the most 'flexible' data type present, typically character.",
+      "R automatically converts all elements to numeric.",
+      "The matrix will retain the original data type for each column.",
+      "An error will occur because mixed data types are not allowed in matrices."
+    ],
+    "correctAnswer": "All elements are converted to the most 'flexible' data type present, typically character.",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] For a dependent variable that is ordered categorical (e.g., ratings 1-5), which\nregression model is considered more theoretically appropriate than linear regression, and\nwhy?",
+    "options": [
+      "`lm()` because it handles all data types equally well.",
+      "`polr()` (Ordinal Logit) because it accounts for the ordered nature of the categories, providing nuanced\ninsights into non-linear effects.",
+      "`glm()` (Logistic Regression) because it is designed for binary outcomes.",
+      "`randomForest()` because it is a non-parametric model."
+    ],
+    "correctAnswer": "`polr()` (Ordinal Logit) because it accounts for the ordered nature of the categories, providing nuanced\ninsights into non-linear effects.",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] What is the primary purpose of 'Dependency Parsing' in NLP?",
+    "options": [
+      "To count the frequency of words in a document.",
+      "To reduce words to their base form (stemming/lemmatization).",
+      "To analyze the grammatical structure of sentences and identify relationships between words.",
+      "To remove common words (stopwords) from text."
+    ],
+    "correctAnswer": "To analyze the grammatical structure of sentences and identify relationships between words.",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] What is the 'Laplace Estimator' (Add-1 Smoothing) used for in the Naive Bayes\nalgorithm?",
+    "options": [
+      "To speed up the calculation of probabilities.",
+      "To convert continuous variables into categorical ones.",
+      "To mitigate the zero-frequency problem by adding a small constant to all counts, ensuring no zero\nprobabilities.",
+      "To normalize the feature values between 0 and 1."
+    ],
+    "correctAnswer": "To mitigate the zero-frequency problem by adding a small constant to all counts, ensuring no zero\nprobabilities.",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] In the context of review helpfulness, how did reviews expressing 'low arousal negative\nemotions' (like sadness) impact helpfulness, compared to 'high arousal negative emotions'\n(like fear)?",
+    "options": [
+      "Both low and high arousal negative emotions made reviews less helpful.",
+      "Low arousal negative emotions made reviews less helpful, while high arousal made them more\nhelpful.",
+      "Low arousal negative emotions made reviews more helpful, while high arousal made them less\nhelpful.",
+      "Neither had a significant impact on helpfulness."
+    ],
+    "correctAnswer": "Low arousal negative emotions made reviews more helpful, while high arousal made them less\nhelpful.",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] In Social Network Analysis, an individual who 'bridges' a structural hole is considered\nvaluable because they:",
+    "options": [
+      "Have the highest number of direct connections in the network.",
+      "Control information flow and facilitate collaboration between otherwise disconnected groups.",
+      "Are isolated from the rest of the network, making them unique.",
+      "Are always the formal leader of an organization."
+    ],
+    "correctAnswer": "Control information flow and facilitate collaboration between otherwise disconnected groups.",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
+  },
+  {
+    "question": "[Mock Exam 5] When creating an Excel dashboard, what is the crucial step to ensure that a single\nslicer filters data across *multiple* PivotTables and their associated Pivot Charts\nsimultaneously?",
+    "options": [
+      "Ensure all PivotTables are on the same worksheet.",
+      "Apply the slicer to each PivotTable individually.",
+      "Use the 'Report Connections' feature to link the slicer to all relevant PivotTables.",
+      "Group all PivotTables together before inserting the slicer."
+    ],
+    "correctAnswer": "Use the 'Report Connections' feature to link the slicer to all relevant PivotTables.",
+    "explanation": "Source: Mock Exam 5",
+    "mock_file": "mock_exam_5.pdf"
   }
 ];

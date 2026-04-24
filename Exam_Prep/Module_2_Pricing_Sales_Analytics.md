@@ -140,3 +140,265 @@ If you see an R output for an advertising regression model (e.g., `Sales ~ TV_Sp
 *   **What is the focus of Week 6?** Shifting from micro-level customer analysis to macro-level cost analysis and marketing decisions.
 *   **What are the 4 Cs?** Customer, Cost, Convenience, Communication.
 *   **Is emotional attachment a 'Cost'?** No, it is a psychological aspect of the 'Customer'.
+
+
+## Mock Exam 2 Questions
+
+**Q: [Mock Exam 2] Which RStudio pane is primarily used for writing and saving your R code scripts?**
+- Console
+- Global Environment
+- Editor
+- Files/Plots/Packages/Help
+**Answer:** Editor
+
+**Q: [Mock Exam 2] In R, what does the symbol `NA` represent?**
+- Not Applicable
+- Not Available
+- New Assignment
+- Numeric Average
+**Answer:** Not Available
+
+**Q: [Mock Exam 2] What is the primary difference between an R `matrix` and a `data.frame` regarding the
+data types of their elements?**
+- A matrix can only store numeric data, while a data frame can store any type.
+- All elements in a matrix must be of the same data type, while each column in a data frame can have a
+different data type.
+- A matrix is 1-dimensional, while a data frame is 2-dimensional.
+- Data frames are used for mathematical operations, while matrices are for general data analysis.
+**Answer:** All elements in a matrix must be of the same data type, while each column in a data frame can have a
+different data type.
+
+**Q: [Mock Exam 2] Which `dplyr` function is used to add new variables or transform existing ones while
+preserving the original dataset's row count?**
+- `summarise()`
+- `filter()`
+- `mutate()`
+- `group_by()`
+**Answer:** `mutate()`
+
+**Q: [Mock Exam 2] What term describes information that is not organized in a pre-defined tabular format,
+such as text, images, or audio?**
+- Structured Data
+- Quantitative Data
+- Unstructured Data
+- Relational Data
+**Answer:** Unstructured Data
+
+**Q: [Mock Exam 2] In text mining, what is a Document Term Matrix (DTM)?**
+- A matrix showing relationships between documents.
+- A matrix where rows are documents, columns are unique terms, and cell values indicate term
+frequency.
+- A matrix of terms and their definitions.
+- A matrix used only for sentiment analysis.
+**Answer:** A matrix where rows are documents, columns are unique terms, and cell values indicate term
+frequency.
+
+**Q: [Mock Exam 2] In the context of email or SMS filtering, what does "Spam" refer to?**
+- Legitimate and useful messages.
+- Messages from known contacts.
+- Unsolicited or undesirable messages.
+- Messages containing attachments.
+**Answer:** Unsolicited or undesirable messages.
+
+**Q: [Mock Exam 2] In Social Network Analysis (SNA), what is an individual entity within a network, such as
+a person or an organization, commonly referred to as?**
+- A Path
+- A Tie
+- A Node (or Actor)
+- A Dyad
+**Answer:** A Node (or Actor)
+
+**Q: [Mock Exam 2] What is the primary purpose of a dashboard in marketing analytics?**
+- To replace all other forms of reporting.
+- To provide a visual display of key performance indicators (KPIs) and facilitate data exploration.
+- To perform predictive analytics automatically.
+- To store raw data for later analysis.
+**Answer:** To provide a visual display of key performance indicators (KPIs) and facilitate data exploration.
+
+**Q: [Mock Exam 2] According to the lecture, what are basic necessities required for human survival, such
+as food, shelter, and safety?**
+- Wants
+- Desires
+- Needs
+- Demands
+**Answer:** Needs
+
+**Q: [Mock Exam 2] What is a key advantage of R for Marketing Analytics compared to Excel, as highlighted
+in the lecture?**
+- R is easier to learn for beginners.
+- R is open-source, free, and handles massive datasets more efficiently.
+- R is primarily a graphical interface, making it more intuitive.
+- R is better for small, one-off tasks.
+**Answer:** R is open-source, free, and handles massive datasets more efficiently.
+
+**Q: [Mock Exam 2] In R, which logical operator would you use to select elements from a vector `a` that are
+both greater than 15 AND less than 20?**
+- `|` (OR)
+- `!` (NOT)
+- `&` (AND)
+- `==` (Equality)
+**Answer:** `&` (AND)
+
+**Q: [Mock Exam 2] When combining vectors of different data types (e.g., integer, numeric, character) using
+`cbind()` to form a matrix, what is the typical outcome regarding the data types in the
+resulting matrix?**
+- Each column retains its original data type.
+- R coerces all elements in the matrix to the most "flexible" data type present, usually character.
+- The operation will result in an error due to incompatible types.
+- Only numeric data types are allowed in matrices, so character vectors are ignored.
+**Answer:** R coerces all elements in the matrix to the most "flexible" data type present, usually character.
+
+**Q: [Mock Exam 2] What is the main functional difference between `mutate()` and `summarise()` in the
+`dplyr` package?**
+- `mutate()` is for filtering rows, while `summarise()` is for selecting columns.
+- `mutate()` adds new columns and keeps the same number of rows, while `summarise()` aggregates
+data to fewer rows.
+- `mutate()` works only on numeric data, while `summarise()` works on character data.
+- `mutate()` is for single variables, while `summarise()` is for multiple variables.
+**Answer:** `mutate()` adds new columns and keeps the same number of rows, while `summarise()` aggregates
+data to fewer rows.
+
+**Q: [Mock Exam 2] When calculating the mean of a vector in R that contains `NA` values, what argument
+should be used within the `mean()` function to ensure an accurate result by ignoring missing
+values?**
+- `na.omit = TRUE`
+- `remove.na = TRUE`
+- `na.rm = TRUE`
+- `ignore.na = TRUE`
+**Answer:** `na.rm = TRUE`
+
+**Q: [Mock Exam 2] What is the primary limitation of the "Bag-of-Tokens" approach in text mining, as
+discussed in the lecture?**
+- It is computationally very expensive.
+- It requires extensive manual labeling of data.
+- It loses all information about the original word order and immediate context.
+- It cannot handle large volumes of text data.
+**Answer:** It loses all information about the original word order and immediate context.
+
+**Q: [Mock Exam 2] What is the "naive" assumption made by the Naive Bayes algorithm?**
+- That all features are equally important.
+- That features are strongly independent of each other given the class.
+- That the data follows a normal distribution.
+- That there are no missing values in the dataset.
+**Answer:** That features are strongly independent of each other given the class.
+
+**Q: [Mock Exam 2] When preparing a Document Term Matrix (DTM) for a Naive Bayes classifier, why might
+it be beneficial to convert term frequencies to a binary occurrence (presence/absence)
+representation?**
+- To increase the dimensionality of the data.
+- To make the DTM denser and use more memory.
+- Because Naive Bayes often performs optimally by considering only the presence or absence of words,
+reducing noise from specific counts.
+- To make the model more complex and harder to interpret.
+**Answer:** Because Naive Bayes often performs optimally by considering only the presence or absence of words,
+reducing noise from specific counts.
+
+**Q: [Mock Exam 2] In Social Network Analysis, what is a "Structural Hole"?**
+- A node with very few connections.
+- The absence of a direct connection between two nodes who belong to otherwise connected groups.
+- A node that is central to all communication.
+- A connection that flows in only one direction.
+**Answer:** The absence of a direct connection between two nodes who belong to otherwise connected groups.
+
+**Q: [Mock Exam 2] What is the primary output or goal of an effective descriptive analytics dashboard, as
+emphasized in the lecture?**
+- To provide definitive answers to all business questions.
+- To generate questions, hunches, and hypotheses for further investigation.
+- To replace the need for human analysts.
+- To automatically make strategic business decisions.
+**Answer:** To generate questions, hunches, and hypotheses for further investigation.
+
+**Q: [Mock Exam 2] Which analytical technique involves creating hypothetical product or service options
+with varying attributes to gauge customer preferences, especially when real-world
+behavioral data isn't available for new products?**
+- Regression Analysis
+- Conjoint Analysis
+- Factor Analysis
+- Market Basket Analysis
+**Answer:** Conjoint Analysis
+
+**Q: [Mock Exam 2] What are "Economic Switching Barriers (ESB)" in the context of customer churn?**
+- Emotional or social costs of switching.
+- The difficulty or complexity of the switching process itself.
+- Monetary costs or losses associated with switching, such as contract termination fees.
+- The lack of appealing alternatives in the market.
+**Answer:** Monetary costs or losses associated with switching, such as contract termination fees.
+
+**Q: [Mock Exam 2] How does R internally represent a factor variable, and which function can be used to
+reveal this internal representation?**
+- As character strings; `as.character()`
+- As integers with associated labels (levels); `as.numeric()`
+- As logical (TRUE/FALSE) values; `as.logical()`
+- As numeric values; `as.integer()`
+**Answer:** As integers with associated labels (levels); `as.numeric()`
+
+**Q: [Mock Exam 2] When using the `matrix()` function in R to create a matrix from a vector of values, what
+is the default order in which the values are filled into the matrix?**
+- Row-wise
+- Column-wise
+- Diagonally
+- Randomly
+**Answer:** Column-wise
+
+**Q: [Mock Exam 2] For a dependent variable that is ordered categorical (e.g., customer satisfaction ratings
+from 1 to 5), why is `polr()` (Ordinal Logit Regression) considered a more theoretically
+appropriate model than `lm()` (Linear Regression)?**
+- `lm()` is computationally more expensive for categorical data.
+- `polr()` can handle missing values better than `lm()`.
+- `polr()` accounts for the ordered nature of the categories and models non-linear effects, whereas
+`lm()` assumes a continuous, interval scale.
+- `lm()` can only be used for binary dependent variables.
+**Answer:** `polr()` accounts for the ordered nature of the categories and models non-linear effects, whereas
+`lm()` assumes a continuous, interval scale.
+
+**Q: [Mock Exam 2] What is the "Zero-Frequency Problem" in the Naive Bayes algorithm, and what
+technique is commonly used to mitigate it?**
+- It occurs when a feature appears too frequently, leading to overfitting; mitigated by removing common
+words.
+- It occurs when a particular category in the training data has zero occurrences of a feature, leading to a
+zero probability that can nullify overall probabilities; mitigated by Laplace Estimator (Add-1 Smoothing).
+- It occurs when the model predicts zero probability for all classes; mitigated by increasing the training
+data size.
+- It occurs when features are highly correlated; mitigated by dimensionality reduction.
+**Answer:** It occurs when a particular category in the training data has zero occurrences of a feature, leading to a
+zero probability that can nullify overall probabilities; mitigated by Laplace Estimator (Add-1 Smoothing).
+
+**Q: [Mock Exam 2] In the supply chain game case study discussed in the lecture, what counter-intuitive
+outcome was observed in Group 2 after communication was allowed, which prompted a
+deeper investigation using SNA?**
+- Group 2's performance improved significantly, as expected.
+- Group 2's performance remained unchanged.
+- Group 2's performance surprisingly deteriorated despite the ability to share information.
+- Group 2 disbanded due to communication conflicts.
+**Answer:** Group 2's performance surprisingly deteriorated despite the ability to share information.
+
+**Q: [Mock Exam 2] In the analytical framework for Segmentation, Targeting, and Positioning, what is the
+primary role of Factor Analysis in the initial phase of data reduction?**
+- To directly assign customers to segments based on demographics.
+- To group customers into clusters based on their overall spending.
+- To reduce a large number of observed behavioral variables into fewer latent, meaningful underlying
+dimensions.
+- To predict future customer behavior based on past actions.
+**Answer:** To reduce a large number of observed behavioral variables into fewer latent, meaningful underlying
+dimensions.
+
+**Q: [Mock Exam 2] In the advanced segmentation workflow that extracts individual consumer preferences,
+why is "significance filtering" (setting non-statistically significant coefficients to zero)
+applied to the regression coefficients for each individual?**
+- To simplify the model and reduce computational time.
+- To ensure that only meaningful and statistically reliable preferences contribute to a consumer's profile,
+preventing noise from distorting segment formation.
+- To make the preference matrix denser and easier to interpret.
+- To convert all preference coefficients into positive values.
+**Answer:** To ensure that only meaningful and statistically reliable preferences contribute to a consumer's profile,
+preventing noise from distorting segment formation.
+
+**Q: [Mock Exam 2] In the "Powered Blocked Pricing" model (all-units discount) discussed, what is the key
+difference in how the price is applied if a customer's consumption crosses the defined
+"cut-off" value?**
+- Only the units consumed *beyond* the cut-off are charged at the lower price.
+- The price per unit remains the same regardless of consumption volume.
+- The *entire* consumption (all units) is charged at the lower price.
+- The customer receives a refund for the initial units charged at the higher price.
+**Answer:** The *entire* consumption (all units) is charged at the lower price.
+

@@ -179,3 +179,249 @@ Here are actual questions from past assignments that you should memorize. They r
 *   **Vectors in R:** The lecturer analogizes a vector in R to **one column of an Excel spreadsheet**. Even if a variable contains only *one* value, it is still technically considered a vector.
 *   **Console Output:** If you type `a = 0` and hit enter, nothing happens in the console. Why? Because the command assigned a value but didn't explicitly request to print it.
 *   **F-statistic significance:** In a linear regression (`lm`), if the F-statistic has a tiny p-value (e.g., `2.2e-16`), it means the model is highly significant (at least one independent variable explains the dependent variable).
+
+
+## Mock Exam 1 Questions
+
+**Q: [Mock Exam 1] What is the primary purpose of RStudio?**
+- To store large datasets
+- To provide a user-friendly interface for R
+- To replace Microsoft Excel
+- To manage hardware resources
+**Answer:** To provide a user-friendly interface for R
+
+**Q: [Mock Exam 1] Which RStudio pane displays the output of executed R commands?**
+- Editor
+- Global Environment
+- Console
+- Files
+**Answer:** Console
+
+**Q: [Mock Exam 1] What symbol is used to denote a comment in R code?**
+- //
+- --
+- #
+- /* */
+**Answer:** #
+
+**Q: [Mock Exam 1] What is the key difference between a Matrix and a Data Frame in R regarding data types?**
+- Matrices can store only numeric data, while Data Frames can store any data type.
+- All elements in a Matrix must be of the same data type, while each column in a Data Frame can have
+a different data type.
+- Data Frames are 1-dimensional, while Matrices are 2-dimensional.
+- Matrices are used for text, Data Frames for numbers.
+**Answer:** All elements in a Matrix must be of the same data type, while each column in a Data Frame can have
+a different data type.
+
+**Q: [Mock Exam 1] Which `dplyr` function is used to add new variables or transform existing ones while
+preserving the original dataset's row count?**
+- summarise()
+- group_by()
+- mutate()
+- filter()
+**Answer:** mutate()
+
+**Q: [Mock Exam 1] When performing statistical calculations in R with potentially missing values, which
+argument is crucial to ensure accurate results?**
+- na.omit = TRUE
+- remove.na = TRUE
+- na.rm = TRUE
+- ignore.na = TRUE
+**Answer:** na.rm = TRUE
+
+**Q: [Mock Exam 1] What is 'unstructured data'?**
+- Information organized in a pre-defined tabular format.
+- Information not organized in a pre-defined tabular format, such as text or images.
+- Numerical data ready for statistical analysis.
+- Data stored in a database.
+**Answer:** Information not organized in a pre-defined tabular format, such as text or images.
+
+**Q: [Mock Exam 1] What is the primary purpose of the `tm_map` function in R's `tm` package?**
+- To create a Document Term Matrix.
+- To apply various cleaning steps to a text corpus.
+- To calculate TF-IDF scores.
+- To visualize word clouds.
+**Answer:** To apply various cleaning steps to a text corpus.
+
+**Q: [Mock Exam 1] What is the main advantage of using the NRC Lexicon over the Bing Lexicon in
+sentiment analysis?**
+- NRC is simpler and only classifies words as positive or negative.
+- NRC provides a continuous sentiment score from -5 to +5.
+- NRC categorizes words into positive/negative sentiment and 8 basic emotions, offering
+multi-dimensional insights.
+- NRC is specifically designed for Indian English.
+**Answer:** NRC categorizes words into positive/negative sentiment and 8 basic emotions, offering
+multi-dimensional insights.
+
+**Q: [Mock Exam 1] In the context of the Naive Bayes algorithm for spam detection, what problem does the
+Laplace Estimator (Add-1 Smoothing) address?**
+- Overfitting to the training data.
+- The zero-frequency problem, where a feature has zero occurrences in a category.
+- Multicollinearity between features.
+- Handling continuous variables.
+**Answer:** The zero-frequency problem, where a feature has zero occurrences in a category.
+
+**Q: [Mock Exam 1] In Social Network Analysis (SNA), what does a 'node' typically represent?**
+- A connection between entities
+- An individual entity within a network
+- The strength of a relationship
+- A gap in the network
+**Answer:** An individual entity within a network
+
+**Q: [Mock Exam 1] What is the primary purpose of a 'slicer' in an Excel dashboard?**
+- To create new data tables.
+- To perform complex calculations.
+- To provide an interactive, visual filter for data.
+- To generate static reports.
+**Answer:** To provide an interactive, visual filter for data.
+
+**Q: [Mock Exam 1] In the Bullwhip Effect game case study, what unexpected outcome was observed in
+Group 2 after communication was allowed?**
+- Their performance improved significantly, as expected.
+- Their performance remained unchanged.
+- Their performance deteriorated, despite having access to more information.
+- They achieved perfect coordination and zero costs.
+**Answer:** Their performance deteriorated, despite having access to more information.
+
+**Q: [Mock Exam 1] What is the key advantage of Conjoint Analysis over directly asking customers what
+features they prefer?**
+- It is less expensive to implement.
+- It forces consumers to make realistic trade-offs, mimicking real-world purchasing decisions.
+- It can be used for products that already exist in the market.
+- It provides qualitative insights into consumer emotions.
+**Answer:** It forces consumers to make realistic trade-offs, mimicking real-world purchasing decisions.
+
+**Q: [Mock Exam 1] In the hotel review analysis, which attribute was found to be the most important driver
+of overall rating?**
+- Location
+- Cleanliness
+- Value for Money
+- Service
+**Answer:** Value for Money
+
+**Q: [Mock Exam 1] What does the 'none of these' option in Choice-Based Conjoint (CBC) analysis help to
+establish?**
+- The most preferred product configuration.
+- A 'cut-off utility' or threshold below which consumers are unwilling to buy.
+- The demographic profile of non-buyers.
+- The interaction effects between attributes.
+**Answer:** A 'cut-off utility' or threshold below which consumers are unwilling to buy.
+
+**Q: [Mock Exam 1] When performing individual-level regressions in Conjoint Analysis, what is the purpose
+of 'significance filtering'?**
+- To remove outliers from the dataset.
+- To ensure that only statistically reliable preferences contribute to a consumer's profile in the
+preference matrix.
+- To combine similar attribute levels into one.
+- To normalize the part-worth utilities.
+**Answer:** To ensure that only statistically reliable preferences contribute to a consumer's profile in the
+preference matrix.
+
+**Q: [Mock Exam 1] According to the lecture, which type of data is prioritized for *initial* market
+segmentation in modern marketing analytics?**
+- Geographic data
+- Demographic data
+- Psychographic data
+- Behavioral data
+**Answer:** Behavioral data
+
+**Q: [Mock Exam 1] What is the primary purpose of the 'elbow method' (often using a scree plot) in cluster
+analysis?**
+- To visualize the dendrogram.
+- To determine the optimal number of clusters (k).
+- To calculate Euclidean distance.
+- To perform factor analysis.
+**Answer:** To determine the optimal number of clusters (k).
+
+**Q: [Mock Exam 1] What is the difference between a Point of Parity (POP) and a Point of Difference (POD)
+in positioning?**
+- POP makes a brand unique, while POD establishes its legitimacy.
+- POP establishes a brand's legitimacy, while POD creates competitive advantage.
+- POP is about price, while POD is about quality.
+- POP is for new products, while POD is for established products.
+**Answer:** POP establishes a brand's legitimacy, while POD creates competitive advantage.
+
+**Q: [Mock Exam 1] What is the main objective of 'skimming pricing' strategy?**
+- To set a single, low price to capture maximum market share quickly.
+- To maximize total revenue by gradually lowering prices over time to capture different customer
+segments.
+- To match competitor prices exactly.
+- To sell products only in bundles.
+**Answer:** To maximize total revenue by gradually lowering prices over time to capture different customer
+segments.
+
+**Q: [Mock Exam 1] What is the significance of the 'coefficient of innovation (p)' in the Bass Diffusion
+Model?**
+- It represents the rate at which potential adopters purchase due to word-of-mouth.
+- It reflects the maximum possible number of adopters in the market.
+- It represents the impact of external influences and the eagerness of innovators, vital for early success.
+- It measures the decay rate of product popularity.
+**Answer:** It represents the impact of external influences and the eagerness of innovators, vital for early success.
+
+**Q: [Mock Exam 1] What is the primary purpose of an 'Adstock' model in marketing mix modeling?**
+- To measure the immediate sales impact of an advertisement.
+- To capture the long-term, carryover effect of past advertising on current sales.
+- To determine the optimal price for a product.
+- To calculate the cost-per-click for digital ads.
+**Answer:** To capture the long-term, carryover effect of past advertising on current sales.
+
+**Q: [Mock Exam 1] In the Coca-Cola case study, what did the interaction model (`sales ~ price * ad_spend`)
+reveal about pricing and advertising decisions?**
+- Price and ad spend had independent effects on sales.
+- The impact of price on sales was significantly different depending on the ad spend level.
+- Higher ad spend always led to higher sales, regardless of price.
+- Price had no significant impact on sales.
+**Answer:** The impact of price on sales was significantly different depending on the ad spend level.
+
+**Q: [Mock Exam 1] Which type of collaborative filtering is generally more scalable for platforms with a very
+large number of users and fewer items?**
+- User-Based Collaborative Filtering (UCF)
+- Item-Based Collaborative Filtering (ICF)
+- Content-Based Recommendation
+- Cluster Models
+**Answer:** Item-Based Collaborative Filtering (ICF)
+
+**Q: [Mock Exam 1] In RFM analysis, why are customers with the most recent purchases given the highest
+Recency score?**
+- They are typically less engaged and responsive.
+- They are often more engaged, more responsive to current promotions, and more likely to make
+another purchase.
+- They represent the highest total monetary value.
+- They indicate customer loyalty over a long period.
+**Answer:** They are often more engaged, more responsive to current promotions, and more likely to make
+another purchase.
+
+**Q: [Mock Exam 1] What does a 'Lift' value greater than 1 in Market Basket Analysis indicate?**
+- The items are frequently purchased together purely by chance.
+- The observed co-occurrence of items is less than expected by chance.
+- The items are purchased together more often than expected by chance, suggesting a positive
+correlation.
+- The confidence of the rule is very low.
+**Answer:** The items are purchased together more often than expected by chance, suggesting a positive
+correlation.
+
+**Q: [Mock Exam 1] What is 'Partial Churn' in the context of customer churn?**
+- When a customer completely cancels their service.
+- When a customer appears active but has shifted a significant portion of their business to a competitor.
+- When a customer reduces their usage temporarily due to seasonal factors.
+- When a customer refers a new customer to the company.
+**Answer:** When a customer appears active but has shifted a significant portion of their business to a competitor.
+
+**Q: [Mock Exam 1] In the Redwoods case study, what was the primary reason for the hotel chain's struggle
+despite high average daily rates (ADR)?**
+- Low average daily rates.
+- High customer loyalty to the Redwoods brand.
+- Low customer loyalty to individual properties, poor retention, and limited cross-selling.
+- Over-reliance on corporate branding.
+**Answer:** Low customer loyalty to individual properties, poor retention, and limited cross-selling.
+
+**Q: [Mock Exam 1] What is the main advantage of the Cox Proportional Hazard Model over the
+Kaplan-Meier Estimator in survival analysis?**
+- Cox model is non-parametric and does not assume a specific distribution.
+- Cox model is simpler to implement in R.
+- Cox model allows incorporating multiple customer characteristics (covariates) to influence the hazard
+rate.
+- Cox model only works for binary outcomes.
+**Answer:** Cox model allows incorporating multiple customer characteristics (covariates) to influence the hazard
+rate.
+

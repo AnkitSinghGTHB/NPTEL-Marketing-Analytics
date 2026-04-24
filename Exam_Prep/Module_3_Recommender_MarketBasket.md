@@ -119,3 +119,246 @@ The main package used for Market Basket Analysis in R is `arules`, and the funct
 *   **Recency (R) in RFM:** Measures how recently a customer made a purchase.
 *   **Frequency (F) in RFM:** Indicates how often a customer makes purchases within a given period.
 *   **Monetary (M) in RFM:** Represents the total expenditure a customer has made.
+
+
+## Mock Exam 3 Questions
+
+**Q: [Mock Exam 3] What is the primary purpose of RStudio in R programming?**
+- To store large datasets
+- To provide a user-friendly interface for R
+- To directly perform statistical calculations without R
+- To manage R packages only
+**Answer:** To provide a user-friendly interface for R
+
+**Q: [Mock Exam 3] In R, what does `NA` represent?**
+- Not Applicable
+- No Action
+- Not Available
+- New Assignment
+**Answer:** Not Available
+
+**Q: [Mock Exam 3] What is the key difference between a Matrix and a Data Frame in R regarding data types?**
+- Matrices are 1-dimensional, Data Frames are 2-dimensional
+- All elements in a Matrix must be of the same data type, while Data Frame columns can have different
+data types
+- Data Frames are only for numeric data
+- Matrices can store character data, Data Frames cannot
+**Answer:** All elements in a Matrix must be of the same data type, while Data Frame columns can have different
+data types
+
+**Q: [Mock Exam 3] Which R function is used to install a new library from CRAN?**
+- `load.library()`
+- `library()`
+- `install.packages()`
+- `get.package()`
+**Answer:** `install.packages()`
+
+**Q: [Mock Exam 3] Which R function is used to display the first few rows (default 6) of a data frame?**
+- `tail()`
+- `str()`
+- `head()`
+- `View()`
+**Answer:** `head()`
+
+**Q: [Mock Exam 3] What is the purpose of `barplot()` in R?**
+- To create scatter plots
+- To visualize categorical data comparisons
+- To perform linear regression
+- To display data frame structures
+**Answer:** To visualize categorical data comparisons
+
+**Q: [Mock Exam 3] What is the definition of "Unstructured Data"?**
+- Information organized in a pre-defined tabular format
+- Information not organized in a pre-defined tabular format
+- Numerical data only
+- Data that has been cleaned and processed
+**Answer:** Information not organized in a pre-defined tabular format
+
+**Q: [Mock Exam 3] What is the primary purpose of a Word Cloud?**
+- To perform statistical regression
+- To visually represent text data where word size indicates frequency
+- To analyze grammatical structure
+- To identify abstract topics in documents
+**Answer:** To visually represent text data where word size indicates frequency
+
+**Q: [Mock Exam 3] In text mining, what is a "Corpus"?**
+- A type of statistical model
+- A special data structure used by the `tm` package to store and manage text documents
+- A numerical matrix of word frequencies
+- A list of stopwords
+**Answer:** A special data structure used by the `tm` package to store and manage text documents
+
+**Q: [Mock Exam 3] In the context of spam detection, what does "Ham" refer to?**
+- Unsolicited messages
+- Legitimate and useful messages
+- Messages with attachments
+- Encrypted messages
+**Answer:** Legitimate and useful messages
+
+**Q: [Mock Exam 3] Which RStudio pane displays the output of executed R commands and provides
+immediate feedback during development?**
+- Editor
+- Global Environment
+- Console
+- Files
+**Answer:** Console
+
+**Q: [Mock Exam 3] When calculating statistical functions like `mean()` or `sd()` in R, what argument should
+be used to ensure `NA` values do not cause the function to return `NA`?**
+- `ignore.na = TRUE`
+- `na.handle = TRUE`
+- `na.rm = TRUE`
+- `remove.na = TRUE`
+**Answer:** `na.rm = TRUE`
+
+**Q: [Mock Exam 3] If you combine an integer vector, a numeric vector, and a character vector using
+`cbind()` to create a matrix, what will be the data type of all elements in the resulting matrix?**
+- Integer
+- Numeric
+- Character
+- Logical
+**Answer:** Character
+
+**Q: [Mock Exam 3] What is the primary difference between `mutate()` and `summarise()` functions in
+`dplyr`?**
+- `mutate()` adds new rows, `summarise()` adds new columns
+- `mutate()` modifies existing variables, `summarise()` creates new ones
+- `mutate()` adds new variables while preserving row count, `summarise()` aggregates to fewer rows
+- `mutate()` is for single variables, `summarise()` is for multiple variables
+**Answer:** `mutate()` adds new variables while preserving row count, `summarise()` aggregates to fewer rows
+
+**Q: [Mock Exam 3] In the hotel analytics problem, if the `overall_rating` for a hotel is below average, what
+is the *next* logical step to identify contributing factors?**
+- Immediately increase marketing spend
+- Compare average attribute-wise ratings for the hotel against benchmarks
+- Change the hotel's location
+- Reduce the hotel's price
+**Answer:** Compare average attribute-wise ratings for the hotel against benchmarks
+
+**Q: [Mock Exam 3] Why is `beside = TRUE` a crucial argument when using `barplot()` to compare two
+hotels across various attributes?**
+- It stacks the bars on top of each other
+- It displays bars side-by-side for direct comparison
+- It changes the color of the bars
+- It adds a legend to the plot
+**Answer:** It displays bars side-by-side for direct comparison
+
+**Q: [Mock Exam 3] What is the key distinction between Text Mining and Natural Language Processing
+(NLP)?**
+- Text Mining is only for structured data, NLP for unstructured
+- Text Mining is a broad technique, NLP is a specific type considering linguistic characteristics
+- NLP is only for machine-generated text
+- Text Mining focuses on grammar, NLP on word frequency
+**Answer:** Text Mining is a broad technique, NLP is a specific type considering linguistic characteristics
+
+**Q: [Mock Exam 3] What is the primary purpose of Inverse Document Frequency (IDF) in TF-IDF
+calculation?**
+- To count how often a term appears in a document
+- To upweight rare, distinctive words and downweight common words across a corpus
+- To remove stopwords
+- To identify grammatical relationships between words
+**Answer:** To upweight rare, distinctive words and downweight common words across a corpus
+
+**Q: [Mock Exam 3] Why are Document Term Matrices (DTMs) typically stored as sparse matrices?**
+- To make them easier to read
+- Because most elements are zero, reducing memory usage and computation time
+- To hide sensitive information
+- To allow for non-numeric data
+**Answer:** Because most elements are zero, reducing memory usage and computation time
+
+**Q: [Mock Exam 3] What problem does the "Naive" assumption in Naive Bayes algorithm address?**
+- It simplifies calculations by assuming features are independent given the class
+- It ensures all features are equally important
+- It removes missing values from the dataset
+- It converts continuous variables into categorical ones
+**Answer:** It simplifies calculations by assuming features are independent given the class
+
+**Q: [Mock Exam 3] In the context of Naive Bayes for text classification, why might converting term
+frequencies to binary occurrence features be beneficial?**
+- It makes the DTM denser
+- It simplifies the model and aligns better with the algorithm's assumptions
+- It increases the dimensionality of the data
+- It is required for all machine learning models
+**Answer:** It simplifies the model and aligns better with the algorithm's assumptions
+
+**Q: [Mock Exam 3] In sentiment analysis, why are adjectives often considered more critical than nouns in
+conveying sentiment?**
+- Nouns are always stopwords
+- Adjectives directly describe the quality or feeling associated with a noun
+- Adjectives are easier to count
+- Nouns are only used in negative reviews
+**Answer:** Adjectives directly describe the quality or feeling associated with a noun
+
+**Q: [Mock Exam 3] The lecture notes state that R infers `integer` for whole number sequences (e.g., `1:10`)
+but uses `numeric` for combined lists (e.g., `c()`). What is the primary reason R uses
+`numeric` for combined lists in this context?**
+- `numeric` is always more memory-efficient
+- `numeric` is a safer default, anticipating potential decimal values in combined lists
+- `integer` cannot store more than 10 elements
+- `c()` function only works with `numeric` types
+**Answer:** `numeric` is a safer default, anticipating potential decimal values in combined lists
+
+**Q: [Mock Exam 3] Which statement accurately describes R's internal representation and manipulation of
+Factor variables?**
+- Factors store character data directly, allowing for easy arithmetic operations
+- R stores factors as numeric codes with associated labels (levels), and `as.numeric()` reveals these
+internal codes
+- Factors are identical to character vectors but use less memory
+- `levels()` function is used to convert factors to numeric data for statistical modeling
+**Answer:** R stores factors as numeric codes with associated labels (levels), and `as.numeric()` reveals these
+internal codes
+
+**Q: [Mock Exam 3] When using the `matrix()` function in R with `nrow` specified but `byrow` not, what is
+the default fill order for the matrix?**
+- Row-wise
+- Column-wise
+- Randomly
+- Diagonally
+**Answer:** Column-wise
+
+**Q: [Mock Exam 3] A marketing analyst needs to calculate the growth rate of revenue for each company
+over financial years, where the growth rate for a given year depends on the previous year's
+revenue. Which R programming construct is explicitly mentioned as suitable for automating
+such an iterative calculation?**
+- `mutate()` with `group_by()`
+- `summarise()` with `group_by()`
+- A `for` loop
+- The `ifelse()` function
+**Answer:** A `for` loop
+
+**Q: [Mock Exam 3] In the hotel analytics problem, the lecture notes highlight that `Date of Review` is
+initially a `factor` variable. What is the significance of this observation for future analysis?**
+- It means the date is already in a perfect format for time-series analysis
+- It indicates a potential need for data type conversion (e.g., to character then to date) for proper
+time-series analysis
+- Factor variables are always preferred for date information in R
+- It signifies that the `Date of Review` is a categorical variable and cannot be used in any numerical
+analysis
+**Answer:** It indicates a potential need for data type conversion (e.g., to character then to date) for proper
+time-series analysis
+
+**Q: [Mock Exam 3] In the context of the `polr()` (Ordinal Logit) model for predicting
+`Review_Overall_Rating` (1-5 scale), what is the primary reason this model is considered
+more theoretically appropriate than `lm()` (Linear Regression)?**
+- `polr()` is faster to compute
+- `lm()` cannot handle multiple independent variables
+- The dependent variable is ordered categorical, making `polr()` suitable for non-linear effects
+- `polr()` automatically handles missing values
+**Answer:** The dependent variable is ordered categorical, making `polr()` suitable for non-linear effects
+
+**Q: [Mock Exam 3] What is the primary purpose of Lemmatization/Stemming in the NLP preprocessing
+pipeline?**
+- To remove common words like "the" and "is"
+- To identify the grammatical role of each word
+- To reduce words to their base or root form to standardize analysis and accurately count frequencies
+- To convert text into a bag-of-tokens
+**Answer:** To reduce words to their base or root form to standardize analysis and accurately count frequencies
+
+**Q: [Mock Exam 3] What is the core limitation of simple tokenization that Dependency Parsing aims to
+address?**
+- It cannot handle numerical data
+- It loses all information about word order and grammatical context
+- It is computationally too expensive
+- It only works for English text
+**Answer:** It loses all information about word order and grammatical context
+
